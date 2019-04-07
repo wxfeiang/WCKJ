@@ -1,0 +1,31 @@
+{
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "easysass.compileAfterSave": true,
+  "easysass.excludeRegex": "",
+  "easysass.formats": [
+    {
+      "format": "expanded",
+      "extension": ".css"
+    }
+    // 暂时 不用
+    // {
+    //     "format": "compressed",
+    //     "extension": ".min.css"
+    // }
+  ],
+  "easysass.targetDir": "css/",
+  "git.autofetch": true,
+
+  // vue 指令报错
+  "explorer.confirmDelete": false,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "vetur.validation.template": false,
+  //  - "bounded" (在视区宽度和 "editor.wordWrapColumn" 两者的较小者处换行)。
+  "editor.wordWrap": "on",
+  "window.zoomLevel": 0,
+  //  保存后自动刷新
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true
+}
