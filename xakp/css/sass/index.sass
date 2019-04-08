@@ -68,7 +68,7 @@
     text-align: center 
     font-size: 14px 
     border: 1px solid #233975 
- 
+
 // head
 .head-list
     color: #fff
@@ -87,8 +87,8 @@
         li
             line-height: 32px
 .top
-    border-top: 1px solid  #999
-    border-bottom: 1px solid #999
+    border-top: 1px solid  #0c151b
+    border-bottom: 1px solid #0c151b
     .top-box
         margin: 32px auto 28px
         .logo-box
@@ -179,6 +179,7 @@
             height: 220px
             box-shadow: 0px 5px 24px 0px #eaeaea
             border-radius: 4px 
+           
             .swi-list
                 position: relative
                 padding: 42px 72px 30px 78px 
@@ -283,15 +284,86 @@
                         
 
 
-            .rl-list:hover
+            .rl-list:hover,.rl-list-active
                 background:  #fff
                 cursor: pointer
                 h3
                     i
                         background: #233975
+
 .data-grabbing
-    .grabox
+    .grabox 
         padding: 54px 0 90px 0 
+        background: url(../images/bgs.png) left 25px no-repeat 
+        height: 652px 
+        .graboxb-l  
+            width: 450px 
+            float: left 
+            padding: 100px 0 0 38px 
+            color: #fefefe 
+            h4  
+                font: bold 18px/100px MicrosoftYaHei 
+            .cont  
+                font: 14px/24px MicrosoftYaHei 
+            .date  
+                margin-top: 85px 
+                .m  
+                    font: 48px/48px "MicrosoftYaHei" 
+                    margin-right: 18px 
+                .d  
+                    font: 18px/18px "MicrosoftYaHei" 
+                    color: #7e7f7f 
+        .graboxb-r  
+            float: left 
+            margin-left: 30px 
+            .banner  
+                width: 682px 
+                height: 422px 
+                overflow: hidden 
+                position: relative 
+                .ban  
+                     position: relative 
+                li  
+                    position: absolute 
+                    left: 0px 
+                    top: 0 
+                .click  
+                    width: 100% 
+                    position: absolute 
+                    bottom: 30px 
+                    text-align: center 
+ 
+                    .ace  
+                        background: darkred 
+                    li  
+                        width: 20px 
+                        height: 20px 
+                        border-radius: 50% 
+                        background: #333
+                        display: inline-block 
+                        margin-right: 10px 
+                        text-align: center 
+                        cursor: pointer 
+                p 
+                    position: absolute 
+                    top: 45% 
+                    opacity: 0.6 
+                    filter: alpha(opacity=0.6) 
+                    cursor: pointer
+                p:hover  
+                    opacity: 1 
+                    filter: alpha(opacity=1) 
+ 
+                .post  
+                    width: 75px 
+                    position: absolute 
+                    left: 0 
+                    bottom: 29px 
+                .prev  
+                    left: 0 
+                .next  
+                    right: 0 
+ 
 
 
 .footer
@@ -344,32 +416,53 @@
     text-align: center
     color: #676767
     background: #1a1919
-
-
 .contact-way
     position: fixed
     z-index: 999
-    bottom: 40%
+    bottom: 36%
     right: 0
     height: 240px
     .way-item
+        position: relative
         margin-bottom: 1px 
-        background: #0088de
-     
-        height: 60px
-        overflow: hidden
+        padding: 10px 0 0 0
+        height: 50px   
         cursor: pointer
         .way-ico
-            height: 32px
+            text-align: center
+            span
+                font-size: 20px 
+                color: #fff
+                line-height: 22px
         .way-title
             font: 14px/26px MicrosoftYaHei
             color: #fff
             text-align: center
+            width: 66px
         .phone
             .way-title2
                 font: 14px/24px MicrosoftYaHei
                 color: #fff
                 text-align: center
+        .cen-span
+            display: inline-block
+            margin: 16px 20px 0
+            height: 28px
+            width: 1px
+            background: #fff
+            opacity: 0.3
+        .show-way2
+            position: absolute 
+            width: 240px
+            right: 0 
+
+        .way-boxs  
+            position: absolute
+            height: 50px
+            padding: 10px 0 0 0
+            width: 66px
+            right: 0
+            background: #0088de
 
             
 
