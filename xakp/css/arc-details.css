@@ -1,0 +1,38 @@
+.artic-min .artics {
+  padding: 36px 0 16px;
+}
+
+.artic-min .artics .arts-title {
+  font: 24px/66px MicrosoftYaHei;
+  color: #404040;
+  text-align: center;
+}
+
+.artic-min .artics .sm-title {
+  text-align: center;
+  border-bottom: solid 1px #f1f1f1;
+}
+
+.artic-min .artics .sm-title span {
+  margin: 0 30px;
+  font: 14px/52px  MicrosoftYaHei;
+  color: #8c8c8c;
+}
+
+.artic-min .artics .atric-content {
+  padding: 50px 0;
+}
+
+.artic-min .artics .pages {
+  margin: 20px 0 30px;
+}
+
+.artic-min .artics .pages .pages-list a {
+  font: 16px/60px  MicrosoftYaHei;
+  color: #6b6b6b;
+}
+
+.artic-min .artics .pages .pages-list .active {
+  text-direction: underline;
+  color: #0088de;
+}

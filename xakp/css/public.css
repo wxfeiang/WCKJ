@@ -134,6 +134,36 @@
   margin-left: 0;
 }
 
+/* ------ current-nav  -----*/
+.current-nav .curr-title {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.current-nav .curr-title i {
+  font-size: 16px;
+  color: #bfbfbf;
+  line-height: 52px;
+}
+
+.current-nav .curr-title span {
+  color: #0088de;
+}
+
+/* ------ current-end  -----*/
+/*-----bg-title ----*/
+.bg-title {
+  margin: 50px 0 30px;
+  font: 24px/34px MicrosoftYaHei;
+  color: #343434;
+  text-align: center;
+}
+
+.bg-title span {
+  font: 16px/24px MicrosoftYaHei;
+  color: #b3b3b3;
+}
+
+/*-----bg-title  end----*/
 /* ------顶部end-----*/
 /*-------footer-------*/
 .footer {

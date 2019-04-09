@@ -1,0 +1,61 @@
+.content-min .min-left {
+  margin-right: 70px;
+  width: 528px;
+}
+
+.content-min .min-left .fomes {
+  margin-top: 20px;
+}
+
+.content-min .min-left .fomes input, .content-min .min-left .fomes textarea {
+  margin-bottom: 20px;
+  padding: 0 15px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
+  color: #a5a5a5;
+  border: 1px solid #e5e5e5;
+}
+
+.content-min .min-left .fomes .text-cont {
+  margin-bottom: 20px;
+  line-height: 24px;
+  height: 144px;
+}
+
+.content-min .min-left .fomes .btn {
+  margin-bottom: 40px;
+  width: 106%;
+  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
+  color: #fff;
+  background: #0088de;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.content-min .min-left .fomes .btn:hover {
+  background: #0089de;
+}
+
+.content-min .min-right h4 {
+  font: 18px/58px  MicrosoftYaHei;
+  color: #585858;
+}
+
+.content-min .min-right .us-decion li {
+  font: 14px/36px  MicrosoftYaHei;
+  color: #808080;
+}
+
+.current-map {
+  margin-bottom: 130px;
+}
+
+.current-map .maps {
+  height: 460px;
+  background: #ccc;
+}
