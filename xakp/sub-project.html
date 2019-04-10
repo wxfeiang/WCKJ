@@ -353,15 +353,10 @@
  
 
     $(".lable").each(function(){
-        var off= true;
+   
         $(this).click(function(){
-            if(off){
-                $(this).addClass("active").siblings().removeClass("active");
-                off= false;
-            }else{
-                $(this).removeClass("active");
-                off= true;
-            }  
+			 $(this).toggleClass("active").siblings().removeClass("active");
+           
         })
     })
 
