@@ -1,4 +1,9 @@
 function ban() {
+  cont = [
+    "Web数据抓取（Web scraping，也叫Web数据采集）指的是批量、快速从网站上提取信息的上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技术。Web数据Web数据抓取指的是批量、快速从网站上提取信息的一种计算机软件技术。Web数据",
+    "第二组数据",
+    "第三组数据",
+    "第四组数据"]
   var num_li = "";
   var obj_li = $(".ban li");
   var len = obj_li.length;
@@ -21,6 +26,7 @@ function ban() {
       sw = len;
     }
     $("#m").html("0" + sw);
+    $("#cont").html(cont[sw-1])
     myShow(sw);
   });
   //下一页按钮
@@ -28,6 +34,7 @@ function ban() {
     clearInterval(myTime);
     sw++;
     $("#m").html("0" + sw);
+     $("#cont").html(cont[sw-1])
     if (sw == len) {
       sw = 0;
     }
@@ -65,6 +72,7 @@ function ban() {
         myShow(sw);
         sw++;
         $("#m").html("0" + sw);
+        $("#cont").html(cont[sw-1])
         if (sw == len) {
           sw = 0;
         }
@@ -77,6 +85,7 @@ function ban() {
     myShow(sw);
     sw++;
     $("#m").html("0" + sw);
+    $("#cont").html(cont[sw-1])
     if (sw == len) {
       sw = 0;
     }
@@ -84,3 +93,10 @@ function ban() {
 }
 
 ban();
+
+// 
+$(".arc-right .rl-list").each(function () {
+  $(this).hover(function () {
+    $(this).addClass("active").siblings().removeClass("active")
+  },)
+})

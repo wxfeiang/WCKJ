@@ -1,3 +1,39 @@
+@keyframes myfirst {
+  from {
+    background: #fff;
+  }
+  to {
+    background: #233975;
+  }
+}
+
+@-moz-keyframes myfirst {
+  from {
+    background: #fff;
+  }
+  to {
+    background: #233975;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  from {
+    background: #fff;
+  }
+  to {
+    background: #233975;
+  }
+}
+
+@-o-keyframes myfirst {
+  from {
+    background: #fff;
+  }
+  to {
+    background: #233975;
+  }
+}
+
 .h3-title {
   font: 24px/40px MicrosoftYaHei;
   color: #233975;
@@ -67,8 +103,12 @@
 }
 
 .aboutus .about-left a:hover {
-  background: #1890ff;
   color: #fff;
+  animation: myfirst 2s;
+  -moz-animation: myfirst 2s;
+  -webkit-animation: myfirst 2s;
+  -o-animation: myfirst 2s;
+  background: #233975;
 }
 
 .aboutus .about-right {
@@ -83,19 +123,28 @@
   margin: 10px 0 0 10px;
 }
 
-.articles {
+.artic-swip {
+  position: relative;
   background: #fafafa;
-  padding: 0 0 60px 0;
+  margin-top: -90px;
 }
 
-.articles .articles-box .swip-2 {
-  margin: -30px 0 0 0;
-  height: 220px;
+.artic-swip .block {
+  background: #fff;
+  height: 110px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.articles-box {
   box-shadow: 0px 5px 24px 0px #eaeaea;
   border-radius: 4px;
+  position: relative;
+  z-index: 10;
 }
 
-.articles .articles-box .swip-2 .swi-list {
+.articles-box .swi-list {
   position: relative;
   padding: 42px 72px 30px 78px;
   box-sizing: border-box;
@@ -104,16 +153,16 @@
   background: #fff;
 }
 
-.articles .articles-box .swip-2 .swi-list h3 {
+.articles-box .swi-list h3 {
   font: 18px/33px MicrosoftYaHei-Bold;
   color: #233975;
 }
 
-.articles .articles-box .swip-2 .swi-list h3 img {
+.articles-box .swi-list h3 img {
   margin: 0  10px 0 0;
 }
 
-.articles .articles-box .swip-2 .swi-list p {
+.articles-box .swi-list p {
   margin: 20px  0 16px 0;
   height: 46px;
   font: 14px/22px MicrosoftYaHei-Bold;
@@ -123,7 +172,7 @@
   overflow: hidden;
 }
 
-.articles .articles-box .swip-2 .swi-list .arc-btn {
+.articles-box .swi-list .arc-btn {
   display: inline-block;
   width: 118px;
   height: 30px;
@@ -132,12 +181,16 @@
   line-height: 30px;
 }
 
-.articles .articles-box .swip-2 .swi-list .arc-btn:hover {
+.articles-box .swi-list .arc-btn:hover {
   color: #fff;
+  animation: myfirst 2s;
+  -moz-animation: myfirst 2s;
+  -webkit-animation: myfirst 2s;
+  -o-animation: myfirst 2s;
   background: #233975;
 }
 
-.articles .articles-box .swip-2 .swi-list span {
+.articles-box .swi-list span {
   display: inline-block;
   position: absolute;
   right: 0;
@@ -148,56 +201,57 @@
   background: #ccc;
 }
 
-.articles .articles-box .h3-title {
-  margin: 80px 0 0 0;
+.articles {
+  background: #fafafa;
+  padding: 80px 0 60px 0;
 }
 
-.articles .articles-box .arc-box {
+.arc-box {
   margin: 38px 0 0 0;
 }
 
-.articles .articles-box .arc-box .arc-left {
+.arc-box .arc-left {
   padding: 20px 50px 42px;
   box-sizing: border-box;
   width: 546px;
   background: #fff;
 }
 
-.articles .articles-box .arc-box .arc-left h4 {
+.arc-box .arc-left h4 {
   font: 24px/34px MicrosoftYaHei;
   color: #bebebe;
 }
 
-.articles .articles-box .arc-box .arc-left h4 span {
+.arc-box .arc-left h4 span {
   font: 14px/24px MicrosoftYaHei;
 }
 
-.articles .articles-box .arc-box .arc-left .p-title {
+.arc-box .arc-left .p-title {
   font: 16px/40px MicrosoftYaHei;
   color: #3e3e3e;
 }
 
-.articles .articles-box .arc-box .arc-left .p-dec {
+.arc-box .arc-left .p-dec {
   margin-bottom: 10px;
   font: 14px/24px MicrosoftYaHei;
   color: #b2b2b2;
 }
 
-.articles .articles-box .arc-box .arc-right {
+.arc-box .arc-right {
   width: 600px;
 }
 
-.articles .articles-box .arc-box .rl-list {
+.arc-box .rl-list {
   position: relative;
   padding: 24px 20px 30px 34px;
 }
 
-.articles .articles-box .arc-box .rl-list h3 {
+.arc-box .rl-list h3 {
   font: 16px/34px MicrosoftYaHei;
   color: #4d4d4d;
 }
 
-.articles .articles-box .arc-box .rl-list h3 i {
+.arc-box .rl-list h3 i {
   display: inline-block;
   position: absolute;
   width: 5px;
@@ -206,11 +260,11 @@
   margin: 16px 0 0 -24px;
 }
 
-.articles .articles-box .arc-box .rl-list h3 span {
+.arc-box .rl-list h3 span {
   color: #b2b2b2;
 }
 
-.articles .articles-box .arc-box .rl-list p {
+.arc-box .rl-list p {
   position: relative;
   margin-top: 10px;
   width: 440px;
@@ -218,7 +272,7 @@
   color: #999;
 }
 
-.articles .articles-box .arc-box .rl-list p .sm-arrows {
+.arc-box .rl-list p .sm-arrows {
   display: inline-block;
   position: absolute;
   right: -70px;
@@ -230,12 +284,12 @@
   border-left: 1px solid #ccc;
 }
 
-.articles .articles-box .arc-box .rl-list:hover, .articles .articles-box .arc-box .rl-list-active {
+.arc-box .rl-list:hover, .arc-box .active {
   background: #fff;
   cursor: pointer;
 }
 
-.articles .articles-box .arc-box .rl-list:hover h3 i, .articles .articles-box .arc-box .rl-list-active h3 i {
+.arc-box .rl-list:hover h3 i, .arc-box .active h3 i {
   background: #233975;
 }
 
@@ -257,6 +311,8 @@
 }
 
 .data-grabbing .grabox .graboxb-l .cont {
+  height: 144px;
+  overflow: hidden;
   font: 14px/24px MicrosoftYaHei;
 }
 

@@ -1,0 +1,225 @@
+.line-hr {
+  width: 36px;
+  height: 3px;
+  border: none;
+}
+
+.server-ava .ser-box {
+  padding: 36px 0 44px 0;
+  background: url(../images/server1_04.jpg) no-repeat top;
+}
+
+.server-ava .serve-left {
+  width: 576px;
+}
+
+.server-ava .serve-right {
+  width: 588px;
+}
+
+.server-ava .serve-right h3 {
+  margin-top: 10px;
+  font: bold 18px/30px MicrosoftYaHei;
+}
+
+.server-ava .serve-right .line-hr {
+  display: inline-block;
+  width: 36px;
+  height: 3px;
+  background: #233975;
+}
+
+.server-ava .serve-right .sever-cent {
+  width: 560px;
+  font: 14px/26px MicrosoftYaHei;
+  text-align: justify;
+}
+
+.sever-me .h4-title {
+  margin-top: 52px;
+  font: bold 16px/52px MicrosoftYaHei;
+  color: #3f3f3f;
+  text-align: center;
+}
+
+.sever-me .line-hr {
+  display: block;
+  margin: 0 auto;
+  background: #0088de;
+}
+
+.sever-me .sm-center {
+  margin: 0 0 8px 0;
+  font: 14px/58px MicrosoftYaHei;
+  color: #aaa;
+  text-align: center;
+}
+
+.sever-me .listbox {
+  overflow: hidden;
+}
+
+.sever-me .listbox .sever-list {
+  padding-bottom: 26px;
+  width: 1400px;
+  border-bottom: 1px solid #eee;
+}
+
+.sever-me .listbox .sever-list li {
+  margin: 0 30px 0 0;
+  width: 380px;
+}
+
+.sever-me .listbox .sever-list li .list-title {
+  font: 16px/50px MicrosoftYaHei;
+  color: #4d4d4d;
+  border-bottom: 1px solid #eee;
+}
+
+.sever-me .listbox .sever-list li .list-center {
+  margin: 10px 0 0 0;
+  font: 14px/26px MicrosoftYaHei;
+  color: #9b9b9b;
+}
+
+.sever-me .listbox .works {
+  width: 1400px;
+}
+
+.sever-me .listbox .works li {
+  margin: 0 56px 0 0;
+  width: 354px;
+}
+
+.sever-me .listbox .works li .work-title {
+  margin-top: 32px;
+  padding-left: 10px;
+  font: bold 16px/20px MicrosoftYaHei;
+  color: #595959;
+  border-left: 4px solid #0088de;
+}
+
+.sever-me .listbox .works li .work-sm {
+  padding-left: 10px;
+  font: 14px/34px MicrosoftYaHei;
+  color: #b4b4b4;
+}
+
+.sever-me .listbox .works li .work-center {
+  margin: 14px 0 35px;
+  font: 14px/24px MicrosoftYaHei;
+  color: #999;
+}
+
+.sever-flow {
+  height: 500px;
+  background: url(../images/sm-serve4.jpg) no-repeat top;
+}
+
+.sever-flow .flow-box {
+  overflow: hidden;
+}
+
+.sever-flow .flow-box .flow-list {
+  width: 1400px;
+  margin-top: 300px;
+}
+
+.sever-flow .flow-box .flow-list li {
+  margin: 0 175px 0 0;
+  padding: 0 10px;
+  width: 80px;
+  font: 14px/22px MicrosoftYaHei;
+  color: #fff;
+}
+
+.sever-flow .flow-box .flow-list .flow-lastli {
+  margin: 0;
+}
+
+.server-merit .h4-title {
+  margin: 22px 0  0 0;
+  font: bold 16px/60px MicrosoftYaHei;
+  color: #3f3f3f;
+  text-align: center;
+}
+
+.server-merit .line-hr {
+  display: block;
+  margin: 0 auto;
+  background: #0088de;
+}
+
+.server-merit .merit-swiper {
+  margin: 54px 0 74px;
+  overflow: hidden;
+}
+
+.server-merit .merit-swiper .merit-list {
+  position: relative;
+  width: 1040px;
+  padding: 80px;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item {
+  width: 318px;
+  height: 400px;
+  background: #f1f7fb;
+  cursor: pointer;
+  text-align: center;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item .merit-icon {
+  margin: 46px auto  36px;
+  height: 79px;
+  width: 79px;
+  border-radius: 50%;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item .merit-title {
+  font: bold 16px/26px MicrosoftYaHei;
+  color: #333;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item .merit-sm {
+  margin-bottom: 8px;
+  font: 12px/24px MicrosoftYaHei;
+  color: #b7b7b7;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item .merit-center {
+  margin: 34px auto 0;
+  width: 196px;
+  font: 14px/24px MicrosoftYaHei;
+  color: #747474;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item:hover {
+  background: #0088de;
+  color: #fff !important;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item:hover .line-hr {
+  background: #fff;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item:hover .merit-icon {
+  background: #fff;
+}
+
+.server-merit .merit-swiper .merit-list .merit-item:hover .merit-center, .server-merit .merit-swiper .merit-list .merit-item:hover .merit-sm, .server-merit .merit-swiper .merit-list .merit-item:hover .merit-title {
+  color: #fff;
+}
+
+/*  swiper btn*/
+.swiper-button-next {
+  width: 38px;
+  height: 38px;
+  background: url(../images/server-next.png) no-repeat top;
+}
+
+.swiper-button-prev {
+  width: 38px;
+  height: 38px;
+  background: url(../images/server-perv.png) no-repeat top;
+}

@@ -1,0 +1,73 @@
+.article {
+  margin-bottom: 88px;
+}
+
+.article .arcti-item {
+  margin: 20px 0 0 0;
+}
+
+.article .arcti-item .item-left {
+  width: 918px;
+  border-bottom: 1px solid #eee;
+}
+
+.article .arcti-item .item-left .item-tiele {
+  font: 18px/74px MicrosoftYaHei-Bold;
+  color: #0088de;
+}
+
+.article .arcti-item .item-left .item-content {
+  font: 14px/24px MicrosoftYaHei;
+  color: #737373;
+}
+
+.article .arcti-item .item-left .item-data {
+  font: 14px/56px MicrosoftYaHei;
+  color: #999999;
+}
+
+.article .arcti-item .item-left .item-data i {
+  margin-right: 8px;
+}
+
+.article .arcti-item .item-right {
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.article .arc-page {
+  margin: 88px 0  0 0;
+  text-align: center;
+}
+
+.article .arc-page span {
+  font: 14px/36px MicrosoftYaHei;
+  color: #737373;
+}
+
+.article .arc-page .pages-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.article .arc-page .pages-item li a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0 10px;
+  font: 14px/34px MicrosoftYaHei;
+  color: #b3b3b3;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+
+.article .arc-page .pages-item li a:hover, .article .arc-page .pages-item li .active {
+  background: #0088de;
+  color: #fff;
+}
+
+.article .arc-page .page-ip {
+  width: 28px;
+  height: 28px;
+  background-color: #f9f9f;
+  border-radius: 4px;
+  border: solid 1px #eee;
+}

@@ -10,8 +10,13 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/servers.css">
 
     <style>
+        /* .swiper-slide-active,.swiper-slide-next{
+        margin: 0 48px 0 0 !important;
+        width: 315px;
+    } */
     </style>
 </head>
 
@@ -58,10 +63,10 @@
             <div class="nav">
                 <ul class="clearfix layout nvbox">
                     <li class="fl  fist-li">
-                        <a href="index.html">首页</a>
+                        <a href="index.html" >首页</a>
                     </li>
                     <li class="fl">
-                        <a href="services.html">服务项目</a>
+                        <a href="services.html" class="active">服务项目</a>
                     </li>
                     <li class="fl">
                         <a href="charge-policy.html">收费政策</a>
@@ -119,6 +124,7 @@
         </h3>
     </div>
     <!--  current-nav  end-->
+    <!--  server-ava-->
     <div class="server-ava">
         <div class="layout">
             <h3 class=" bg-title">
@@ -134,76 +140,152 @@
                 </div>
                 <div class="fr serve-right">
                     <h3>WEB数据抓取服务介绍</h3>
-                    <p>
+                    <hr class="line-hr">
+                    <p class="sever-cent">
                         因特网(Internet)是一个巨大的和飞速发展的信息资源，但大多数信息都是以无结构的文本形式存在，使得信息聚合非常困难。 Web数据抓取是一个从目标网页中摘取某些数据形成统一的本地数据库的一个过程，这个过程所需要的不仅仅是网页爬行器（爬虫）与网页解析器（HTML解析器）。一个复杂的数据抽取过程需要应付种种障碍，例如会话识别，HTML表单，客户端脚本，并发连接限制，以及数据整合问题等等。
                         <br> 由于目标网站结构复杂多样，客户需要各异，因此任何数据采集软件都不可能完全满足所有用户的需要。我们针对不同的网站、不同客户的需求定制抓取程序，最终为客户提供完整并且准确的数据或脚本。
                         <br> 您只需告诉我们您想抓取的网站是什么，您感兴趣的字段有哪些，你需要的数据是哪种格式，我们将为您做所有的工作，最后把数据（或程序）交付给你。数据的格式可以是CSV、JSON、XML、ACCESS、SQLITE、MSSQL、MYSQL等等。
                     </p>
-
                 </div>
-
             </div>
 
         </div>
     </div>
+    <!-- server-ava  end -->
+    <!-- sever-me  -->
     <div class="sever-me">
-        <ul class="layout">
-            <h4>我们服务的内容</h4>
-            <p>
+        <div class="layout">
+            <h4 class="h4-title">我们服务的内容</h4>
+            <hr class="line-hr">
+
+            <p class="sm-center">
                 Web数据抓取服务是采集网页数据的最简便方法，别再把时间浪费在人工的复制与粘贴上了。我们用专业、科学、快捷的方法采集到数据后，会进行数据处理，然后存储为您想要的格式。
             </p>
-            <ul class="sever-list">
-                <li class="fl">
-                    <h3>网站定制采集服务</h3>
-                    <p>网站数据定制采集服务（存储为CSV、JSON、XML、ACCESS、SQLITE、MSSQL、MYSQL等等）</p>
-                </li>
-                <li class="fl">
-                    <h3>APP定制采集服务</h3>
-                    <p>移动App数据定制采集服务（采集App内展示的数据）</p>
-                </li>
-                <li class="fl">
-                    <h3>定制开发采集服务</h3>
-                    <p>定制开发数据采集程序（例如，自动数据导出、表单提交、报表生成等等）</p>
-                </li>
+            <div class="listbox">
+                <ul class="clearfix sever-list">
+                    <li class="fl">
+                        <img src="images/sm-serve1.jpg" alt="">
+                        <h3 class="list-title">网站定制采集服务</h3>
+                        <p class="list-center">网站数据定制采集服务（存储为CSV、JSON、XML、ACCESS、SQLITE、MSSQL、MYSQL等等）</p>
+                    </li>
+                    <li class="fl">
+                        <img src="images/sm-serve2.jpg" alt="">
+                        <h3 class="list-title">APP定制采集服务</h3>
+                        <p class="list-center">移动App数据定制采集服务（采集App内展示的数据）</p>
+                    </li>
+                    <li class="fl">
+                        <img src="images/sm-serve3.jpg" alt="">
+                        <h3 class="list-title">定制开发采集服务</h3>
+                        <p class="list-center">定制开发数据采集程序（例如，自动数据导出、表单提交、报表生成等等）</p>
+                    </li>
 
-            </ul>
-            <ul class="clearfix">
-                <li class="fl">
-                    <h3>我们做什么？
-                        <span>What do we do?</span>
-                        <p>我们从您的目标网页上抽取需要的数据，然后把原始数据转化成结构化的数据。我们通过专业、科学的方法保证抓取数据的数量和质量。</p>
-                    </h3>
-                </li>
-                <li class="fl">
-                    <h3>您得到的是什么?
-                        <span>What do you get?</span>
-                        <p>你得到的是完整而准确的数据。数据文件格式可以是CSV、JSON、XML、ACCESS、SQLITE、MSSQL、MySQL等等。</p>
-                    </h3>
-                </li>
-                <li class="fl">
-                    <h3>工作是如何进行的？
-                        <span>How did the work go on?</span>
-                        <p>您需要告诉我们您的目标网站的网址，和您所感兴趣的内容，我们会据此分析网站的结构和数据抓取的复杂度，确定目标网站是否可供挖掘…</p>
-                    </h3>
-                </li>
+                </ul>
+            </div>
+            <div class="listbox">
+                <ul class="clearfix works">
+                    <li class="fl">
+                        <h3 class="work-title">我们做什么？</h3>
+                        <p class="work-sm">What do we do?</p>
+                        <p class="work-center">我们从您的目标网页上抽取需要的数据，然后把原始数据转化成结构化的数据。我们通过专业、科学的方法保证抓取数据的数量和质量。</p>
+                    </li>
+                    <li class="fl">
+                        <h3 class="work-title">您得到的是什么?</h3>
+                        <p class="work-sm">What do you get?</p>
+                        <p class="work-center">你得到的是完整而准确的数据。数据文件格式可以是CSV、JSON、XML、ACCESS、SQLITE、MSSQL、MySQL等等。</p>
+                    </li>
+                    <li class="fl">
+                        <h3 class="work-title">工作是如何进行的？</h3>
+                        <p class="work-sm">How did the work go on?</p>
+                        <p class="work-center">您需要告诉我们您的目标网站的网址，和您所感兴趣的内容，我们会据此分析网站的结构和数据抓取的复杂度，确定目标网站是否可供挖掘…</p>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
+
+        </div>
     </div>
+    <!-- sever-me end -->
+    <!-- sever-flow" -->
+    <div class="sever-flow">
+        <div class="layout flow-box">
+            <ul class="clearfix flow-list">
+                <li class="fl">您提出建议的目标网站或手机APP，以及你想要获取的信息。
+                </li>
+                <li class="fl">我们评估可行性，并给 出最合理的报价和项目周期。
+                </li>
+                <li class="fl">签订合作协议，充分保 障双方的合法权益。
+                </li>
+                <li class="fl">项目开始数据提取、 结构化、清洗，校验。
+                </li>
+                <li class="fl flow-lastli">交付验收,处理您的 反馈。
+                </li>
+            </ul>
+        </div>
     </div>
+    <!-- sever-flow   end-->
 
+    <!-- server -merit -->
+    <div class="server-merit">
+        <div class="layout">
+            <h4 class="h4-title">我们服务的内容</h4>
+            <hr class="line-hr">
+            <!-- swiper -->
+            <div class="merit-swiper">
+                <div class="clearfix merit-list">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="merit-item">
+                                    <div class="merit-icon">
+                                        <img src="images/merit1.png" alt="">
+                                    </div>
+                                    <h3 class="merit-title">简单</h3>
+                                    <p class="merit-sm">SIMPLE</p>
+                                    <hr class="line-hr">
+                                    <p class="merit-center">您不需要使用任何的软件，只需要告诉我们您的目标网站和你感兴趣的内容，就能获取我们为您抓取的数据。</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fl merit-item">
+                                    <div class="merit-icon">
+                                        <img src="images/merit3.png" alt="">
+                                    </div>
+                                    <h3 class="merit-title">弹性</h3>
+                                    <p class="merit-sm">ELASTIC</p>
+                                    <hr class="line-hr">
+                                    <p class="merit-center">您能从任何的网站上获取任何数据，特别是动态网站上的数据。</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fl merit-item">
+                                    <div class="merit-icon">
+                                        <img src="images/merit2.png" alt="">
+                                    </div>
+                                    <h3 class="merit-title">快捷</h3>
+                                    <p class="merit-sm">QUICK</p>
+                                    <hr class="line-hr">
+                                    <p class="merit-center">
+                                        对于一个需要20个人工作日完成的工作， 我们能在数小时内完成。因此，您不仅能节省您的时间、精力和金钱，还能让您领先于您的竞争对手。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-
-
-
-
-
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- server -end-->
     <!-- footer -->
     <div class="footer">
         <div class="fotbox layout clearfix">
             <div class="foot-left fl ">
                 <div class="logo1 clearfix">
-                    <div class=" fl ">
-                        <img src="images/logo2.png" alt="" width="60px">
+                    <div class=" fl opciy-03">
+                        <img src="images/logo.png" alt="" width="60px">
                     </div>
                     <h3 class="fl">
                         西安鲲之鹏网络信息技术
@@ -215,8 +297,8 @@
 
                 </div>
                 <div class="logo2 clearfix">
-                    <div class=" fl">
-                        <img src="images/24h2.png" alt="" width="60px">
+                    <div class=" fl opciy-03">
+                        <img src="images/24h.png" alt="" width="60px">
                     </div>
                     <h3 class="fl">
                         客户服务热线：
@@ -326,18 +408,6 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/public.js"></script>
-<script>
-    var myswiper = new Swiper('.myswiper1', {
-        pagination: '.swiper-pagination',
-        //   nextButton: '.swiper-button-next',
-        //   prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 3000,
-        autoplayDisableOnInteraction: false
-    });
 
-</script>
 
 </html>

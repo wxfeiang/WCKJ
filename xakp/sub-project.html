@@ -68,7 +68,7 @@
                         <a href="charge-policy.html">收费政策</a>
                     </li>
                     <li class="fl">
-                        <a href="sub-project.html">提交项目</a>
+                        <a href="sub-project.html" class="active">提交项目</a>
                     </li>
                     <li class="fl">
                         <a href="article.html">技术文章</a>
@@ -145,11 +145,11 @@
                     <input type="text" class="ip-text">
                     <h5>
                         <span>*</span> 4.交费类型 </h5>
-                    <label for="">
+                    <label for="" class="lable active">
                         <input type="radio" name="data"> 数据
                     </label>
 
-                    <label for="">
+                    <label for="" class="lable">
                         <input type="radio" name="data">类型
                     </label>
                     <h5>
@@ -157,15 +157,61 @@
                     <textarea name="" id="" rows="5" placeholder="http://" class="ip-area"></textarea>
                     <h5>
                         <span>*</span> 6.输出格式 </h5>
+                    <div>
+                        <label for="" class="lable active">
+                            <input type="checkbox" name="data" id="">CSV
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">JSON
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">SML
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">ACCESS
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">MSSQL
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">MYSQL
+                        </label>
+                        <label for="" class="lable">
+                            <input type="checkbox" name="data">其它
+                        </label>
+                    </div>
+
                     <h5>
                         <span>*</span> 7.记录数据估计 </h5>
+
                     <h5>
+                        <div>
+                            <label for="" class="lable active">
+                                <input type="checkbox" name="data">小于1万
+                            </label>
+                            <label for="" class="lable">
+                                <input type="checkbox" name="data">1万到10万
+                            </label>
+                            <label for="" class="lable">
+                                <input type="checkbox" name="data">10万到50万
+                            </label>
+                            <label for="" class="lable ">
+                                <input type="checkbox" name="data">大于50万
+                            </label>
+                        </div>
                         <span>*</span> 8.详细说明 </h5>
                     <textarea name="" id="" rows="5" placeholder="详细说明内容" class="ip-area"></textarea>
                     <h5>
                         <span>*</span> 9.验证码 </h5>
-                    <input type="text" class="ip-text">
+                        <div class="clearfix">
 
+                            <input type="text" class="fl ip-text">
+                            <div class="fl cav"  >
+                                <canvas width="134" height="46" id="c1">
+                                    </canvas>
+                            </div>
+                          
+                        </div>
                     <button class="porject-btn">提交项目</button>
                 </form>
             </div>
@@ -304,16 +350,73 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/public.js"></script>
 <script>
-    var myswiper = new Swiper('.myswiper1', {
-        pagination: '.swiper-pagination',
-        //   nextButton: '.swiper-button-next',
-        //   prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 3000,
-        autoplayDisableOnInteraction: false
-    });
+ 
+
+    $(".lable").each(function(){
+        var off= true;
+        $(this).click(function(){
+            if(off){
+                $(this).addClass("active").siblings().removeClass("active");
+                off= false;
+            }else{
+                $(this).removeClass("active");
+                off= true;
+            }  
+        })
+    })
+
+
+// 验证码
+   //1.新建一个函数产生随机数
+   function rn(min,max){
+                return  parseInt(Math.random()*(max-min)+min);
+            }
+            //2.新建一个函数产生随机颜色
+            function rc(min,max){
+                var r=rn(min,max);
+                var g=rn(min,max);
+                var b=rn(min,max);
+                return `rgb(${r},${g},${b})`;
+            }
+            //3.填充背景颜色,颜色要浅一点
+            var w=134;
+            var h=46;
+            var ctx=c1.getContext("2d");
+            ctx.fillStyle=rc(180,230);
+            ctx.fillRect(0,0,w,h);
+            //4.随机产生字符串
+            var pool="ABCDEFGHIJKLIMNOPQRSTUVWSYZ1234567890";
+            for(var i=0;i<4;i++){
+                var c = pool[rn(0,pool.length)];//随机的字
+                var fs=rn(18,40);//字体的大小
+                var deg=rn(-30,30);//字体的旋转角度
+                ctx.font=fs+'px Simhei';
+                ctx.textBaseline="top";
+                ctx.fillStyle=rc(80,150);
+                ctx.save();
+                ctx.translate(30*i+15,15);
+                ctx.rotate(deg*Math.PI/180);
+                ctx.fillText(c,-15+5,-15);
+                ctx.restore();
+                console.log(c);
+            }
+            //5.随机产生5条干扰线,干扰线的颜色要浅一点
+            for(var i=0;i<5;i++){
+                ctx.beginPath();
+                ctx.moveTo(rn(0,w),rn(0,h));
+                ctx.lineTo(rn(0,w),rn(0,h));
+                ctx.strokeStyle=rc(180,230);
+                ctx.closePath();
+                ctx.stroke();
+            }
+            //6.随机产生40个干扰的小点
+            for(var i=0;i<20;i++){
+                ctx.beginPath();
+                ctx.arc(rn(0,w),rn(0,h),1,0,2*Math.PI);
+                ctx.closePath();
+                ctx.fillStyle=rc(150,200);
+                ctx.fill();
+            }
 
 </script>
 
