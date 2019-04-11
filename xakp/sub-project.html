@@ -86,17 +86,17 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <a href="javascript:;">
-                        <img src="images/banner1.jpg" alt="banner" width="1920px">
+                        <img src="images/sub-banner_02.jpg" alt="banner" width="1920px">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="javascript:;">
-                        <img src="images/banner1.jpg" alt="banner" width="1920px">
+                        <img src="images/sub-banner_02.jpg" alt="banner" width="1920px">
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="javascript:;">
-                        <img src="images/banner1.jpg" alt="banner" width="1920px">
+                        <img src="images/sub-banner_02.jpg" alt="banner" width="1920px">
                     </a>
                 </div>
             </div>
@@ -145,73 +145,90 @@
                     <input type="text" class="ip-text">
                     <h5>
                         <span>*</span> 4.交费类型 </h5>
-                    <label for="" class="lable active">
-                        <input type="radio" name="data"> 数据
-                    </label>
-
-                    <label for="" class="lable">
-                        <input type="radio" name="data">类型
-                    </label>
+                    <ul class="chekboxWrap clearfix">
+                        <li class="active">
+                            <input type="radio" id="data1" />
+                            <label for="data1">数据</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="data2" />
+                            <label for="data2">类型</label>
+                        </li>
+                    </ul>
                     <h5>
                         <span>*</span> 5.网址URL </h5>
                     <textarea name="" id="" rows="5" placeholder="http://" class="ip-area"></textarea>
                     <h5>
                         <span>*</span> 6.输出格式 </h5>
-                    <div>
-                        <label for="" class="lable active">
-                            <input type="radio" name="data" id="">CSV
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">JSON
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">SML
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">ACCESS
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">MSSQL
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">MYSQL
-                        </label>
-                        <label for="" class="lable">
-                            <input type="radio" name="data">其它
-                        </label>
-                    </div>
+                    <ul class="chekboxWrap clearfix">
+                        <li class="active">
+                            <input type="radio" id="CSV" />
+                            <label for="CSV">CSV</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="JSON" />
+                            <label for="JSON">JSON</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="SML" />
+                            <label for="JSON">SML</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="SML" />
+                            <label for="SML">SML</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="ACCESS" />
+                            <label for="ACCESS">ACCESS</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="MSSQL" />
+                            <label for="MSSQL">MSSQL</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="MYSQL" />
+                            <label for="MYSQL">MYSQL</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="other" />
+                            <label for="other">MYSQL</label>
+                        </li>
 
+                    </ul>
                     <h5>
                         <span>*</span> 7.记录数据估计 </h5>
-
+                    <ul class="chekboxWrap clearfix">
+                        <li class="active">
+                            <input type="radio" id="one" />
+                            <label for="one">小于1万</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="two" />
+                            <label for="two">1万到10万</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="three" />
+                            <label for="three">10万到50万</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="four" />
+                            <label for="four">大于50万</label>
+                        </li>
+                    </ul>
                     <h5>
-                        <div>
-                            <label for="" class="lable active">
-                                <input type="radio" name="data">小于1万
-                            </label>
-                            <label for="" class="lable">
-                                <input type="radio" name="data">1万到10万
-                            </label>
-                            <label for="" class="lable">
-                                <input type="radio" name="data">10万到50万
-                            </label>
-                            <label for="" class="lable ">
-                                <input type="radio" name="data">大于50万
-                            </label>
-                        </div>
                         <span>*</span> 8.详细说明 </h5>
                     <textarea name="" id="" rows="5" placeholder="详细说明内容" class="ip-area"></textarea>
                     <h5>
                         <span>*</span> 9.验证码 </h5>
-                        <div class="clearfix">
+                    <div class="clearfix">
 
-                            <input type="text" class="fl ip-text">
-                            <div class="fl cav"  >
-                                <canvas width="134" height="46" id="c1">
-                                    </canvas>
-                            </div>
-                          
+                        <input type="text" class="fl ip-text">
+                        <div class="fl cav">
+                            <canvas width="134" height="46" id="c1">
+                            </canvas>
                         </div>
+
+                    </div>
                     <button class="porject-btn">提交项目</button>
                 </form>
             </div>
@@ -350,73 +367,71 @@
 <script src="js/swiper.min.js"></script>
 <script src="js/public.js"></script>
 <script>
- 
 
-    $(".lable").each(function(){
-        var off= true;
-        $(this).click(function(){
-            if(off){
-                $(this).addClass("active").siblings().removeClass("active");
-                off= false;
-            }else{
-                $(this).removeClass("active");
-                off= true;
-            }  
+    $(function () {
+
+        $(".chekboxWrap label").click(function () {
+
+            $(this).parent("li").addClass("active").siblings().removeClass("active");
         })
     })
 
 
-// 验证码
-   //1.新建一个函数产生随机数
-   function rn(min,max){
-                return  parseInt(Math.random()*(max-min)+min);
-            }
-            //2.新建一个函数产生随机颜色
-            function rc(min,max){
-                var r=rn(min,max);
-                var g=rn(min,max);
-                var b=rn(min,max);
-                return `rgb(${r},${g},${b})`;
-            }
-            //3.填充背景颜色,颜色要浅一点
-            var w=134;
-            var h=46;
-            var ctx=c1.getContext("2d");
-            ctx.fillStyle=rc(180,230);
-            ctx.fillRect(0,0,w,h);
-            //4.随机产生字符串
-            var pool="ABCDEFGHIJKLIMNOPQRSTUVWSYZ1234567890";
-            for(var i=0;i<4;i++){
-                var c = pool[rn(0,pool.length)];//随机的字
-                var fs=rn(18,40);//字体的大小
-                var deg=rn(-30,30);//字体的旋转角度
-                ctx.font=fs+'px Simhei';
-                ctx.textBaseline="top";
-                ctx.fillStyle=rc(80,150);
-                ctx.save();
-                ctx.translate(30*i+15,15);
-                ctx.rotate(deg*Math.PI/180);
-                ctx.fillText(c,-15+5,-15);
-                ctx.restore();
-                console.log(c);
-            }
-            //5.随机产生5条干扰线,干扰线的颜色要浅一点
-            for(var i=0;i<5;i++){
-                ctx.beginPath();
-                ctx.moveTo(rn(0,w),rn(0,h));
-                ctx.lineTo(rn(0,w),rn(0,h));
-                ctx.strokeStyle=rc(180,230);
-                ctx.closePath();
-                ctx.stroke();
-            }
-            //6.随机产生40个干扰的小点
-            for(var i=0;i<20;i++){
-                ctx.beginPath();
-                ctx.arc(rn(0,w),rn(0,h),1,0,2*Math.PI);
-                ctx.closePath();
-                ctx.fillStyle=rc(150,200);
-                ctx.fill();
-            }
+
+
+    // 验证码
+    //1.新建一个函数产生随机数
+    function rn(min, max) {
+        return parseInt(Math.random() * (max - min) + min);
+    }
+    //2.新建一个函数产生随机颜色
+    function rc(min, max) {
+        var r = rn(min, max);
+        var g = rn(min, max);
+        var b = rn(min, max);
+        return `rgb(${r},${g},${b})`;
+    }
+    //3.填充背景颜色,颜色要浅一点
+    var w = 134;
+    var h = 46;
+    var ctx = c1.getContext("2d");
+    ctx.fillStyle = rc(180, 230);
+    ctx.fillRect(0, 0, w, h);
+    //4.随机产生字符串
+    var pool = "ABCDEFGHIJKLIMNOPQRSTUVWSYZ1234567890";
+    for (var i = 0; i < 4; i++) {
+        var c = pool[rn(0, pool.length)];//随机的字
+        var fs = rn(18, 40);//字体的大小
+        var deg = rn(-30, 30);//字体的旋转角度
+        ctx.font = fs + 'px Simhei';
+        ctx.textBaseline = "top";
+        ctx.fillStyle = rc(80, 150);
+        ctx.save();
+        ctx.translate(30 * i + 15, 15);
+        ctx.rotate(deg * Math.PI / 180);
+        ctx.fillText(c, -15 + 5, -15);
+        ctx.restore();
+        console.log(c);
+    }
+    //5.随机产生5条干扰线,干扰线的颜色要浅一点
+    for (var i = 0; i < 5; i++) {
+        ctx.beginPath();
+        ctx.moveTo(rn(0, w), rn(0, h));
+        ctx.lineTo(rn(0, w), rn(0, h));
+        ctx.strokeStyle = rc(180, 230);
+        ctx.closePath();
+        ctx.stroke();
+    }
+    //6.随机产生40个干扰的小点
+    for (var i = 0; i < 20; i++) {
+        ctx.beginPath();
+        ctx.arc(rn(0, w), rn(0, h), 1, 0, 2 * Math.PI);
+        ctx.closePath();
+        ctx.fillStyle = rc(150, 200);
+        ctx.fill();
+    }
+  //  点击事件
+
 
 </script>
 

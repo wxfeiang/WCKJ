@@ -236,21 +236,23 @@
 
                 </div>
                 <ul class="arc-right fr">
+
                     <li class="rl-list active">
-                        <h3>
-                            <i></i>
-                            DeleGate响应速度慢问题的分析和解决
-                            <span class="fr">12-20</span>
-                        </h3>
-                        <p>
-                            近日发现使用DeleGate为后端的HTTP代理响应速度异常慢， 访问百度首页都需要20秒左右，如下测试截图本次访问耗时20.942秒…
-                            <span class="sm-arrows">
-                                &#8594
-                            </span>
-                        </p>
-
-
+                        <a href="#">
+                            <h3>
+                                <i></i>
+                                DeleGate响应速度慢问题的分析和解决
+                                <span class="fr">12-20</span>
+                            </h3>
+                            <p>
+                                近日发现使用DeleGate为后端的HTTP代理响应速度异常慢， 访问百度首页都需要20秒左右，如下测试截图本次访问耗时20.942秒…
+                                <span class="sm-arrows">
+                                    &#8594
+                                </span>
+                            </p>
+                        </a>
                     </li>
+
                     <li class="rl-list">
                         <h3>
                             <i></i>
@@ -299,7 +301,7 @@
             <!-- 图展示 -->
             <div class="graboxb">
                 <div class="graboxb-l">
-                    <h4>什么是WEB数据抓取？</h4>
+                    <h4 class="graboxb-talte" id="cont_title">什么是WEB数据抓取1？</h4>
                     <p class="cont" id="cont">Web数据抓取（Web scraping，也叫Web数据采集）指的是批量、快速从网站上提取信息的上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技术。Web数据Web数据抓取指的是批量、快速从网站上提取信息的一种计算机软件技术。Web数据</p>
                     <p class="date">
                         <span class="m" id="m">01</span>
@@ -308,38 +310,25 @@
                 </div>
                 <div class="graboxb-r">
                     <div class="banner">
-                        <ul class="ban">
-                            <li>
-                                <a href="/">
-                                    <img src="images/bgs.jpg" alt="" width="688px" height="420px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/">
-                                    <img src="images/arc_01.jpg" width="688px" height="420px" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/">
-                                    <img src="images/arc_01.jpg" width="688px" height="420px" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/">
-                                    <img src="images/arc_01.jpg" width="688px" height="420px" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <!--点-->
+                        <div class="swiper-container myswiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide olen">
 
-                        <!--左右-->
-                        <div class="post">
-                            <p class="prev">
-                                <img src="images/prev.png" alt="">
-                            </p>
-                            <p class="next">
-                                <img src="images/next.png" alt="">
-                            </p>
+                                    <img src="images/bgs.jpg" alt="" width="688px" height="420px">
+
+                                </div>
+                                <div class="swiper-slide olen">
+
+                                    <img src="images/server-banner_02.jpg" alt="" width="688px" height="420px">
+
+                                </div>
+                                <div class="swiper-slide olen">
+
+                                    <img src="images/sm-serve1.jpg" alt="" width="688px" height="420px">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next last-naxt"></div>
+                            <div class="swiper-button-prev last-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -454,12 +443,15 @@
                 </div>
             </div>
         </div>
-        <div class="way-item">
+        <div class="way-item weinxwrop">
             <div class="way-boxs ">
                 <div class="way-ico">
                     <span class="icon iconfont ">&#xe61e;</span>
                 </div>
                 <p class="way-title">微信</p>
+            </div>
+            <div class="weixin">
+                <img src="images/wx2.jpg" alt="微信二维码"> 
             </div>
         </div>
         <div class="way-item way-top">
@@ -494,6 +486,41 @@
         prevButton: '.swiper-button-prev',
 
     });
+
+    var len = $(".olen").length
+    $("#d").html("| &nbsp;" + "0" + len);
+
+    var swiper = new Swiper('.myswiper3', {
+
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        centeredSlides: true,
+        autoplay: 3000,
+        autoplayDisableOnInteraction: false,
+        onSlideChangeEnd: function (swiperHere) {
+            var cont_title = [
+                "什么是WEB数据1",
+                "什么是WEB数据2",
+                "什么是WEB数据3",
+                "什么是WEB数据4"
+            ]
+            var cont = [
+                "Web数据抓取（Web scraping，也叫Web数据采集）指的是批量、快速从网站上提取信息的上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技上提取信息的一种计算机软件技术。Web数据Web数据抓取指的是批量、快速从网站上提取信息的一种计算机软件技术。Web数据",
+                "第二组数据",
+                "第三组数据",
+                "第四组数据"];
+            var indexs = swiperHere.activeIndex + 1;
+            //console.log(indexs);
+
+            $("#m").html("0" + indexs);
+            $("#cont_title").html(cont_title[swiperHere.activeIndex])
+            $("#cont").html(cont[swiperHere.activeIndex])
+
+        }
+
+    });
+
 </script>
 
 </html>

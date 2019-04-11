@@ -23,7 +23,7 @@
   border: 1px solid #dcdcdc;
   border-radius: 50%;
   color: #b3b3b3;
-  text-align: center;
+  text-indent: 7px;
 }
 
 .policy .polic-box .polic-dec .polic-item .iten-dec {
@@ -49,9 +49,9 @@
 }
 
 .policy .inorde-box .inorde .orde-item .bg-icon {
-  height: 214px;
-  background: #f3f7fa;
-  border-radius: 50%;
+  margin: 0 auto;
+  width: 216px;
+  height: 216px;
 }
 
 .policy .inorde-box .inorde .orde-item span {
@@ -86,6 +86,30 @@
 .policy .inorde-box .inorde .orde-item:hover .click-btn, .policy .inorde-box .inorde .active .click-btn {
   color: #fff;
   background: #0088de;
+}
+
+.policy .inorde-box .inorde .orde-item1 .bg-icon {
+  background: url(../images/ploiy1.png) no-repeat center center;
+}
+
+.policy .inorde-box .inorde .orde-item1:hover .bg-icon {
+  background: url(../images/ploiy4.png) no-repeat center center;
+}
+
+.policy .inorde-box .inorde .orde-item2 .bg-icon {
+  background: url(../images/ploiy2.png) no-repeat center center;
+}
+
+.policy .inorde-box .inorde .orde-item2:hover .bg-icon {
+  background: url(../images/ploiy5.png) no-repeat center center;
+}
+
+.policy .inorde-box .inorde .orde-item3 .bg-icon {
+  background: url(../images/ploiy2.png) no-repeat center center;
+}
+
+.policy .inorde-box .inorde .orde-item3:hover .bg-icon {
+  background: url(../images/ploiy6.png) no-repeat center center;
 }
 
 .policy .inorde-box .inorde .orde-item2 {

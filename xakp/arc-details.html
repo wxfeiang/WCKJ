@@ -17,7 +17,32 @@
 </head>
 
 <body>
-
+    <script>
+        function _addFavorite() {
+            var url = window.location;
+            var title = document.title;
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.indexOf("360se") > -1) {
+                alert("由于360浏览器功能限制，请按 Ctrl+D 手动收藏！");
+            }
+            else if (ua.indexOf("msie 8") > -1) {
+                window.external.AddToFavoritesBar(url, title); //IE8
+            }
+            else if (document.all) {//IE类浏览器
+                try {
+                    window.external.addFavorite(url, title);
+                } catch (e) {
+                    alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+                }
+            }
+            else if (window.sidebar) {//firfox等浏览器；
+                window.sidebar.addPanel(title, url, "");
+            }
+            else {
+                alert('您的浏览器不支持,请按 Ctrl+D 手动收藏!');
+            }
+        }    
+    </script>
     <!-- banner -->
     <div class="banner">
         <div class="fixed">
@@ -26,7 +51,8 @@
                 <div class="layout head-list clearfix">
                     <p class="fl head-title">欢迎您关注我们的网站！</p>
                     <ul class="fr clearfi head-collect">
-                        <li class="fl fist-li">收藏
+                        <li class="fl fist-li">
+                            <i onclick="_addFavorite()">收藏</i>
                             <span></span>
                         </li>
                         <li class="fl">在线咨询</li>
@@ -126,18 +152,33 @@
     <div class="artic-min">
         <div class="layout artics">
             <h2 class="arts-title">如何采集微信公众号历史数据</h2>
-            <div class="clearfix sm-title ">
-                <span class=" ">时间：2018-11-06 </span>
-                <span class=" "> 来源：中国登山协会</span>
-                <span class=" ">浏览（4）</span>
-                <span class=" ">点赞（6）</span>
-                <span class="share">分享到：
-                    <a href="">
-                        <img src="" alt="">
-                    </a>
+            <div class="tit-box">
+                <div class="sm-title ">
+                    <span class=" ">时间：2018-11-06 </span>
+                    <span class=" "> 来源：中国登山协会</span>
+                    <span class=" ">浏览（4）</span>
+                    <span class=" ">点赞（6）</span>
+                    <span class="share ">分享到：
 
-                </span>
+                    </span>
+                    <!-- Baidu Button BEGIN -->
+                    <div class="bshare-custom" style="display: inline-block ;font-size: 16px;
+                line-height: 52px !important;">
+                        <div class="bsPromo bsPromo2"></div>
+                        <a title="分享到QQ空间" class="bshare-qzone"></a>
+                        <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                        <a title="分享到人人网" class="bshare-renren"></a>
+                        <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                        <a title="分享到网易微博" class="bshare-neteasemb"></a>
+                        <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                    </div>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+                    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+
+                </div>
+
             </div>
+
             <div class="atric-content">
                 <img src="images/arc-ban.jpg" alt="banner" width="100%">
                 <p>
@@ -295,6 +336,4 @@
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/public.js"></script>
-
-
 </html>

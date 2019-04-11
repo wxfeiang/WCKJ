@@ -47,21 +47,37 @@
                 text-align: center
                 &:hover
                     background: #0089de
-            .lable
-                display: inline-block
-                padding: 0 0 0 20px
-                margin: 22px 0 44px
-                width: 120px
-                height: 28px
-                outline: none
-                line-height: 28px
-                cursor: pointer
-                background: url(../images/check2.png) no-repeat left top
-                input
-                     outline: none
-                     opacity: 0
-            .active
-                background: url(../images/check1.png) no-repeat left top
+            .chekboxWrap 
+                li  
+                    float: left  
+                    position: relative  
+                    height: 28px  
+                    line-height: 28px  
+                    margin: 22px 0 44px
+                    
+                    
+                    input
+                        opacity: 0  
+                        filter: alpha(opacity=0)  
+                        position: absolute  
+
+                    label  
+                        display: block  
+                        cursor: pointer
+                        width: 80px  
+                        height: 28px  
+                        padding-left: 45px  
+                        margin-right: 10px  
+                        background: url(../images/check2.png) no-repeat left center  
+                .active 
+                    label  
+                        background: url(../images/check1.png) no-repeat left center  
+  
+          
+
+
+
+            
             .cav
                 margin-left: 25px
                 padding: 0px 0 0 0
