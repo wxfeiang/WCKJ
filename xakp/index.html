@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0 user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>西安鲲之鹏网络信息技术有限公司</title>
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/swiper.min.css">
@@ -451,7 +452,7 @@
                 <p class="way-title">微信</p>
             </div>
             <div class="weixin">
-                <img src="images/wx2.jpg" alt="微信二维码"> 
+                <img src="images/wx2.jpg" alt="微信二维码">
             </div>
         </div>
         <div class="way-item way-top">
@@ -468,11 +469,10 @@
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper.min.js"></script>
-
 <script src="js/index.js"></script>
 <script src="js/public.js"></script>
 <script>
-   
+
     var myswiper = new Swiper('.myswiper2', {
         slidesPerView: 4,
         spaceBetween: 0,
@@ -482,6 +482,8 @@
         //     nextEl: '.swiper-button-next',
         //     prevEl: '.swiper-button-prev',
         // },
+
+        noSwiping: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
 
@@ -497,6 +499,8 @@
         prevButton: '.swiper-button-prev',
         centeredSlides: true,
         autoplay: 3000,
+
+        noSwiping: true,
         autoplayDisableOnInteraction: false,
         onSlideChangeEnd: function (swiperHere) {
             var cont_title = [
