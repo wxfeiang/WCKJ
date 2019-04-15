@@ -99,3 +99,18 @@ a:hover,
 	width: 1200px;
 	margin: 0 auto;
 }
+@media screen and (max-width:320px){  
+	html{ font-size:44.44px;}
+
+}
+@media screen and (min-width:321px) and (max-width:375px){  /* */
+	
+	html{ font-size:52.08px;}
+
+}
+@media screen and (min-width:376px) and (max-width:414px){  /**/
+	
+	html{ font-size:57.5px;}
+
+}
+
