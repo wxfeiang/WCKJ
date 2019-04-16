@@ -1,0 +1,217 @@
+/*---------------footer---------------------*/
+.footer {
+  padding: 56px 0;
+  background: #2c3a63;
+}
+
+.partner {
+  text-align: center;
+  padding-left: 57px;
+}
+
+.partner a {
+  display: inline-block;
+  margin: 0 15px 12px 0;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  background: #36c8ff;
+  font: 18px/26px "ArialMT";
+}
+
+.ercode {
+  margin: 60px auto 10px;
+  text-align: center;
+}
+
+.ercode li {
+  display: inline-block;
+  margin-right: 26px;
+}
+
+.ercode li p {
+  font: 14px/34px "ArialMT";
+  color: #fff;
+}
+
+.footr-cen {
+  text-align: center;
+  font: 14px/24px "ArialMT";
+  color: #fff;
+}
+
+.footr-cen a {
+  color: #fff;
+}
+
+/*---------------footer end---------------------*/
+/*---------------header---------------------*/
+.top-box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 1810px;
+  z-index: 99;
+}
+
+.header {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.header .header-rlght .head-item {
+  position: relative;
+  margin-left: 15px;
+  line-height: 26px;
+}
+
+.header .header-rlght .head-item .iconfont {
+  color: #fff;
+  cursor: pointer;
+}
+
+.header .header-rlght .head-item .serch {
+  width: 100px;
+  height: 24px;
+  border-radius: 12px;
+  padding: 0 10px;
+  border: solid 1px #fff;
+  background: none;
+}
+
+.header .header-rlght .head-item span {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.header .header-rlght .head-item b {
+  font-size: 20px;
+}
+
+.header .header-rlght .head-tab li {
+  color: #fff;
+}
+
+/*---------------header end---------------------*/
+/*---------------nav---------------------*/
+.nav .logo-tit {
+  margin-left: 16px;
+  font: bold 32px/38px "ArialMT";
+  color: #fff;
+}
+
+.nav .logo-tit span {
+  font: bold 22px/32px "ArialMT";
+}
+
+.nav .menu {
+  position: relative;
+}
+
+.nav .menu .nav-list {
+  background: #133495;
+  border-radius: 38px;
+  padding: 0 94px 0 20px;
+}
+
+.nav .menu .nav-list .nav-item a {
+  display: inline-block;
+  padding: 0 20px;
+  font: 14px/76px "ArialMT";
+  color: #fff;
+}
+
+.nav .menu .nav-list .nav-item a:hover {
+  color: #36c8ff;
+}
+
+.nav .menu .menu-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 76px;
+  height: 76px;
+  border-radius: 38px;
+  background: #36c8ff url("../images/menumore.png") no-repeat center center;
+}
+
+/*---------------nav end---------------------*/
+/*--------------- current nav---------------------*/
+.current-nav {
+  background: #eee;
+}
+
+.current-nav .nav-title {
+  font: 14px/40px "ArialMT";
+  color: #595959;
+}
+
+.current-nav .nav-title span {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.current-nav .nav-title a {
+  color: #595959;
+}
+
+/*---------------nav end---------------------*/
+/*---------------cont-title ---------------------*/
+.cont-title h3 {
+  font: bold 30px/110px "ArialMT";
+  color: #333;
+}
+
+.cont-title .p-line {
+  width: 86px;
+  height: 2px;
+  background: #333;
+  margin-bottom: 40px;
+}
+
+/*---------------cont-title end---------------------*/
+/*----------------ban-h3 ---------------------------*/
+.banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.banner .ban-tetle {
+  margin: 132px 0 0 0;
+}
+
+.banner .ban-tetle h3 {
+  position: relative;
+  width: 528px;
+  margin: 0  auto;
+  font: bold 30px/90px "ArialMT";
+  color: #fff;
+  text-align: center;
+  border: solid 4px #fff;
+}
+
+.banner .ban-tetle h3 span {
+  position: absolute;
+  display: inline-block;
+  width: 116px;
+  height: 1px;
+  background: #fff;
+  top: 50%;
+}
+
+.banner .ban-tetle h3 .left-s {
+  left: -100px;
+}
+
+.banner .ban-tetle h3 .right-s {
+  right: -100px;
+}
+
+/*----------------ban-h3  end---------------------------*/

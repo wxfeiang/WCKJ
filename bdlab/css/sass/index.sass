@@ -1,0 +1,352 @@
+$FFF : #fff
+/*-----------------.index-record--------------*/
+.record
+    position: fixed
+    bottom: 6%
+    left: 0
+    z-index: 99
+    p
+        margin-left: 10px
+        padding-left: 10px
+        font: 14px/14px "ArialMT"
+        color: #303030
+        border-left: 4px solid #36c8ff
+        span
+            color: #ddd
+/*-----------------.index-record end--------------*/ 
+/*-----------------.bg-tetle--------------*/ 
+.bg-tetle
+    position: absolute
+    left: 50px
+    bottom: 12%
+    width: 50%
+    h3
+        font:  38px/42px "ArialMT"
+        color: $FFF
+        text-align: left
+    p
+        font:  16px/30px "ArialMT"
+        color:  $FFF
+        text-align: left
+    .bg-line
+        margin-top: 30px 
+        width: 120px
+        height: 4px
+        background: $FFF
+    
+/*-----------------.bg-tetle end--------------*/ 
+/*----------------- flg.css--------------*/ 
+
+
+
+        
+/*----------------- flg.css end--------------*/ 
+/*-----------------.index-home--------------*/
+.index-home
+    position: relative
+    background: url("../images/bg-home.jpg") no-repeat  top  center
+ 
+    .home-min
+        position: absolute
+        left: 50px
+        top: 30%
+        
+        padding: 0 0 0 10px
+        width: 40%
+        .home-title
+            
+            text-align: left
+            font: bold 40px/42px "ArialMT"
+            color: $FFF
+        .sm-title
+            text-align: left
+            font: 24px/32px "ArialMT"
+            color: $FFF
+            span
+                color: #36c8ff
+        .home-content
+            text-align: left
+            margin: 34px  0
+            font: 16px/24px "ArialMT"
+            color: $FFF
+        .home-btn
+            display: inline-block
+            padding:  0 60px
+            font: 16px/40px "ArialMT"
+            color: $FFF
+            background: #36c8ff
+/*-----------------.index-home end--------------*/
+/*-----------------.index-news --------------*/
+.index-news
+    position: relative
+    background: url("../images/bg-news.jpg") no-repeat  top  center
+    height: 100vh
+    .new-list
+        position: absolute
+        left: 31%
+        top: 28%
+        width: 45%
+        margin: 0 auto
+        background: url("../images/news-border.png") no-repeat  center right
+        li
+            width: 84%
+            padding: 12px 40px 9px 44px
+            margin-bottom: 20px
+            .list-left
+                margin:  0 30px 0 0
+                span
+                    display: inline-block
+                    width: 40px
+                    height: 2px
+                    background: $FFF
+                    line-height: 78px
+                    vertical-align: middle
+            .list-data
+                text-align: center
+                margin-right: 20px
+                h3
+                    font: bold 53.6px/56px "ArialMT"
+                    color: $FFF
+                p
+                    text-align: left
+                    font: bold 14px/16px "ArialMT"
+                    color: $FFF
+            .list-right
+                width: 78%
+                h4
+                    text-align: left
+                    font: bold 22px/36px "ArialMT"
+                    color: $FFF
+
+                p
+                    text-align: left
+                    font:  16px/22px "ArialMT"
+                    color: $FFF
+            &:hover,active
+                border-radius: 5px
+                opacity: 0.5
+                background: #133495
+                cursor: pointer
+/*-----------------.index-news end--------------*/
+/*-----------------.index-leader end--------------*/
+.index-leader
+    position: relative
+    background: url("../images/bg-leader.jpg") no-repeat  top  center
+    .leader-box
+        position: absolute
+        left: 18.5%
+        top: 25%
+        .leader-left
+           
+            margin-top: 146px
+            ul
+                .leader-item
+                    text-align: right
+                    font:  20px/36px "ArialMT"
+                    letter-spacing: -0.4px
+                    color: $FFF
+            .leader-btn
+                display: inline-block
+                float: right
+                margin-top: 30px
+                text-align: center
+                width: 100px
+                height: 30px
+                background: #36c8ff
+                text-align: center
+                font:  16px/30px "ArialMT"
+                color: $FFF
+        .leader-right
+            position: relative
+            width: 46%
+            padding: 0 0 0 4%
+            .leader-title
+                position: absolute
+                left: 50px
+                top: 176px
+                width: 124px
+            
+                padding: 22px 0 30px
+                border-top: 2px solid rgba(91, 110, 163, 0.8)
+                border-bottom: 2px solid rgba(91, 110, 163, 0.8)
+                h3
+                    font:  bold 20px/38px "ArialMT"
+                    color: $FFF
+
+                p
+                    font:  bold 16px/30px "ArialMT"
+                    color: $FFF
+            .imgbox
+                width: 324px
+                height: 484px
+                position: relative
+                left: 100px
+                background: url("../images/leader-boder.png") no-repeat 
+
+                z-index: 5
+                .imgtwo
+                    position: absolute
+                    top: 20px
+                    left: 54px
+                    width: 300px
+                    height: 443px
+                    background: #133495
+                    opacity: 0.5
+                    z-index: 6
+                .img-show
+                    position: absolute
+                    top: 42px
+                    left: 86px
+                    z-index: 7
+                    img
+                        width: 300px
+                        height: 400px
+/*-----------------.index-leader --------------*/
+/*-----------------.index-tema --------------*/
+.index-tema
+    position: relative
+    background: url("../images/bg-tema.jpg") no-repeat  top  center
+    .tema-box
+        position: absolute
+        left: 19%
+        top: 28%
+        width: 1200px
+        .tema-item
+            .tab-top
+                width: 666px
+                margin:  0 auto
+                li,.active
+                    margin:  0 10px
+                    cursor: pointer
+                    .tema-smt
+                        padding:  0 10px
+                        font:  16px/26px "ArialMT"
+                        color: $FFF
+                        background: #133495
+                        border-radius: 12.5px
+                    span
+                        display: none
+                        margin: 0 auto
+                        font:  26px/16px "ArialMT"
+                        color: #36c8ff
+                        text-align: center
+                .active
+                    .tema-smt
+                        background: #36c8ff
+                    span
+                        display: block
+            .tab-dec
+                width: 94%
+                margin: 8px auto 54px
+                .dec-list
+                    display: none
+                    .dec-cont
+                        text-align: center
+                        font:  16px/24px "ArialMT"
+                        color: $FFF
+                        min-height: 48px
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+                        -webkit-line-clamp: 2
+                        overflow: hidden
+            .tabbox
+                margin: 0 auto
+                width: 1200px
+                overflow: hidden
+                .boxlist
+                    display: none
+                    width: 1350px
+                    .tbimgbox
+                        position: relative
+                        float: left
+                        width: 270px
+                        height: 270px
+                        margin-right: 35px
+                        border-radius: 50%
+                        overflow: hidden
+                        .tab-more
+                            display: none
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 270px
+                            height: 270px
+                            border-radius: 50%
+                            background-color: #133495
+                            opacity: 0.5
+                            .dec-names
+                                margin-top: 100px
+                                text-align: center
+                                font: bold 24px/24px "ArialMT"
+                                color: $FFF
+                                z-index: 99
+                            a
+                                display: block
+                                width: 100px
+                                margin: 46px auto 0
+                                font:  16px/24px "ArialMT"
+                                color: $FFF
+                                text-align: center
+                                border: 1px solid $FFF
+                        &:hover
+                              .tab-more
+                                  display: block
+/*-----------------.index-tema --------------*/
+/*-----------------.index-research --------------*/
+.index-research
+    position: relative
+    background: url("../images/bg-resch.jpg") no-repeat  top  center
+    .resah
+        position: absolute
+        left: 19%
+        top: 28%
+
+        .resah-min
+            .resah-box
+                padding: 0 50px
+                li
+                    position: relative
+                    width: 220px
+                    height: 220px
+                    img
+                        width: 220px
+                        height: 220px
+                    .resc-cent
+                        padding: 40px 20px 
+                        height: 140px
+                        background: #133495 
+                        opacity: 0.5
+                        font:  16px/22px "ArialMT"
+                        text-align: center
+                        color: $FFF
+                        display: -webkit-box
+                        -webkit-box-orient: vertical
+                        -webkit-line-clamp: 6
+                        overflow: hidden
+                    .resc-sm
+                        position: absolute
+                        right: 0
+                        bottom:  0
+                        width: 40px
+                        height: 40px 
+
+                        background:  url("../../images/teach-jiao.png") no-repeat right bottom               
+/*-----------------.index-research  end --------------*/
+/*-----------------.index-teaching   --------------*/
+.index-teaching
+    position: relative
+    background: url("../images/bg-teaching.jpg") no-repeat  top  center
+/*-----------------.index-teaching  end --------------*/
+/*-----------------.index-links   --------------*/
+.index-links
+    position: relative
+    background: url("../images/bg-links.jpg") no-repeat  top  center
+    .links
+        position: absolute
+        top: 28%
+        left: 19%
+        .partner
+            a
+                background: #133495
+                opacity: 0.4
+/*-----------------.index-links  end --------------*/

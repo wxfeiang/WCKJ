@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            position: absolute;
+            bottom: 0;
+            left: 175px;
+        }
+
+        ul li {
+            float: left;
+        }
+
+        ul li a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ffbeaa;
+            margin-left: 5px;
+            opacity: 0.6;
+        }
+
+        ul li a.active {
+            background-color: red;
+        }
+
+        .inner {
+            width: 3000px;
+            height: 400px;
+        }
+
+        .inner img {
+            display: block;
+            float: left;
+        }
+
+        .pic {
+            width: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 190px;
+            opacity: 0.6;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic">
+        <div class="inner">
+            <img src="images/bg-links.jpg" alt="">
+            <img src="images/resh_03.jpg" alt="">
+            <img src="images/leader.jpg" alt="">
+            
+        </div>
+        <ul>
+            <li>
+                <a href="#" class="active"></a>
+            </li>
+            
+        </ul>
+        <a href="#" class="prev">
+            <img src="images/leader.jpg" alt="">
+        </a>
+        <a href="#" class="next">
+            <img src="images/leader.jpg" alt="">
+        </a>
+    </div>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        
+        var num = 0;
+        var timer = null;
+        var timeout = null;
+        // 设置鼠标悬浮在按钮切换事件
+        $("ul li a").mouseenter(function (event) {
+            //设置定时器前应先判断有没有定时器，有就清除
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            num = $(this).parent().index();
+            //设置悬浮时500毫秒时切换，不足500毫秒时不会切换
+            timeout = setTimeout(changgeMg, 500);
+            return false;
+        })
+        //悬浮在窗口时停止轮播
+        $(".pic").mouseenter(function () {
+            //清除定时器
+            clearInterval(timer);
+        })
+        //鼠标移除窗口时开始轮播
+        $(".pic").mouseleave(function () {
+            //设置一个3秒的自动轮播定时器
+            timer = setInterval(changeTab, 3000);
+        })
+        //点击next切换
+        $(".next").click(function () {
+            //设置定时器前应先判断有没有定时器，有就清除
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            if (num < 4) {
+                num++;
+            } else {
+                num = 0;
+            }
+            //设置点击后500毫秒去切换，如果点击间隔小于500毫秒不停点击则不会切换
+            timeout = setTimeout(changgeMg, 500);
+            //不让a元素去默认跳转
+            return false;
+        })
+        //点击prev切换
+        $(".prev").click(function () {
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            if (num > 0) {
+                num--;
+            } else {
+                num = 4;
+            }
+            //设置点击后500毫秒去切换，如果点击间隔小于500毫秒不停点击则不会切换
+            timeout = setTimeout(changgeMg, 500);
+            return false;
+        })
+        //轮播定时器
+        timer = setInterval(changeTab, 1000);
+        //移动盒子和给当前索引上色
+        function changgeMg() {
+            var movePx = num * -600 + "px";
+            $(".inner").animate({ "marginLeft": movePx }, 500);
+            $("ul li").eq(num).find("a").addClass("active").parent().siblings().find("a").removeClass("active");
+        }
+        //定时器函数    
+        function changeTab() {
+            if (num < 4) {
+                num++;
+            } else {
+                num = 0;
+            }
+            changgeMg();
+        }
+    </script>
+
+</html>
