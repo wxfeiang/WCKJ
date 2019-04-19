@@ -1,0 +1,92 @@
+.nav-top
+    position: fixed
+    top: 0
+    border-bottom: 2px solid rgba(255,255,255,0.5)
+    z-index: 99
+    background: #fff
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
+.nav-z
+    width: 100%
+    min-height: 6.25rem 
+
+    
+.dy-navbar
+    padding-bottom:  0 !important
+    
+@media ( min-width : 768px)  
+    .dy-nav
+        .dy-nav-ul
+            .dy-nav-li
+                .dy-nav-a
+                    padding: 2rem 1rem
+                    color: #333
+                    &:hover
+                        color: #143290
+                        border-bottom: 1px solid #143290
+   
+@media ( max-width : 768px)  
+    .dy-nav
+        .dy-nav-ul
+            .dy-nav-li
+                .dy-nav-a
+                    color: #000
+                    &:hover
+                        color: #143290
+                        border-bottom: 1px solid #143290
+    .nav-z
+        min-height: 3.25rem
+
+
+.banner
+    background: url("../../images/bg-ban.jpg") no-repeat center   center
+    min-height: 298px
+
+
+.brie-top
+    margin-top: 1.8rem
+    border-bottom: 1px solid #ececec
+    .dy-tabbox
+        .dy-tab
+            margin: 0 0.8rem
+            padding: 0.4rem 1.6rem
+            color: #969696
+            text-align: center
+            border: 1px solid #ccc
+            border-radius: 4px
+            cursor: pointer
+            &:hover,&.active
+                background: #143290
+                box-shadow: 0px 0px 15px 0px rgba(20, 50, 144, 0.28)
+                border-radius: 4px
+                color: #fff
+.dy-navs
+    a
+        color: #969696
+    span
+        margin:  0.2rem
+        color: #969696
+
+
+.brie-body
+    padding: 4rem 0 
+.originator
+    background: rul("../saturate()")
+    
+
+@media ( max-width : 576px)  
+    .sm-none
+        display: none
+    .brie-top
+        margin-top: 1rem
+        .dy-tabbox
+            .dy-tab
+                margin: 0 0.2rem
+                padding: 0.4rem 1rem
+                color: #969696
+                text-align: center
+                border: 1px solid #ccc
+                border-radius: 4px
+    .brie-body
+        padding: 1rem 0 
+            
+             

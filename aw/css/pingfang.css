@@ -1,0 +1,18 @@
+@font-face {
+	font-family: PingFangSC;
+	src: url('../fonts/PingFangSC-Medium.ttf')format('truetype');
+} 
+@font-face {
+	font-family: PingFangSC-Light;
+	src: url('../fonts/PingFangSC-Light.ttf')format('truetype');
+} 
+html,body * {
+	-webkit-user-select: none;
+	font-family: " PingFangSC , MicrosoftYaHei,Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif ;
+	
+}
+html {
+	font-size: 1rem;
+  }
+  
+ 

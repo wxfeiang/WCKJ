@@ -1,0 +1,430 @@
+.nav-top {
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 99;
+}
+
+#logo2 {
+  display: none;
+}
+
+.dy-navbar {
+  padding-bottom: 0 !important;
+}
+
+.nav-top2 {
+  background: #fff;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.nav-top2 .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a {
+  padding: 2rem 1rem;
+  color: #333;
+}
+
+.nav-top2 .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a:hover {
+  color: #143290;
+  border-bottom: 1px solid #143290;
+}
+
+@media (min-width: 768px) {
+  .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a {
+    padding: 2rem 1rem;
+    color: #fff;
+  }
+  .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a:hover {
+    color: #000;
+    border-bottom: 2px solid #143290;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-top {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    border-bottom: none;
+    background: #fff;
+  }
+  .nav-top .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a {
+    color: #000;
+  }
+  .nav-top .dy-nav .dy-nav-ul .dy-nav-li .dy-nav-a:hover {
+    color: #143290;
+    border-bottom: 1px solid #143290;
+  }
+  .dy-navbar {
+    padding-bottom: 0 !important;
+  }
+  .dy-navbar a img {
+    width: 4rem;
+  }
+}
+
+.index-banner {
+  padding: 0 !important;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: url("../../images/arrows1_01.jpg");
+  left: 20%;
+  top: 98%;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: url("../../images/arrows1_02.png");
+  left: 21%;
+  top: 98%;
+}
+
+.twobox {
+  background: #f8f8f8;
+  padding: 53px 0 176px 0;
+}
+
+.two-h3 h3 {
+  font: 30px/36px bold  "PingFang-SC";
+  color: #333;
+}
+
+.h3-title {
+  font: 1.1rem/3rem "PingFang";
+}
+
+.p-center {
+  font: 12px/26px "PingFang";
+  color: #333;
+}
+
+.dy-a-btn {
+  color: #a1a1a1;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+}
+
+/* threebox*/
+.threebox .nums-wap {
+  margin-top: -90px;
+  background: #fff;
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.item-num {
+  position: relative;
+}
+
+.item-num::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 45px;
+  background-color: #ebebeb;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.item-num .num-box {
+  padding: 3rem 0;
+}
+
+.item-num .num-box .num-s {
+  margin: 0;
+  font: 42px/48px "PingFangSC-Light";
+  color: #333;
+  letter-spacing: -1.9px;
+}
+
+.item-num .num-box .num-s b {
+  font-weight: normal !important;
+  font-stretch: normal !important;
+}
+
+.item-num .num-box .num-s span {
+  font: 14px/14px "PingFangSC-Light";
+  vertical-align: top;
+}
+
+.item-num .num-box .num-title {
+  margin: 0;
+  font: 14px/16px "PingFangSC-Light";
+  color: #333;
+}
+
+/*----------for-------*/
+.forbox {
+  margin-top: 6rem;
+  background: url("../../images/bg-fore.jpg") no-repeat center center;
+}
+
+.forbox .leader-box {
+  padding: 114px 0 86px;
+}
+
+.forbox .leader-box .leader-title {
+  margin: 0;
+  font: 30px/40px "PingFang";
+  color: #000;
+}
+
+.forbox .leader-box .leader-dec {
+  margin: 0;
+  font: 16px/24px "PingFang";
+  color: #929292;
+}
+
+.forbox .leader-box .dy-line {
+  margin: 1.6rem 0;
+  width: 28px;
+  height: 2px;
+  background: #143290;
+}
+
+.forbox .leader-box .leader-center {
+  font: 16px/24px "PingFang";
+  color: #929292;
+}
+
+.forbox .leader-box .leader-center p {
+  color: #929292;
+}
+
+.forbox .leader-box a {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: #143290;
+}
+
+.forbox .leader-box a:hover {
+  box-shadow: 0px 0px 15px 0px rgba(20, 50, 144, 0.28);
+}
+
+/* five*/
+.fivebox {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.five-item div {
+  position: relative;
+  padding-top: 14px;
+  min-height: 6rem;
+  cursor: pointer;
+}
+
+.five-item div::after {
+  content: "";
+  border: 1px solid rgba(170, 170, 170, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.five-item div:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+  -moz-transition: all 0.36s ease;
+  -webkit-transition: all 0.36s ease;
+  -o-transition: all 0.36s ease;
+  transition: all 0.36s ease;
+}
+
+.five-item div img {
+  min-width: 5rem;
+}
+
+.five-item h5 {
+  font-size: 1rem;
+  line-height: 4rem;
+  margin: 0;
+  color: #333333;
+}
+
+.sexbox {
+  padding-top: 20px;
+  background: #2a2828;
+}
+
+.sexbox h4 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6rem;
+  color: #fff !important;
+}
+
+.sexbox h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.6rem;
+  color: #fff !important;
+}
+
+.sexbox h5 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff !important;
+}
+
+.sexbox p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff  !important;
+}
+
+.sexbox .fa-icon a {
+  line-height: 4rem;
+  color: #B3B3B3;
+  margin-right: 20px;
+  transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.sexbox .fa-icon a:hover {
+  color: #fff;
+}
+
+/* footes***/
+.footers {
+  padding: 20px 0  5px 0;
+  background: #1c1b1b;
+}
+
+.footers p {
+  margin: 0;
+  color: #fff;
+}
+
+.footers p a {
+  color: #fff;
+}
+
+.right-fixed {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 9999;
+}
+
+.right-fixed #shares a {
+  display: block;
+  color: #000;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 1rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.right-fixed #shares a:hover {
+  background: #143290;
+  color: #fff;
+}
+
+.show-weix {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  overflow-y: auto;
+}
+
+.show-weix .wx {
+  width: 258px;
+  height: 298px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -129px;
+  margin-top: -149px;
+}
+
+/*  media */
+@media (min-width: 768px) {
+  .five-item {
+    width: 20% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .sm-none {
+    display: none;
+  }
+  .twobox {
+    padding: 53px 0 8rem 0;
+  }
+  .five-item {
+    width: 50% !important;
+  }
+  .forbox {
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+  }
+  .forbox .leader-box {
+    padding: 0;
+  }
+  .fivebox {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+  .right-fixed {
+    display: none;
+  }
+  .sexbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #2a2828;
+  }
+  .sexbox h4 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6rem;
+    color: #fff !important;
+  }
+  .sexbox h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6rem;
+    color: #fff !important;
+  }
+  .sexbox h5 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff !important;
+  }
+  .sexbox p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff  !important;
+  }
+  .footers {
+    padding: 20px 0  5px 0;
+    background: #1c1b1b;
+  }
+  .footers p {
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+  }
+  .index-banner img {
+    max-height: 60vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .sexbox {
+    padding-top: 66px;
+  }
+}
