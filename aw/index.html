@@ -20,56 +20,92 @@
   <!-- header -->
   <div class="container-fluid nav-top">
 
-    <div class="container clearfix ">
-      <nav class="navbar navbar-expand-md  dy-navbar ">
-        <!-- Brand/logo -->
-        <a class="navbar-brand " href="#" id="logo1">
-          <img src="images/logo.png" alt="logo">
+    <div class="container clearfix div-flex">
+      <div class="logo" style="padding-bottom: 0.5rem;">
+        <a href="">
+          <img src="images/logo.png" alt="" id="logo1">
+          <img src="images/logo1.png" alt="" id="logo2" style="display:none">
         </a>
-        <a class="navbar-brand  float-left" href="#" id="logo2">
-          <img src="images/logo1.png" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="glyphicon glyphicon-align-justify"></span>
-        </button>
-        <!-- Links -->
-        <div class="collapse navbar-collapse dy-nav" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto dy-nav-ul">
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link dy-nav-a" href="#">首页</a>
-            </li>
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">公司简介</a>
-            </li>
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">业务领域</a>
-            </li>
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">核心特色</a>
-            </li>
-
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">项目案例</a>
-            </li>
-            <li class="nav-item dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">合作伙伴</a>
-            </li>
-            <li class=" dy-nav-li">
-              <a class="nav-link  dy-nav-a" href="#">联系我们</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
+      </div>
+      <ul class="n-nav">
+        <li>
+          <a href="index.html">首页</a>
+        </li>
+        <li>
+          <a href="brieft.html">公司简介</a>
+        </li>
+        <li>
+          <a href="http://">业务领域</a>
+        </li>
+        <li>
+          <a href="http://">核心特色</a>
+        </li>
+        <li>
+          <a href="http://">项目案例</a>
+        </li>
+        <li>
+          <a href="http://">合作伙伴</a>
+        </li>
+        <li>
+          <a href="http://">联系我们</a>
+        </li>
+      </ul>
     </div>
+  </div>
+
+  <!--  小屏手机显示nav -->
+  <div class="container-fluid s-n-nav">
+    <div class="container clearfix  s-nav-b">
+      <div class="s-logo ">
+        <img src="images/logo1.png" alt="" >
+      </div>
+      <div class="s-btn" id="s-btn">
+        <i class="fa fa-navicon"></i>
+      </div>
+      <ul class="s-nav-ul">
+          <li>
+            <a href="index.html">首页</a>
+          </li>
+          <li>
+            <a href="brieft.html">公司简介</a>
+          </li>
+          <li>
+            <a href="http://">业务领域</a>
+          </li>
+          <li>
+            <a href="http://">核心特色</a>
+          </li>
+          <li>
+            <a href="http://">项目案例</a>
+          </li>
+          <li>
+            <a href="http://">合作伙伴</a>
+          </li>
+          <li>
+            <a href="http://">联系我们</a>
+          </li>
+        </ul>
+    </div>
+  
+  </div>
 
   </div>
+
+
   <!-- index-banner -->
   <div class="container-fluid index-banner">
     <div class="swiper-container myswiper1">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <a href="javascript:;">
+            <div class="swiper-dec">
+                <div class="text-center fist-t">为客户创造价值,是我们永远不变的使命</div>
+                <div class="text-center two-t">CONNECTING WORLD</div>
+                <div class="text-center thre-t">
+                  <span  class="sm-span">
+                  <i class="fa  fa-angle-down"></i>
+                </span></div>
+            </div>
             <img src="images/bg-banner.jpg" alt="banner" width="100%">
           </a>
         </div>
@@ -85,6 +121,8 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>  -->
 
     </div>
   </div>
@@ -113,12 +151,11 @@
   </div>
   <!-- three -->
   <div class="container-fluid threebox">
-    <div class="container  nums-wap">
+    <div class="container nums-wap">
       <div class="row">
         <div class="col-md-3 col-sm-6 col-6  item-num">
           <div class="num-box">
             <p class=" num-s text-center">
-
               <b id="count">2013</b>
               <span>年</span>
             </p>
@@ -262,47 +299,56 @@
   </div>
   <!-- six -->
   <div class="container-fluid sexbox">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 ">
-          <h4>联系我们</h4>
-          <p>Shang Hai Ivy Auto</p>
-        </div>
-        <div class="col-md-3 fa-icon">
-          <h5>关注</h5>
-          <a class="fl" target="_blank" href="http://weibo.com/web">
-            <i class="fa fa-weibo"></i>
-          </a>
-          <a class="fl" target="_blank" href="tencent://message/?uin=&amp;Site=uelike&amp;Menu=yes">
-            <i class="fa fa-qq"></i>
-          </a>
-          <a id="weixin" class="fl" target="_blank" href="javascript:;">
-            <i class="fa fa-weixin"></i>
-          </a>
-        </div>
-        <div class="col-md-3 ">
-          <h4> 上海埃维汽车技术有限公司</h4>
-          <p>地址:上海市中春路1288号22号楼</p>
-          <p>电话:+86-21-59559336</p>
-          <p>传真:+86-21-59559336</p>
-        </div>
-        <div class="col-md-3">
-          <p>邮编:200000</p>
-          <p>招才纳士:HR@ivycar.cn</p>
-          <p>市场部:Marketing@ivycar.cn</p>
-        </div>
+      <div class="container">
+          <div class="row">
+              <div class="wow fadeInUp  col-md-3 ">
+                  <h4>联系我们</h4>
+                  <p>Shang Hai Ivy Auto</p>
+              </div>
+              <div class="wow fadeInUp  col-md-3 fa-icon">
+                  <h5>关注</h5>
+                  <a class="fl" target="_blank" href="http://weibo.com/web">
+                      <i class="fa fa-weibo"></i>
+                  </a>
+                  <a class="fl" target="_blank" href="tencent://message/?uin=&amp;Site=uelike&amp;Menu=yes">
+                      <i class="fa fa-qq"></i>
+                  </a>
+                  <a id="weixin" class="fl" target="_blank" href="javascript:;">
+                      <i class="fa fa-weixin"></i>
+                  </a>
+              </div>
+              <div class="wow fadeInUp  col-md-6">
+                  <div>
+                      <h4> 上海埃维汽车技术有限公司</h4>
+                  </div>
+                  <div class="row decion-p">
+                      <div class="col-md-6  ">
+                          <p>地址:上海市中春路1288号22号楼</p>
+                          <p>电话:+86-21-59559336</p>
+                          <p>传真:+86-21-59559336</p>
+                      </div>
+                      <div class="col-md-6">
+                          <p>邮编:200000</p>
+                          <p>招才纳士:HR@ivycar.cn</p>
+                          <p>市场部:Marketing@ivycar.cn</p>
+                      </div>
+                  </div>
+
+              </div>
+
+
+          </div>
       </div>
-    </div>
 
   </div>
   <!-- footer -->
   <div class="container-fluid footers">
-    <footer class="container  ">
-      <p>版权所有 © 2019 上海埃维汽车技术有限公司 .All Right revesved
-        <a href="#">Privacy</a> ·
-        <a href="#">沪ICP备09013316号</a>
-      </p>
-    </footer>
+      <footer class="wow fadeInUp  container  ">
+          <p>版权所有 © 2019 上海埃维汽车技术有限公司 .All Right revesved
+              <a href="#">Privacy</a> ·
+              <a href="#">沪ICP备09013316号</a>
+          </p>
+      </footer>
   </div>
   <!-- footer end  -->
   <!-- right-fixed -->
@@ -334,8 +380,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/waypoints.min.js"></script>
 <script src="js/count.js"></script>
-<script src="slick/slick.js"></script>
-<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/public.js"></script>
 <script>
@@ -353,45 +398,45 @@
     paginationClickable: true,
     loop: true,
     centeredSlides: true,
-    autoplay: 3000,
-    autoplayDisableOnInteraction: false
+    // autoplay: 3000,
+    // autoplayDisableOnInteraction: false
   });
-
-  $(".threebox").waypoint(function (direction) {
-    console.log(direction)
-    if (direction == "down") {
-      $(function () {
-        $("#count").numberRock({
-          lastNumber: 2013,
-          duration: 1000,
-          easing: 'swing',
+ 
+   $(".threebox").waypoint(function (direction) {
+        console.log(direction)
+        if (direction == "down") {
+            $(function () {
+                $("#count").numberRock({
+                    lastNumber: 2013,
+                    duration: 1000,
+                    easing: 'swing',
+                });
+            });
+            $(function () {
+                $("#count1").numberRock({
+                    lastNumber: 1500,
+                    duration: 1000,
+                    easing: 'swing',
+                });
+            });
+            $(function () {
+                $("#count2").numberRock({
+                    lastNumber: 8,
+                    duration: 500,
+                    easing: 'swing',
+                });
+            });
+            $(function () {
+                $("#count3").numberRock({
+                    lastNumber: 38,
+                    duration: 1000,
+                    easing: 'swing',
+                });
+            });
+        }
+    }, {
+            offset: "64%"
         });
-      });
-      $(function () {
-        $("#count1").numberRock({
-          lastNumber: 1500,
-          duration: 1000,
-          easing: 'swing',
-        });
-      });
-      $(function () {
-        $("#count2").numberRock({
-          lastNumber: 8,
-          duration: 500,
-          easing: 'swing',
-        });
-      });
-      $(function () {
-        $("#count3").numberRock({
-          lastNumber: 38,
-          duration: 1000,
-          easing: 'swing',
-        });
-      });
-    }
-  }, {
-      offset: "64%"
-    });
 
   // 获取滚动条位置
   $(window).scroll(function () {
@@ -401,17 +446,37 @@
     if (yheight1 - top > 0) {
 
       $(".nav-top").addClass("nav-top2");
-      $("#logo1").hide();
       $("#logo2").show();
+      $("#logo1").hide();
+
+      $(".s-n-nav").addClass("s-n-nav2")
     } else {
 
       $(".nav-top").removeClass("nav-top2");
-      $("#logo2").hide();
       $("#logo1").show();
+      $("#logo2").hide();
+      $(".s-n-nav").removeClass("s-n-nav2")
     }
   })
 
+  var on = true;
+$("#s-btn").click(function(){
+  
+  if(on){
+    $(".s-nav-ul")
+      .animate({ height: "287px" ,overflow: "auto"}, 500);
+       on = false;
+  }else{
+    $(".s-nav-ul")
+      .animate({ height: 0 }, 500);
+      on = true;
+  }
+ 
+})
+$(".sm-span").click(function(){
+  $(".two-h3").animate({ scrollTop: 0 }, "slow");
 
+})
 </script>
 
 </html>

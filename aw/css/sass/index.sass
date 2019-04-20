@@ -1,64 +1,4 @@
-.nav-top
-    position: fixed
-    top: 0
-    border-bottom: 2px solid rgba(255,255,255,0.5)
-    z-index: 99
-#logo2
-    display: none
-.dy-navbar
-    padding-bottom:  0 !important
-.nav-top2
-    background: #fff
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
-    .dy-nav
-        .dy-nav-ul
-            .dy-nav-li
-                .dy-nav-a
-                    padding: 2rem 1rem
-                    color: #333
-                    &:hover
-                        color: #143290
-                        border-bottom: 1px solid #143290
-
-    
-@media ( min-width : 768px)  
-    .dy-nav
-        .dy-nav-ul
-            .dy-nav-li
-                .dy-nav-a
-                    padding: 2rem 1rem
-                    color: #fff
-                    &:hover
-                        color: #000
-                        border-bottom: 2px solid #143290
-
-@media ( max-width : 768px)  
-    .nav-top
-        position: fixed
-        // position: inherit
-        top: 0
-        z-index: 99
-        border-bottom: none
-        background:  #fff
-        .dy-nav
-            .dy-nav-ul
-                .dy-nav-li
-                    .dy-nav-a
-                        color: #000
-                        &:hover
-                            color: #143290
-                            border-bottom: 1px solid #143290
-  
-   
-    .dy-navbar
-        padding-bottom:  0 !important
-        a
-            img
-                width: 4rem
-
-
-
-
+/*sass*/
 .index-banner
     padding: 0 !important
     // height: 36rem
@@ -71,14 +11,46 @@
     background-image: url("../../images/arrows1_02.png") 
     left: 21%
     top: 98% 
+.myswiper1
+    .swiper-slide
+        position: relative
+        .swiper-dec
+            position: absolute
+            left: 0
+            top: 40%
+            width: 100%
+            .fist-t
+                font-size: 1rem
+                color: #ccd0d7
+            .two-t
+                font-size: 3rem
+                font-weight: bold
+                color: #fff
+            .thre-t
+                text-align: center
+                span
+                    display: inline-block
+                    width: 56px
+                    height: 56px
+                    border-radius: 50%
+                    border: 1px solid #fff
+                    i
+                        color: #fff
+                        line-height: 56px
+                        font-size: 30px
 
 
+
+
+
+
+
+/* teo*/
 .twobox
     background: #f8f8f8
     padding: 53px 0 176px 0
 .two-h3
     h3
-        font: 30px/36px bold  "PingFang-SC"
         color: #333
 .h3-title
     font: 1.1rem/3rem "PingFang"
@@ -89,17 +61,21 @@
     color: #a1a1a1
     text-align: center
     border: 1px solid #dcdcdc
+    font-size: 12px
+    &:hover
+        background: #233876
+        color: #fff
 
 /* threebox*/
 .threebox
-   
+ 
     .nums-wap
         margin-top: -90px
         background: #fff
         box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.1)
 .item-num
     position: relative
-    &::after
+    &:not(:last-child)::after
         content: ''
         position: absolute
         width: 1px
@@ -217,6 +193,9 @@
         font-size: 16px
         line-height: 30px
         color: #fff  !important
+    .decion-p
+        margin-top: 2.5rem
+        p
       
     .fa-icon
         a
@@ -232,19 +211,22 @@
 
 /* footes***/
 .footers
-    padding: 20px 0  5px 0
+    padding: 10px 0  5px 0
     background: #1c1b1b
     p
         margin:  0
-        color: #fff
+        color: #a3a3a3
+        font-size: 13px
         a
-            color: #fff
+            color: #a3a3a3
+             font-size: 13px
 
 .right-fixed
     position: fixed
     right: 0
     top: 50%
     z-index: 9999
+    margin-top: -60px
     #shares
         a
             display: block
@@ -301,7 +283,7 @@
         display: none
     .sexbox
         padding-top: 20px
-        padding-bottom: 20px
+        padding-bottom: 10px
         background: #2a2828
         h4
             margin: 0 
@@ -323,8 +305,11 @@
             font-size: 14px
             line-height: 30px
             color: #fff  !important
+        .decion-p
+            margin-top: 0
+       
     .footers
-        padding: 20px 0  5px 0
+        padding: 10px 0  10px 0
         background: #1c1b1b
         p
             font-size: 14px
@@ -338,14 +323,193 @@
         
 @media ( min-width : 768px) 
     .sexbox
-        padding-top: 66px 
+        padding: 66px  0
+
+
+
                 
 
+.s-n-nav
+    display: none
+
+.nav-top
+    position: fixed
+    top: 0
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+    z-index: 99
+    padding: 0.8rem 0 0
+    .div-flex
+        display: flex
+
+    .n-nav
+        display: flex
+        padding: 0 !important
+        margin: 0 0 0 5% 
+        li
+            list-style: none
+            justify-content: flex-end
+            border-bottom: 1px solid  transparent
+            a
+                display: inline-block
+                padding: 0 1.2rem
+                text-align: center
+                line-height: 5rem
+                text-decoration: none
+                color: #fff
+            &:hover
+                border-bottom: 2px solid  #fff
+.nav-top2
+    background: #fff
+    .div-flex
+        display: flex
+        .n-nav
+            display: flex
+            padding: 0 !important
+            margin: 0 0 0 5% 
+            li
+                list-style: none
+                justify-content: flex-end
+                border-bottom: 1px solid  transparent
+                a
+                    display: inline-block
+                    padding: 0 1.2rem
+                    text-align: center
+                    line-height: 5rem
+                    text-decoration: none
+                    color: #333
+                &:hover
+                    border-bottom: 2px solid  #143290
+
+@media ( max-width : 960px)     
+    .nav-top
+        padding: 0.8rem 0 0 
+        .div-flex
+            display: flex
+            .logo
+                padding-bottom: 0.03rem
+            .n-nav
+                display: flex
+                padding: 0 !important
+                margin: 0 0 0 5% 
+                li
+                    list-style: none
+                    justify-content: center
+                    border-bottom: 1px solid  transparent
+                    a
+                        display: inline-block
+                        padding: 0 0.1rem
+                        text-align: center
+                        line-height: 5rem
+                        text-decoration: none
+                    &:hover
+                        border-bottom: 1px solid  #fff  
+@media ( max-width : 768px)     
+    .n-nav
+        li
+            a
+                padding: 0 0.05rem
+
+
+@media ( max-width :  768px)   
+    .nav-top
+        display: none
+    .s-n-nav
+        position: fixed
+        top: 0
+        background: rgba(0,0,0,0.5)
+        z-index: 999
+        padding: 0.2rem 
+        display: block !important
+    .s-nav-b
+        position: relative
+     
+        .s-logo
+            img
+                width: 4rem
+        .s-btn
+            position: absolute
+            right:  0.8rem
+            top: 0.5rem
+            color: #fff
+            i
+                font-size: 1.5rem
+        .s-nav-ul
+            padding: 0
+            margin:  0 0
+            list-style: none
+            height: 0 
+            overflow: hidden 
+       
+            li
+                list-style: none
+                a
+                    display: block
+                    text-decoration: none
+                    line-height: 2.6rem
+                    color: #fff
 
 
 
+    .s-n-nav2
+        background: #fff
+        .s-logo
+            img
+                width: 4rem
+        .s-btn
+            color: #000
+        .s-nav-ul
+            padding: 0
+            margin:  0 0
+            list-style: none
+            height: 0 
+            overflow: hidden 
+       
+            li
+                list-style: none
+                a
+                    text-decoration: none
+                    line-height: 2.6rem
+                    color: #000
+    .myswiper1
+        .swiper-slide
+            a
+                position: relative
+                display: block
+                height: 240px
+                .swiper-dec
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    width: 100%
+                    margin-top: -30px
+                    .fist-t
+                        font-size: 0.5rem
+                        color: #ccd0d7
+                    .two-t
+                        font-size: 1.5rem
+                        font-weight: bold
+                        color: #fff
+                    .thre-t
+                        text-align: center
+                        span
+                            display: inline-block
+                            width: 28px
+                            height: 28px
+                            border-radius: 50%
+                            border: 1px solid #fff
+                            i
+                                color: #fff
+                                line-height: 28px
+                                font-size: 15px
+                img
+                    width: auto
+                    height: 100%
 
 
+           
+
+        
+      
 
 
-
+   

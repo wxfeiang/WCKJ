@@ -1,45 +1,172 @@
+.s-n-nav
+    display: none
+
 .nav-top
     position: fixed
     top: 0
-    border-bottom: 2px solid rgba(255,255,255,0.5)
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5)
     z-index: 99
     background: #fff
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
+    padding: 0.8rem 0 0
+    .div-flex
+        display: flex
+    .n-nav
+        display: flex
+        padding: 0 !important
+        margin: 0 0 0 10% 
+        -webkit-align-self: flex-end
+        align-self: flex-end
+        li
+            list-style: none
+            justify-content: flex-end
+            border-bottom: 1px solid  transparent
+            a
+                display: inline-block
+                padding: 0 1.2rem
+                text-align: center
+                line-height: 5rem
+                text-decoration: none
+                color: #333
+            &:hover
+                border-bottom: 1px solid  #143290
+.nav-top2
+    background: #fff
+    .div-flex
+        display: flex
+        .n-nav
+            display: flex
+            padding: 0 !important
+            margin: 0 0 0 5% 
+            li
+                list-style: none
+                justify-content: flex-end
+                border-bottom: 1px solid  transparent
+                a
+                    display: inline-block
+                    padding: 0 1.2rem
+                    text-align: center
+                    line-height: 5rem
+                    text-decoration: none
+                    color: #333
+                &:hover
+                    border-bottom: 1px solid  #fff
+
+@media ( max-width : 960px)     
+    .nav-top
+        padding: 0.8rem 0 0 
+        .div-flex
+            display: flex
+            .logo
+                padding-bottom: 0.03rem
+            .n-nav
+                display: flex
+                padding: 0 !important
+                margin: 0 0 0 5% 
+                li
+                    list-style: none
+                    justify-content: center
+                    border-bottom: 1px solid  transparent
+                    a
+                        display: inline-block
+                        padding: 0 0.1rem
+                        text-align: center
+                        line-height: 5rem
+                        text-decoration: none
+                    &:hover
+                        border-bottom: 1px solid  #fff  
+@media ( max-width : 768px)     
+    .n-nav
+        li
+            a
+                padding: 0 0.05rem
+
+
+@media ( max-width :  768px)   
+    .nav-top
+        display: none
+    .s-n-nav
+        position: fixed
+        top: 0
+        background: #fff
+        z-index: 999
+        padding: 0.2rem 
+        display: block !important
+    
+    .s-nav-b
+        position: relative
+     
+        .s-logo
+            img
+                width: 4rem
+        .s-btn
+            position: absolute
+            right:  0.8rem
+            top: 0.5rem
+            color: #000
+            i
+                font-size: 1.5rem
+        .s-nav-ul
+            padding: 0
+            margin:  0 0
+            list-style: none
+            height: 0 
+            overflow: hidden 
+       
+            li
+                list-style: none
+                a
+                    display: block
+                    text-decoration: none
+                    line-height: 2.6rem
+                    color: #000
+        
+
 .nav-z
     width: 100%
     min-height: 6.25rem 
 
     
-.dy-navbar
-    padding-bottom:  0 !important
-    
-@media ( min-width : 768px)  
-    .dy-nav
-        .dy-nav-ul
-            .dy-nav-li
-                .dy-nav-a
-                    padding: 2rem 1rem
-                    color: #333
-                    &:hover
-                        color: #143290
-                        border-bottom: 1px solid #143290
+
    
 @media ( max-width : 768px)  
-    .dy-nav
-        .dy-nav-ul
-            .dy-nav-li
-                .dy-nav-a
-                    color: #000
-                    &:hover
-                        color: #143290
-                        border-bottom: 1px solid #143290
     .nav-z
         min-height: 3.25rem
 
 
 .banner
-    background: url("../../images/bg-ban.jpg") no-repeat center   center
-    min-height: 298px
+    background: url("../../images/bg-ban.jpg") no-repeat center   center 
+    height: 298px
+    .container
+        height: 100%
+        .ban-dex
+            display: flex
+            -webkit-flex-direction: column
+            flex-direction: column
+            justify-content: center
+            height: 100%
+            padding-left: 20px
+            .ban-title
+                font-size: 1.6rem
+                font-weight: normal
+                font-stretch: normal
+                letter-spacing: -0.5px
+                color: #fff
+
+            .ban-sm
+                font-size: 2rem
+                font-weight: normal
+                letter-spacing: -1.3px
+                color: #fff
+
+                span
+                    display: inline-block
+                    vertical-align: middle
+                    width: 4px
+                    height: 4px
+                    background: #fff
+                    border-radius: 50%
+                    border: 5px solid rgba(74,119,142,0.1)
+     
 
 
 .brie-top
@@ -69,9 +196,65 @@
 
 .brie-body
     padding: 4rem 0 
-.originator
-    background: rul("../saturate()")
+    .showbox
+        display: none
+    .nums-wap
+
+        margin-top: 10px 
+    .briefs
+        margin-top: 3rem
+        .bries-h3-titele
+            line-height: 30.2px
+            letter-spacing: -1px
+            color: #333
+        .brifes-small
+            font-size: 14px
+            color: #999
+        .bries-h4
+            margin: 30px 0 
+            line-height: 30.2px
+            letter-spacing: -0.7px
+            color: #333333
+        .bries-center
+            font-size: 12px
+            line-height: 26px
+            letter-spacing: -0.5px
+            color: #333
+        .threebox
+            margin:  0 -15px
+  
+        .album
+            margin-top: 5rem
+            .col-md-3
+                padding: 0 
+                overflow: hidden
+                img
+                    transition: all 0.5s ease 0s;
+                .d-title
+                    font-size: 19.5px
+                    font-weight: normal
+                    font-stretch: normal
+                    letter-spacing: -0.8px
+                    color: #333
+                .d-center 
+                    font-size: 14px
+                    font-weight: normal
+                    font-stretch: normal
+                    line-height: 22.6px
+                    letter-spacing: -0.6px
+                    color: #9fa0a0
+                &:hover
+                    img
+                        transform: scale(1.2)
+                        // -moz-transition: all 0.3s ease-in
+                        // -webkit-transition: all 0.3s ease-in
+                        // -o-transition: all 0.3s ease-in
+                        // transition: all 0.3s ease-in
+
+
+
     
+
 
 @media ( max-width : 576px)  
     .sm-none
@@ -88,5 +271,45 @@
                 border-radius: 4px
     .brie-body
         padding: 1rem 0 
-            
+        .brifesimg
+            margin-bottom: 2rem
+
+    .sm-img
+        margin-top: 20px
+        margin-bottom: 20px
+    .banner
+        background: url("../../images/bg-ban.jpg") no-repeat center   center 
+        background-size: 100% 100%
+        height: 140px
+        .container
+            height: 100%
+            .ban-dex
+                display: flex
+                -webkit-flex-direction: column
+                flex-direction: column
+                justify-content: center
+                height: 100%
+                .ban-title
+                    font-size: 14px
+                    font-weight: normal
+                    font-stretch: normal
+                    letter-spacing: -0.5px
+                    color: #fff
+
+                .ban-sm
+                    font-size: 1rem
+                    font-weight: normal
+                    letter-spacing: -1.3px
+                    color: #fff
+
+                    span
+                        display: inline-block
+                        vertical-align: middle
+                        width: 4px
+                        height: 4px
+                        background: #fff
+                        border-radius: 50%
+                        border: 5px solid rgba(74,119,142,0.1)
+
+                
              
