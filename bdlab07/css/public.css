@@ -1,0 +1,127 @@
+/*--------------- current nav---------------------*/
+.current-nav {
+  margin: 24px 0 0 0;
+}
+
+.nav-title {
+  padding: 0 20px;
+  background: #f5f5f5;
+  font: 12px/36px "ArialMT";
+  color: #282828;
+}
+
+.nav-title span {
+  color: #3d60f4;
+}
+
+.nav-title a {
+  color: #595959;
+}
+
+/*---------------currentnav end---------------------*/
+/*--- ---------------banner--------------------*/
+.banner {
+  background: #000 url("../../images/ban-sigle.jpg") no-repeat center center;
+  height: 642px;
+}
+
+.banner .ban-title {
+  position: relative;
+  top: 35%;
+}
+
+.banner .ban-title .title-icon {
+  text-align: center;
+}
+
+.banner .ban-title h3 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .ban-title h3 span {
+  color: #36c8ff;
+}
+
+.banner .ban-title p {
+  font: 29px/31px "ArialMT";
+  text-align: center;
+  color: #fff;
+}
+
+/*--- ---------------banner end--------------------*/
+/*---------------footer---------------------*/
+.footer {
+  background: #00111c;
+}
+
+.footer .partner {
+  padding: 0 0 80px 0;
+}
+
+.footer .partner h3 {
+  font: 34px/160px "ArialMT";
+  letter-spacing: 0.7px;
+  color: #fff;
+}
+
+.footer .partner .partner-list .par-item a {
+  display: block;
+  font: 22px/34px "ArialMT";
+  letter-spacing: 0.4px;
+  color: #fff;
+}
+
+.footer .partner .partner-list .par-item a i {
+  display: inline-block;
+  color: #fff;
+  transform: rotate(-90deg);
+  vertical-align: middle;
+}
+
+.footer .partner .partner-list .par-item a:hover {
+  color: #3d60f4;
+}
+
+.footer .partner .partner-list .par-item a:hover i {
+  color: #3d60f4;
+}
+
+.footer .partner .partner-list .par-last {
+  padding-top: 100px;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.footer .partner .partner-list .par-last .wx-img {
+  margin: 0 20px 0 0;
+  display: inline-block;
+  text-align: center;
+}
+
+.footer .partner .partner-list .par-last .wx-img img {
+  vertical-align: middle;
+}
+
+.footer .partner .partner-list .par-last .wx-img p {
+  text-align: center;
+  color: #fff;
+}
+
+.copys {
+  padding: 60px 0;
+  background: #000d15;
+}
+
+.copys .copys-p {
+  text-align: center;
+}
+
+.copys .copys-p a {
+  font: 14px/30px "ArialMT";
+  letter-spacing: 0.3px;
+  color: #fff;
+}
+
+/*---------------footer end---------------------*/

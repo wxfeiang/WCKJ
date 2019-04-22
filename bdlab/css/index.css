@@ -455,7 +455,7 @@
 .index-links .links {
   position: absolute;
   top: 28%;
-  left: 19%;
+  width: 100%;
 }
 
 .index-links .links .partner a {

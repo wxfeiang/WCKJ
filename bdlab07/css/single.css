@@ -1,0 +1,70 @@
+.banner {
+  background: #000 url("../../images/ban-sigle.jpg") no-repeat center center;
+  height: 642px;
+}
+
+.banner .ban-title {
+  position: relative;
+  top: 35%;
+}
+
+.banner .ban-title .title-icon {
+  text-align: center;
+}
+
+.banner .ban-title h3 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.banner .ban-title h3 span {
+  color: #36c8ff;
+}
+
+.banner .ban-title p {
+  font: 29px/31px "ArialMT";
+  text-align: center;
+  color: #fff;
+}
+
+.fly-h3 {
+  position: relative;
+  margin: 80px auto;
+  width: 45%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  color: #131313;
+}
+
+.fly-h3 div {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  background: #36c8ff;
+}
+
+.fly-h3 .before-line {
+  top: 50%;
+  width: 10%;
+  left: -54px;
+}
+
+.fly-h3 .before-line1 {
+  bottom: 10%;
+  width: 15%;
+  left: -80px;
+}
+
+.fly-h3 .after-line {
+  top: 50%;
+  width: 10%;
+  right: -54px;
+}
+
+.fly-h3 .after-line1 {
+  bottom: 10%;
+  width: 15%;
+  right: -80px;
+}

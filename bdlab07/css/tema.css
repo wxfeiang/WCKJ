@@ -1,0 +1,17 @@
+.tema-box {
+  padding: 24px 0 0 0;
+  background: #efefef;
+  height: 500px;
+}
+
+.lead-center .left-box {
+  width: 42%;
+}
+
+.lead-center .right-box {
+  width: 28%;
+}
+
+.lead-center .right-box img {
+  width: 100%;
+}

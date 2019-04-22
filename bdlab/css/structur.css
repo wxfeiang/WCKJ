@@ -1,0 +1,42 @@
+.banner {
+  background: url("../../images/ban-surter.jpg") no-repeat center center;
+}
+
+/*----------structur----------------------*/
+.cont-body .stru-box table {
+  margin: 0 0 30px 0;
+  border-color: #133495;
+}
+
+.cont-body .stru-box table tr td {
+  padding: 0 0 0 10px;
+}
+
+.cont-body .stru-box table tr:nth-child(odd) {
+  background: #f3f5fa;
+}
+
+.cont-body .stru-box .table-h4 {
+  padding: 30px 0;
+  text-align: center;
+  color: #133495;
+  font: bold 24px/36px "Arial-BoldMT";
+}
+
+.cont-body .stru-box .table-name {
+  width: 100%;
+  color: #133495;
+  font: bold  14px/36px "Arial-BoldMT";
+}
+
+.cont-body .stru-box .table-name span {
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+
+.cont-body .stru-box .pab-center {
+  padding: 30px 25px;
+  font: 14px/36px "Arial-BoldMT";
+  color: #133495;
+  text-indent: 2em;
+}
