@@ -1,0 +1,55 @@
+/*------con-body-------*/
+.con-body {
+  padding: 110px 0;
+}
+
+.con-body .stur-top h3 {
+  text-align: center;
+  font: bold 26px/40px "ArialMT";
+  color: #333;
+}
+
+.con-body .stur-top p {
+  padding: 0 26px;
+  font: 16px/50px "ArialMT";
+  color: #333;
+}
+
+.con-body .stur-top p span {
+  font: 16px/50px "ArialMT";
+}
+
+.con-body .stur-center {
+  padding: 0 26px;
+  background: #f6f6f6;
+  border: solid 1px #e5e3e3;
+}
+
+.con-body .stur-center h4 {
+  text-align: center;
+  font: 24px/90px "ArialMT";
+  color: #333;
+}
+
+.con-body .stur-center .list-box {
+  margin: 0 0 10px 0;
+}
+
+.con-body .stur-center .list-box h5 {
+  font: 16px/24px "ArialMT";
+}
+
+.con-body .stur-center .list-box ul li {
+  width: 50%;
+  font: 16px/24px "ArialMT";
+}
+
+.con-body .stur-center .list-box ul:nth-child(even) {
+  font-size: 15px;
+}
+
+.con-body .stur-center:hover {
+  background: #faf9f9;
+}
+
+/*------con-body-end-------*/

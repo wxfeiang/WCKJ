@@ -1,0 +1,403 @@
+.layout {
+  width: 10.20rem;
+  margin: 0 auto;
+}
+
+/*-----------top-----------*/
+.top {
+  background: #222;
+  padding: 0.30rem 0;
+}
+
+.top .top-box a {
+  display: inline-block;
+}
+
+.top .top-box .a-logo {
+  margin-right: 0.60rem;
+}
+
+.top .top-box .a-logo img {
+  width: 2.64rem;
+  height: 0.82rem;
+}
+
+.top .top-box span {
+  color: #fff;
+  font-size: 0.30rem;
+  line-height: 0.90rem;
+  margin-right: 0.20rem;
+}
+
+.top .top-box .a-btn {
+  vertical-align: middle;
+  margin-top: 0.16rem;
+}
+
+.top .top-box .a-btn img {
+  width: 2.27rem;
+  height: 0.57rem;
+}
+
+/*-----------banner---------------*/
+.banner {
+  background: url("../images/banner2.jpg") no-repeat center;
+  background-size: 100% 100%;
+  height: 5.28rem;
+}
+
+/*-------------brand-----------------*/
+.brand {
+  background: #222;
+  padding: 0.6rem 0;
+}
+
+.brand .brand-box .brand-h3 {
+  background: url("../images/brand-tit.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: #000;
+  font: 0.44rem/0.82rem "SourceHanSansCN-Regular";
+}
+
+.brand .brand-box .brand-h4 {
+  margin-top: 0.40rem;
+  text-align: center;
+  font-family: SourceHanSansCN-Light;
+  font-size: 0.52rem;
+  color: #edde75;
+}
+
+.brand .brand-box .brand-p {
+  margin: 0.14rem 0;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.34rem;
+  line-height: 0.52rem;
+  color: #f2f2f2;
+}
+
+.brand .bard-list {
+  margin: 0.20rem auto 0;
+  padding: 0.30rem  0;
+  border: 1px solid #ead76f;
+}
+
+.brand .bard-list li {
+  position: relative;
+  float: left;
+  width: 46.5%;
+  padding: 0 0.10rem;
+  color: #fff;
+  text-align: center;
+}
+
+.brand .bard-list li .imgbox {
+  min-height: 1.4rem;
+  text-align: center;
+}
+
+.brand .bard-list li .list-tilte {
+  margin: 0.30rem 0 0;
+  padding: 0 0 0.30rem 0;
+  font: 0.44rem/0.60rem "SourceHanSansCN-Regular ";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 0.46rem;
+}
+
+.brand .bard-list li .list-p {
+  margin: 0.20rem 0 0 0;
+  text-align: left;
+  font-size: 0.36rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.52rem;
+  color: #efefef;
+}
+
+.brand .bard-list li .list-p span {
+  color: #e8d26a;
+}
+
+/*----------attract-----------*/
+.attract {
+  background: #222;
+  border-bottom: 1px solid rgba(74, 69, 48, 0.2);
+}
+
+.attract .attract-box {
+  padding: 0.40rem 0 0.40rem;
+}
+
+.attract .attract-box .arr-top {
+  text-align: center;
+  margin-bottom: 0.40rem;
+}
+
+.attract .attract-box .arr-top img {
+  width: 100%;
+}
+
+.attract .attract-box .arc-list {
+  padding: 0 0 0.20rem;
+  border-bottom: 1px solid rgba(74, 69, 48, 0.2);
+}
+
+.attract .attract-box .arc-list .dec-span {
+  font-size: 0.42rem;
+  margin: 0.30rem 0 0;
+  line-height: 0.64rem;
+  color: #ffe56c;
+}
+
+.attract .attract-box .arrc-exp p {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.36rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.52rem;
+  color: #ffe56c;
+}
+
+.attract .attract-box .arrc-exp p span {
+  color: #f5f5f5;
+}
+
+.attract .attract-box .arrc-exp .exp-fist {
+  margin-top: 0.30rem;
+}
+
+.attract .attract-box .arrc-exp .exp-dec {
+  margin-top: 0.40rem;
+}
+
+/*---------------pattrrn----------------*/
+.pattern {
+  padding: 0.60rem 0 0.10rem;
+  background: #121212;
+}
+
+.pattern .pattern-box .patt-h3 {
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.50rem;
+  line-height: 0.80rem;
+  color: #222;
+  background: url("../images/patt-tit.png") no-repeat center center;
+  background-size: cover;
+}
+
+.pattern .pattern-box .patt-p {
+  margin: 0.30rem 0 0.40rem;
+  font-family: SourceHanSansCN-ssRegular;
+  line-height: 0.50rem;
+  font-size: 0.36rem;
+  color: #f2f2f2;
+}
+
+.pattern .pattern-box .patt-h5 {
+  margin: 0 0 0.20rem 0;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 0.36rem;
+  line-height: 0.36rem;
+  color: #ffe152;
+}
+
+.pattern .pattern-box .samll {
+  margin: 0.14rem 0;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.35rem;
+  line-height: 0.55rem;
+  color: #ff0000;
+}
+
+.pattern .pattern-box .table2 tr {
+  font-weight: normal;
+  text-align: center;
+}
+
+.pattern .pattern-box .table2 tr th {
+  background: rgba(52, 52, 52, 0.2);
+  color: #ffe152;
+  line-height: 0.36rem;
+  font-size: 0.26rem;
+}
+
+.pattern .pattern-box .table2 tr td {
+  background: transparent;
+  color: #f5f5f5;
+  line-height: 0.40rem;
+  font-size: 0.26rem;
+}
+
+/*---------------advantage----------------*/
+.advantage {
+  padding: 0.70rem  0;
+  background: #222;
+}
+
+.advantage .adv-h3 {
+  margin: 0 0 0.26rem 0;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.50rem;
+  line-height: 0.80rem;
+  color: #222222;
+  background: url("../images/adv-tit.png") no-repeat 82% 50%;
+  background-size: cover;
+}
+
+.advantage p {
+  margin: 0.10rem0 0 0;
+  font-size: 0.35rem;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 0.48rem;
+  letter-spacing: 0px;
+  color: #f2f2f2;
+}
+
+.advantage p span {
+  color: #e9d56d;
+}
+
+/*---------------links----------------*/
+.links {
+  padding: 0.70rem  0;
+  background: #121212;
+}
+
+.links-box .links-tit {
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.50rem;
+  line-height: 0.80rem;
+  color: #222;
+  background: url("../images/links-tit.png") no-repeat center center;
+  background-size: cover;
+}
+
+.links-box .links-dec {
+  margin: 0.40rem 0;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.36rem;
+  color: #f2f2f2;
+}
+
+.links-box .links-list li {
+  float: left;
+  width: 25%;
+}
+
+.links-box .links-list li .linimg {
+  margin: auto;
+  width: 1.40rem;
+  height: 1.40rem;
+  border-radius: 50%;
+  border: 1px solid #3f3f3f;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.links-box .links-list li .linimg img {
+  margin: 0.26rem 0 0;
+  width: 0.80rem;
+}
+
+.links-box .links-list li .links-titlt {
+  margin-top: 0.20rem;
+  min-height: 0.70rem;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.27rem;
+  line-height: 0.36rem;
+  color: #fff;
+}
+
+.links-box .links-list li .links-listy {
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 16px;
+  line-height: 36px;
+  color: #484848;
+}
+
+.links-box .contcat-h3 {
+  margin: 0.50rem 0 0 0;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.50rem;
+  line-height: 0.80rem;
+  color: #222;
+  background: url("../images/links-tit2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.links-box .wxi-box {
+  margin: 0.66rem  0 0 0;
+}
+
+.links-box .wxi-box .wxilist {
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+.links-box .wxi-box .wxilist:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: 0;
+  height: 1.2rem;
+  width: 1px;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.links-box .wxi-box .wxilist .imgbox img {
+  width: 1.76rem;
+  height: 1.76rem;
+}
+
+.links-box .wxi-box .p1 {
+  margin: 0.30rem 0 0.10rem;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.36rem;
+  line-height: 0.42rem;
+  color: #f4f4f4;
+}
+
+.links-box .wxi-box .p2 {
+  text-align: center;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 0.26rem;
+  line-height: 0.42rem;
+  color: #ebd970;
+}
+
+/*----------bottoms---------*/
+.bottoms {
+  background: #222;
+}
+
+.bottoms .bot-box {
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 0.44rem;
+  line-height: 1.10rem;
+  color: #ebd970;
+}
+
+.bottoms .bot-box span {
+  display: inline-block;
+  margin: 0 0.10rem;
+  width: 0.13rem;
+  height: 0.13rem;
+  background-color: #ebd970;
+  vertical-align: middle;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
