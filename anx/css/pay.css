@@ -1,0 +1,234 @@
+/*-------------top---------*/
+.header {
+  position: fixed;
+  background: #06cfb8;
+  width: 100%;
+  top: 0;
+  padding: 0.36rem 0 0 0;
+}
+
+.header a {
+  position: absolute;
+  left: 0.25rem;
+  top: 50%;
+  color: #fff;
+}
+
+.header h3 {
+  text-align: center;
+  line-height: 0.96rem;
+  font-size: 0.34rem;
+  color: #fff;
+}
+
+/*-------------top end---------*/
+/*-------------------pay--------*/
+.pays {
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.pays .pay-icon {
+  text-align: center;
+  color: #06cfb8;
+}
+
+.pays .pay-icon i {
+  font-size: 1.32rem;
+  font-weight: bold;
+}
+
+.pays h4 {
+  text-align: center;
+  font-size: 0.34rem;
+  letter-spacing: 0px;
+  color: #06cfb8;
+}
+
+.pays .errors {
+  color: #ff0000;
+}
+
+.pay-btn {
+  position: fixed;
+  width: 100%;
+  bottom: 20%;
+  left: 0;
+}
+
+.pay-btn .btns {
+  margin: 0 auto;
+  width: 7rem;
+  height: 0.90rem;
+  background-color: #06cfb8;
+  border-radius: 0.45rem;
+  color: #fff;
+  line-height: 0.90rem;
+  font-size: 0.34rem;
+  text-align: center;
+}
+
+/*-------------------pay end--------*/
+/*-------------------sure--------*/
+.sure-top-wrp {
+  background-color: #fff;
+  padding: 0.18rem 0 0 0;
+}
+
+.sure-top-wrp .sure-top {
+  padding: 0 0.15rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px 0px #e3e3e3;
+  border-radius: 6px;
+}
+
+.sure-top-wrp .sure-top li {
+  font-size: 0.26rem;
+  line-height: 1.22rem;
+  color: #06cfb8;
+  border-bottom: 1px solid #ececec;
+}
+
+.sure-top-wrp .sure-top li span {
+  display: inline-block;
+  margin: 0 0.30rem 0 0;
+  width: 1.2rem;
+  text-align: right;
+  font-size: 0.30rem;
+  color: #404040;
+}
+
+.sure-top-wrp h3 {
+  margin: 0.20rem 0 0 0;
+  font-size: 0.30rem;
+  color: #404040;
+  line-height: 0.76rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.sure-top-wrp .sever-list li {
+  font-size: 0.26rem;
+  line-height: 0.82rem;
+  color: #06cfb8;
+  border-bottom: 1px solid #ececec;
+}
+
+.sure-top-wrp .sever-list li:last-child {
+  border: none;
+}
+
+.sure-top-wrp .sever-list li span {
+  font-size: 0.26rem;
+  line-height: 0.86rem;
+  color: #747474;
+}
+
+.sure-cont {
+  margin: 0.20rem 0 0 0;
+  background: #fff;
+}
+
+.select {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.select .laf-left {
+  position: relative;
+  width: 0.80rem;
+}
+
+.select .laf-left label {
+  display: inline-block;
+  width: 0.80rem;
+  height: 1.12rem;
+  text-align: center;
+  line-height: 1.12rem;
+  font-size: 0.40rem;
+  color: #dcdcdc;
+}
+
+.select .laf-left label i {
+  font-size: 0.40rem;
+}
+
+.select .laf-left label.active {
+  font-weight: bold;
+  color: #06cfb8;
+  font-size: 0.5rem;
+}
+
+.select .laf-left input {
+  opacity: 0;
+  position: absolute;
+}
+
+.select .laf-right {
+  font-size: 0.30rem;
+  color: #404040;
+  line-height: 1.12rem;
+}
+
+.pays-box {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 10%;
+}
+
+.pays-box .pays-btns {
+  margin: 0 auto;
+  width: 7rem;
+  height: 0.90rem;
+  overflow: hidden;
+  border-radius: 0.45rem;
+  border: 1px solid #d2d2d2;
+}
+
+.pays-box .pays-btns .num {
+  width: 4.6rem;
+  font-size: 0.36rem;
+  line-height: 0.90rem;
+  color: #06cfb8;
+}
+
+.pays-box .pays-btns .num span {
+  display: inline-block;
+  line-height: 0.90rem;
+  margin: -1px 0 0 0.5rem;
+  font-size: 0.30rem;
+  color: #333;
+}
+
+.pays-box .pays-btns .g-btn {
+  width: 2.40rem;
+  background-color: #06cfb8;
+  color: #fff;
+  text-align: center;
+  font-size: 0.30rem;
+  line-height: 0.90rem;
+}
+
+/*-------------------sure  end--------*/
+.tanbox {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.popbox {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -2rem -2.6rem 0 0;
+  z-index: 999;
+  box-sizing: border-box;
+  width: 5.37rem;
+  height: 4.04rem;
+  background-color: #fff;
+  border-radius: 0.08rem;
+  padidng: 0.20rem;
+}

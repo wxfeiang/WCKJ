@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" maximum-scale="1" minimum-scale="1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/pay.css">
+    <script src="js/remScale.js"></script>
+    <title>确认订单</title>
+</head>
+
+<body>
+
+    <!-- top -->
+    <div class="header">
+        <div class="layout">
+            <a href="javascript:history.go(-1)" class="icon iconfont">&#xe605; </a>
+            <h3>确认订单</h3>
+        </div>
+    </div>
+
+    <!-- top end -->
+    <div class="contanter">
+        <div class="sure-top-wrp">
+            <div class="layout">
+                <ul class="sure-top">
+                    <li>
+                        <span>
+                            手机号:
+                        </span>
+                        165160641984160
+                    </li>
+                    <li>
+                        <span>
+                            邮箱:
+                        </span>
+                        851103141
+                    </li>
+                </ul>
+                <h3>
+                    订购服务：
+                </h3>
+                <ul class="sever-list">
+                    <li>
+                        1.通讯里防爆神器
+                        <span class="fr">平台</span>
+                    </li>
+                    <li>
+                        2.通讯里防爆神器
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="sure-cont">
+            <div class="layout">
+                <div class="select-box">
+                    <div class="clearfix select">
+                        <div class="fl laf-left">
+                            <input type="radio" id="ACCESS" />
+                            <label for="ACCESS">
+                                <i class="icon iconfont ">&#xe713;</i>
+                            </label>
+
+                        </div>
+                        <div class=" fl laf-right">
+                            同意一旦发货，概不退款。
+
+                        </div>
+                    </div>
+                    <!-- <div class="clearfix select">
+                        <div class="fl laf-left">
+                            <input type="radio" id="ACCESS" />
+                            <label for="ACCESS">
+                                <i class="icon iconfont ">&#xe713;</i>
+                            </label>
+
+                        </div>
+                        <div class=" fl laf-right">
+                            同意一旦发货，概不退款。
+
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="pays-box">
+                    <div class="clearfix pays-btns">
+                        <div class="fl num">
+                            <span>
+                                合计
+                            </span>
+                            79999999
+                        </div>
+
+                        <div class="fr g-btn">
+                            立即支付
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function () {
+        $(".laf-left label").each(function () {
+            $(this).click(function () {
+                $(this).addClass("active").find("i").html("&#xe66a;");
+   
+            })
+        })
+
+    })
+</script>
+
+</html>
