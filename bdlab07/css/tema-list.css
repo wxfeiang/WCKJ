@@ -1,0 +1,42 @@
+.con-body {
+  padding: 110px 0;
+}
+
+.con-body .lables {
+  margin: 50px 0 100px;
+}
+
+.con-body .lables span {
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0 10px 0 0;
+  line-height: 36px;
+  letter-spacing: -0.2px;
+  color: #282828;
+  height: 36px;
+  border: solid 1px #3d60f4;
+  border-radius: 18px;
+}
+
+.con-body .lables span:hover, .con-body .lables span.active {
+  color: #fff;
+  background: #3d60f4;
+}
+
+.pages .pages-list {
+  text-align: center;
+}
+
+.pages .pages-list a {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+}
+
+.pages .pages-list a input {
+  width: 54px;
+  height: 26px;
+  text-align: center;
+  border-radius: 4px;
+  border: solid 1px #d4d4d4;
+}

@@ -48,8 +48,62 @@
   font-size: 15px;
 }
 
-.con-body .stur-center:hover {
+.con-body .stur-center .list-box:hover {
   background: #faf9f9;
+}
+
+.con-body .stur-p {
+  margin: 46px 0 0 0;
+  font-family: ArialMT;
+  font-size: 22px;
+  line-height: 36px;
+  color: #606060;
+}
+
+.con-body .stur-hres {
+  margin: 60px  0  0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #e5e3e3;
+}
+
+.con-body .stur-hres .href-list {
+  margin: 0 0 10px 0;
+  font-family: ArialMT;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  color: #282828;
+}
+
+.con-body .stur-hres .href-list:hover {
+  color: #3d60f4;
+}
+
+.con-body .stur-hres .href-list span {
+  display: inline-block;
+  margin: 0 20px;
+  width: 9px;
+  height: 9px;
+  background: #36c8ff;
+  border-radius: 50%;
+}
+
+.con-body .stur-hres .href-list img {
+  margin: 0 20px 0 0;
+}
+
+.con-body .pages {
+  margin: 60px 0 0 0;
+}
+
+.con-body .pages a {
+  display: block;
+  font-size: 18px;
+  line-height: 31px;
+  color: #606060;
+}
+
+.con-body .pages a:hover {
+  color: #3d60f4;
 }
 
 /*------con-body-end-------*/

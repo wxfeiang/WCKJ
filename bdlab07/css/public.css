@@ -126,3 +126,44 @@
 }
 
 /*---------------footer end---------------------*/
+/*------------------fly-f3---------------------*/
+.fly-h3 {
+  position: relative;
+  margin: 0 auto 80px;
+  width: 45%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  color: #131313;
+}
+
+.fly-h3 div {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  background: #36c8ff;
+}
+
+.fly-h3 .before-line {
+  top: 50%;
+  width: 10%;
+  left: -54px;
+}
+
+.fly-h3 .before-line1 {
+  bottom: 10%;
+  width: 15%;
+  left: -80px;
+}
+
+.fly-h3 .after-line {
+  top: 50%;
+  width: 10%;
+  right: -54px;
+}
+
+.fly-h3 .after-line1 {
+  bottom: 10%;
+  width: 15%;
+  right: -80px;
+}

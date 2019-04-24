@@ -148,18 +148,19 @@
   position: relative;
   float: left;
   padding: 0 1%;
-  margin-right: 1%;
+  margin: 0 2%;
   color: #fff;
   text-align: center;
+  min-height: 249px;
 }
 
 .brand .bard-list li .imgbox {
-  min-height: 60px;
+  height: 60px;
   text-align: center;
 }
 
 .brand .bard-list li .list-tilte {
-  font: 20px/60px "SourceHanSansCN-Regular ";
+  font: 16px/60px "SourceHanSansCN-Regular ";
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -184,8 +185,17 @@
   width: 38px;
   height: 38px;
   background: #222 url("../images/brand5.png") no-repeat center center;
-  right: -16px;
-  top: 47%;
+  right: -39px;
+  top: 41%;
+}
+
+.brand .bard-list .last-li {
+  float: right;
+  margin-right: 0;
+}
+
+.brand .bard-list .fistt-li {
+  margin-left: 0;
 }
 
 /*----------attract-----------*/
@@ -232,11 +242,11 @@
   font-stretch: normal;
   line-height: 36px;
   letter-spacing: 0px;
-  color: #ffe56c;
+  color: #f5f5f5;
 }
 
 .attract .attract-box .arrc-exp p span {
-  color: #f5f5f5;
+  color: #ffe56c;
 }
 
 .attract .attract-box .arrc-exp .exp-fist {
@@ -295,13 +305,15 @@
 }
 
 .pattern .pattern-box .table2 tr th {
-  background: rgba(52, 52, 52, 0.2);
+  font-weight: normal;
+  background: #343434;
   color: #ffe152;
   line-height: 36px;
   font-size: 18px;
 }
 
 .pattern .pattern-box .table2 tr td {
+  font-weight: normal;
   background: transparent;
   color: #f5f5f5;
   line-height: 40px;
@@ -384,7 +396,7 @@
   min-height: 36px;
   text-align: center;
   font-family: SourceHanSansCN-Regular;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 18px;
   color: #fff;
 }
@@ -447,6 +459,7 @@
 
 /*----------bottoms---------*/
 .bottoms {
+  border-top: 1px solid #57502e;
   background: #222;
 }
 
