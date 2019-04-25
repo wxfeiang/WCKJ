@@ -72,7 +72,7 @@
 /*-------------------sure--------*/
 .sure-top-wrp {
   background-color: #fff;
-  padding: 0.18rem 0 0 0;
+  padding: 0.30rem 0 0.40rem;
 }
 
 .sure-top-wrp .sure-top {
@@ -96,6 +96,11 @@
   text-align: right;
   font-size: 0.30rem;
   color: #404040;
+}
+
+.sure-top-wrp .sure-top li input {
+  color: #06cfb8;
+  width: 65%;
 }
 
 .sure-top-wrp h3 {
@@ -126,53 +131,90 @@
 .sure-cont {
   margin: 0.20rem 0 0 0;
   background: #fff;
+  min-height: 50vh;
+  padding: 0 0 1.8rem 0;
 }
 
-.select {
+.sure-cont .cont-h3 {
+  font-size: 0.30rem;
+  line-height: 1rem;
+  color: #404040;
+}
+
+.laf-left {
+  position: relative;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.select .laf-left {
-  position: relative;
-  width: 0.80rem;
+.laf-left input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.select .laf-left label {
-  display: inline-block;
-  width: 0.80rem;
+.laf-left label {
+  display: block;
   height: 1.12rem;
   text-align: center;
   line-height: 1.12rem;
-  font-size: 0.40rem;
   color: #dcdcdc;
-}
-
-.select .laf-left label i {
-  font-size: 0.40rem;
-}
-
-.select .laf-left label.active {
-  font-weight: bold;
-  color: #06cfb8;
-  font-size: 0.5rem;
-}
-
-.select .laf-left input {
-  opacity: 0;
-  position: absolute;
-}
-
-.select .laf-right {
-  font-size: 0.30rem;
+  text-align: left;
   color: #404040;
+  font-size: 0.30rem;
+}
+
+.laf-left label i {
+  display: inline-block;
+  font-size: 0.60rem;
   line-height: 1.12rem;
+  vertical-align: middle;
+  width: 0.6rem;
+  color: #dcdcdc;
+  margin: 0 0.25rem 0 0;
+  text-align: left;
+}
+
+.laf-left label i.active {
+  font-size: 0.7rem;
+  color: #06cfb8;
+  font-weight: bold;
+  margin: 0 0.3rem 0 -0.05rem;
+}
+
+.laf-left label .lab-btns {
+  margin: 0.30rem 0 0 0;
+  border-radius: 4px;
+  border: solid 1px #dcdcdc;
+  box-sizing: border-box;
+}
+
+.laf-left label .lab-btns button {
+  display: inline-block;
+  text-align: center;
+  width: 0.32rem;
+  font-size: 0.16rem;
+  line-height: 0.26rem;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.laf-left label .lab-btns span {
+  display: inline-block;
+  text-align: center;
+  width: 0.32rem;
+  color: #06cfb8;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  line-height: 0.4rem;
 }
 
 .pays-box {
   position: fixed;
-  width: 100%;
   left: 0;
-  bottom: 10%;
+  bottom: 5%;
+  width: 100%;
 }
 
 .pays-box .pays-btns {
@@ -182,6 +224,7 @@
   overflow: hidden;
   border-radius: 0.45rem;
   border: 1px solid #d2d2d2;
+  background: #fff;
 }
 
 .pays-box .pays-btns .num {
@@ -206,14 +249,16 @@
   text-align: center;
   font-size: 0.30rem;
   line-height: 0.90rem;
+  height: 0.91rem;
 }
 
 /*-------------------sure  end--------*/
 .tanbox {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   z-index: 100;
@@ -227,8 +272,74 @@
   z-index: 999;
   box-sizing: border-box;
   width: 5.37rem;
-  height: 4.04rem;
+  min-height: 4.04rem;
   background-color: #fff;
   border-radius: 0.08rem;
-  padidng: 0.20rem;
+  padding: 0.30rem 0.20rem 0.40rem;
+  box-sizing: border-box;
+}
+
+.popbox h3 {
+  font-size: 0.28rem;
+  line-height: 0.30rem;
+  color: #404040;
+}
+
+.popbox h3 span {
+  float: right;
+  font-size: 0.28rem;
+  line-height: 0.30rem;
+  color: #404040;
+}
+
+.popbox input {
+  display: block;
+  margin: 0.36rem auto 0.14rem;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
+  width: 4.38rem;
+  height: 0.64rem;
+  border-radius: 4px;
+  border: solid 1px #d2d2d2;
+  text-align: center;
+}
+
+.popbox .errors {
+  display: none;
+  font-size: 0.24rem;
+  line-height: 0.30rem;
+  letter-spacing: 0px;
+  color: #ff0000;
+  text-align: center;
+}
+
+.popbox .pop-btn {
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  width: 3.57rem;
+  height: 0.64rem;
+  background-color: #06cfb8;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 0.30rem;
+  line-height: 0.64rem;
+}
+
+.popbox .timer {
+  margin: 0.24rem auto 0.30rem;
+  width: 2.37rem;
+  height: 0.48rem;
+  border-radius: 0.24rem;
+  text-align: center;
+  line-height: 0.48rem;
+  font-size: 0.24rem;
+  background-color: #eaeaea;
+  color: #737373;
+}
+
+.popbox .timer.disable {
+  background-color: #eaeaea;
+  color: #737373;
 }

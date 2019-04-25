@@ -63,7 +63,7 @@ img {
 	vertical-align: middle;
 	border: none;
 }
-input,textarea{
+input,textarea,button{
 	outline: none;
 	border: none;
 }
@@ -109,7 +109,7 @@ body{
 	background: #f7f7f7;
 }
 .contanter{
-	margin: 1.26rem 0 0 0 ;
+	margin: 1.26rem auto 0 ;
 }  
 .warp{
 	background: #f7f7f7;

@@ -110,12 +110,12 @@
 
 /*-----------------condody--------------*/
 .conbody {
-  padding-bottom: 0.86rem;
+  padding-bottom: 1.06rem;
 }
 
 .con-body {
   margin: 0.26rem 0 0 0;
-  padding: 0.26rem  0;
+  padding: 0.26rem  0 0.50rem;
   background: #fefefe;
 }
 
@@ -125,6 +125,18 @@
   color: #323232;
   border-bottom: 1px solid #f15e4c;
   background: #fff;
+}
+
+.con-body h3.con-h3-2 {
+  border-bottom: 1px solid #89d044;
+}
+
+.con-body h3.con-h3-3 {
+  border-bottom: 1px solid #f68a42;
+}
+
+.con-body h3.con-h3-4 {
+  border-bottom: 1px solid #00afea;
 }
 
 .con-body h3 img {
@@ -168,18 +180,6 @@
   font-size: .26rem;
 }
 
-.con-body .con-h3-2 {
-  border-bottom: 1px solid #89d044;
-}
-
-.con-body .con-h3-2 {
-  border-bottom: 1px solid #f68a42;
-}
-
-.con-body .con-h3-2 {
-  border-bottom: 1px solid #00afea;
-}
-
 /*-----------------footer--------------*/
 .footer {
   position: fixed;
@@ -211,10 +211,10 @@
   color: #666;
 }
 
-.footer a:hover {
+.footer a:hover, .footer a.active {
   background: #06cfb8;
 }
 
-.footer a:hover i, .footer a:hover p {
+.footer a:hover i, .footer a:hover p, .footer a.active i, .footer a.active p {
   color: #fff;
 }
