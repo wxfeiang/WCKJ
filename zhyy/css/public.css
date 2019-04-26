@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/* 2019-4-25 author: 王鹏 */
+/*---------------top----------------------*/
+.top {
+  background: #eee;
+}
+
+.top .top-box {
+  font: 14px/40px "MicrosoftYaHei";
+  color: #333;
+  height: 40px;
+}
+
+.top .top-box span a {
+  color: #37b4f9;
+  margin: 0 10px 0;
+}
+
+/*---------------top end----------------------*/
+/*---------------banner----------------------*/
+.banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/*---------------banner----------------------*/
+/*---------------current-nav----------------------*/
+.current-nav {
+  background: #f5f5f5;
+  line-height: 42px;
+  font-size: 16px;
+}
+
+.current-nav a {
+  margin-right: 10px;
+  color: #999;
+}
+
+.current-nav span {
+  color: #333;
+}
+
+/*---------------current-nav----------------------*/
+/*-----------------------header----------------*/
+.header {
+  padding: 28px 0 14px 20px;
+}
+
+.header .searc-box {
+  margin: 14px  0 0 10%;
+}
+
+.header .searc-box .formbox {
+  border: 1px solid #2ab0f9;
+}
+
+.header .searc-box .formbox input {
+  width: 75%;
+  height: 41px;
+  line-height: 41px;
+  color: #333;
+  padding: 0 10px;
+}
+
+.header .searc-box .formbox button {
+  width: 20%;
+  height: 41px;
+  background-color: #2ab0f9;
+  border: solid 1px #2ab0f9;
+  text-align: center;
+  color: #fff;
+  line-height: 41px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header .serc-h {
+  overflow: hidden;
+  width: 100%;
+}
+
+.header .serc-h a {
+  line-height: 35px;
+  margin: 0 10px;
+  color: #999;
+}
+
+/*-----------------------header end----------------*/
+/*---------------footer----------------------*/
+.footer {
+  background: #252525;
+}
+
+.footer .foot-top {
+  padding: 60px 0 40px;
+}
+
+.footer .foot-top .links .links-list {
+  float: right;
+  margin-left: 13%;
+}
+
+.footer .foot-top .links .links-list a {
+  display: block;
+  font: 16px/34px "MicrosoftYaHei";
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer .foot-top .links .links-list a:hover {
+  color: #fff;
+}
+
+.footer .partner {
+  padding: 18px 0;
+  text-align: center;
+  border-top: 1px solid #3b3b3b;
+}
+
+.footer .partner a, .footer .partner span {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  font: 14px/26px "MicrosoftYaHei";
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer .partner a:hover, .footer .partner span:hover {
+  color: #fff;
+}
+
+.footer .partner a:last-child {
+  border: none;
+}
+
+.footer .partner span {
+  border: none;
+}
+
+/*---------------footer end----------------------*/
+/*---------------login----------------------*/
+.login .loginbox {
+  margin: 100px auto;
+  width: 498px;
+  background-color: pink;
+  box-sizing: border-box;
+}
+
+.login .loginbox h3 {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 22px;
+  line-height: 60px;
+  color: #333333;
+}
+
+.login .loginbox .inp-box {
+  position: relative;
+  margin: 0 auto 14px;
+  width: 80%;
+}
+
+.login .loginbox .inp-box input {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  background-color: #fafafa;
+  border: solid 1px #e5e5e5;
+  font-size: 14px;
+  line-height: 36px;
+  color: #999999;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login .loginbox .inp-box .code-btn {
+  position: absolute;
+  right: 0;
+  top: 1px;
+  width: 30%;
+  height: 36px;
+  text-align: center;
+  display: block;
+  background: #37b4f9;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.login .loginbox .inp-box .code-btn:hover {
+  background: #1890ff;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.login .loginbox .inp-box .code-btn.desibd {
+  color: #000;
+  background: #ccc;
+}
+
+.login .loginbox .sure-btn {
+  display: block;
+  margin: 26px auto;
+  width: 193px;
+  height: 40px;
+  background-color: #37b4f9;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login .loginbox .sure-btn:hover {
+  background: #1890ff;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.login .loginbox p {
+  margin: 0 auto 14px;
+  width: 80%;
+}
+
+.login .loginbox p a {
+  color: #37b4f9;
+}
+
+/*---------------login end----------------------*/
+/*----------------media-----------------------*/
+@media screen and (max-width: 768px) {
+  /* public*/
+  .com-hide {
+    display: none;
+  }
+  /*-------------heder---------------*/
+  .header {
+    padding: 28px 0 0 20px;
+  }
+  .header .searc-box {
+    margin: 14px  0 0 0;
+    border: 1px solid #2ab0f9;
+    height: 40px;
+    overflow: hidden;
+  }
+  .header .searc-box input {
+    width: 75%;
+    height: 41px;
+    line-height: 41px;
+    color: #333;
+    padding: 0 10px;
+  }
+  .header .searc-box button {
+    width: 20%;
+    height: 41px;
+    background-color: #2ab0f9;
+    border: solid 1px #2ab0f9;
+    text-align: center;
+    color: #fff;
+    line-height: 41px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .footer .foot-top {
+    padding: 40px 0 20px;
+  }
+  .footer .foot-top .links .links-list {
+    float: left;
+    margin: 0  6%  0;
+  }
+}

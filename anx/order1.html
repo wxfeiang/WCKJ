@@ -48,7 +48,7 @@
                 <div class="select-box">
                     <div class="laf-left">
                         <input type="radio" id="A" name="select" checked/>
-                        <label for="A">
+                        <label for="A" class="ser-l">
                             <i class="icon iconfont active">&#xe66a;</i>
                             通讯录防爆神器（200元/平台）
                             <div class="fr lab-btns">
@@ -60,28 +60,28 @@
                     </div>
                     <div class="laf-left">
                         <input type="radio" id="b" name="select"  />
-                        <label for="b">
+                        <label for="b" class="ser-l">
                             <i class="icon iconfont ">&#xe713;</i>
                             黑户屏蔽黑科技（169元）
                         </label>
                     </div>
                     <div class="laf-left">
                         <input type="radio" id="c" name="select" />
-                        <label for="c">
+                        <label for="c" class="ser-l">
                             <i class="icon iconfont ">&#xe713;</i>
                             黑户可撸口子大全实时更新（99元）
                         </label>
                     </div>
                     <div class="laf-left">
                         <input type="radio" id="d" name="select" />
-                        <label for="d">
+                        <label for="d" class="ser-l">
                             <i class="icon iconfont ">&#xe713;</i>
                             可拒还网贷平台查询（69元）
                         </label>
                     </div>
                     <div class="laf-left">
                         <input type="radio" id="e" name="select" />
-                        <label for="e">
+                        <label for="e" class="ser-l">
                             <i class="icon iconfont ">&#xe713;</i>
                             超值四件套（原价537元，特惠价499元）
                         </label>
@@ -189,7 +189,9 @@
         }, 1000)
     })
 
-
+$(".pop-btn").click(function(){
+     $(window).attr('location',"order.html");
+})
 
 </script>
 

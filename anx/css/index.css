@@ -4,7 +4,6 @@
   width: 100%;
   top: 0;
   z-index: 99;
-  padding: 0.33rem 0 0 0;
   background: #06cfb8;
   box-sizing: border-box;
 }
@@ -61,6 +60,10 @@
 .gride-box .gride-list {
   width: 50%;
   box-sizing: border-box;
+}
+
+.gride-box .gride-list a {
+  display: inline-block;
 }
 
 .gride-box .gride-list:nth-of-type(2n) {
@@ -169,7 +172,8 @@
 }
 
 .con-body .btn {
-  margin: 0 auto;
+  display: block;
+  margin: 0.56rem auto 0;
   width: 4.6rem;
   height: .78rem;
   border-radius: 0.39rem;
@@ -186,11 +190,13 @@
   width: 100%;
   bottom: 0;
   background: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer a {
-  display: inline-block;
-  width: 32%;
+  display: block;
+  width: 100%;
   text-align: center;
   background: #f2f2f2;
 }

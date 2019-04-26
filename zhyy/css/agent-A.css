@@ -1,0 +1,104 @@
+.banner {
+  height: 520px;
+  width: 100%;
+  background: url("../images/banner-A.jpg") no-repeat center center;
+}
+
+.agent-box .agen-body {
+  padding: 0 12%;
+}
+
+.agent-box .agen-body .agen-top {
+  border-bottom: 1px solid #999;
+  padding: 30px 0 60px;
+}
+
+.agent-box .agen-body .agen-top .sm-logo {
+  text-align: center;
+}
+
+.agent-box .agen-body .agen-top h3 {
+  margin: 14px 0 0 0;
+  text-align: center;
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.agent-box .agen-body .agen-top p {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #666666;
+}
+
+.agent-box .agen-body .agen-cnter {
+  padding: 30px 0 50px;
+  border-bottom: 1px solid #999;
+}
+
+.agent-box .agen-body .agen-cnter h4 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.agent-box .agen-body .agen-cnter p {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #666666;
+}
+
+.agent-box .agen-body .agen-boot {
+  padding: 20px 0;
+}
+
+.agent-box .agen-body .agen-boot h4 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+  color: #333;
+}
+
+.agent-box .agen-body .agen-boot .agen-list li {
+  margin: 0 0 30px 0;
+}
+
+.agent-box .agen-body .agen-boot .agen-list .ag-img {
+  height: 182px;
+  text-align: center;
+}
+
+.agent-box .agen-body .agen-boot .agen-list .ag-img img {
+  height: 100%;
+}
+
+.agent-box .agen-body .agen-boot .agen-list h5 {
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #000;
+}
+
+.agent-box .agen-body .agen-boot .agen-list p {
+  width: 80%;
+  margin: 0 auto;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #999;
+  text-align: center;
+}
