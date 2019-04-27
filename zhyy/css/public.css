@@ -17,6 +17,124 @@
 }
 
 /*---------------top end----------------------*/
+/*----------------nav---------------------*/
+.nav .nav-box .classify {
+  width: 18%;
+  position: relative;
+}
+
+.nav .nav-box .classify .classify-title {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  background: #37b4f9;
+}
+
+.nav .nav-box .classify .classify-title i {
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+
+.nav .nav-box .classify:hover .classify-list {
+  display: block;
+}
+
+.nav .nav-box .classify .classify-list {
+  display: none;
+  position: relative;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  border-bottom: 0;
+  width: 100%;
+  padding: 30px 0 0;
+  background: rgba(40, 44, 71, 0.8);
+  z-index: 999;
+}
+
+.nav .nav-box .classify .classify-list li {
+  cursor: pointer;
+}
+
+.nav .nav-box .classify .classify-list li h3 {
+  text-align: center;
+  color: #fff;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 68px;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(86, 89, 111, 0.8);
+}
+
+.nav .nav-box .classify .classify-list li h3 i {
+  margin: 0 5px 0 0;
+  font-size: 20px;
+}
+
+.nav .nav-box .classify .classify-list li:hover h3 {
+  color: #37b4f9;
+}
+
+.nav .nav-box .classify .classify-list li:hover .classify-item {
+  display: block;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding: 0  20px 20px;
+  width: 350%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px  solid #37b4f9;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit {
+  text-align: left;
+  border-bottom: 1px dotted #e4e4e4;
+  line-height: 40px;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit a {
+  margin: 0 10px 0 0;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #999;
+}
+
+.nav .nav-box .nav-list {
+  width: 80%;
+}
+
+.nav .nav-box .nav-list li {
+  width: 16%;
+  text-align: center;
+}
+
+.nav .nav-box .nav-list li a {
+  display: inline-block;
+  padding: 0 10%;
+  margin: 0 0 0 5%;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 60px;
+  color: #333333;
+  border-bottom: 2px solid transparent;
+}
+
+.nav .nav-box .nav-list li a:hover {
+  color: #37b4f9;
+  border-bottom: 2px solid #37b4f9;
+}
+
+/*---------------nav end----------------------*/
 /*---------------banner----------------------*/
 .banner {
   background-position: center center;
@@ -38,6 +156,23 @@
 
 .current-nav span {
   color: #333;
+}
+
+.curent-list {
+  background: #fff;
+  border-top: 2px solid #37b4f9;
+}
+
+.cursm-nav {
+  background: #fff;
+}
+
+.cursm-nav .list-title {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 46px;
+  letter-spacing: 0.8px;
+  color: #999;
 }
 
 /*---------------current-nav----------------------*/
@@ -128,7 +263,7 @@
   color: #fff;
 }
 
-.footer .partner a:last-child {
+.footer .partner a:last-child, .footer .partner span:last-child {
   border: none;
 }
 
@@ -141,8 +276,8 @@
 .login .loginbox {
   margin: 100px auto;
   width: 498px;
-  background-color: pink;
   box-sizing: border-box;
+  border: 1px solid #ccc;
 }
 
 .login .loginbox h3 {
@@ -194,7 +329,7 @@
   transition: all 0.3s ease-in;
 }
 
-.login .loginbox .inp-box .code-btn.desibd {
+.login .loginbox .inp-box .code-btn.disabled {
   color: #000;
   background: #ccc;
 }
@@ -208,8 +343,6 @@
   border-radius: 4px;
   font-family: PingFangSC-Regular;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 40px;
   letter-spacing: 0px;
   color: #ffffff;

@@ -1,0 +1,160 @@
+.list-box {
+  line-height: 44px;
+  border-top: 1px  dashed  #e5e5e5;
+}
+
+.list-box span {
+  text-align: right;
+  display: inline-block;
+  width: 6%;
+  line-height: 46px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #000;
+}
+
+.list-box a {
+  margin: 0 2%;
+  color: #999;
+}
+
+.list-box a.active {
+  color: #37b4f9;
+}
+
+.list-box .info {
+  display: inline-block;
+  margin: 0 0 0 2%;
+}
+
+.list-cent {
+  padding: 30px 0 0 0;
+  background: #f5f5f5;
+}
+
+.list-cent .list-body .list-tabs {
+  margin: 0 0 20px 0;
+}
+
+.list-cent .list-body .list-tabs span {
+  display: inline-block;
+  margin: 0 -3px;
+  padding: 0 20px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  color: #999;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.list-cent .list-body .list-tabs span:hover, .list-cent .list-body .list-tabs span.active {
+  background: #37b4f9;
+  color: #fff;
+  border: 1px solid  transparent;
+}
+
+.list-cent .list-body .list-tabs .right {
+  line-height: 40px;
+  color: #999;
+}
+
+.list-cent .list-body .list-tabs .right i.active {
+  color: #37b4f9;
+}
+
+.list-cent .list-show {
+  margin: 0 -10px;
+}
+
+.list-cent .list-show li {
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.list-cent .list-show li a {
+  background: #fff;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+  margin: 0  10px 20px;
+  padding: 36px 0 10px 0;
+  border: 2px solid transparent;
+}
+
+.list-cent .list-show li a:hover {
+  border: 2px solid #37b4f9;
+}
+
+.list-cent .list-show li a:hover img {
+  transition: .4s;
+  transform: scale(1.1);
+}
+
+.list-cent .list-show li .li-img {
+  min-height: 164px;
+  text-align: center;
+}
+
+.list-cent .list-show li h4 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 80px;
+  letter-spacing: 0.2px;
+  color: #000;
+  overflow: hidden;
+}
+
+.list-cent .list-show li p {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  color: #999;
+  overflow: hidden;
+}
+
+.list-cent .pages {
+  text-align: right;
+}
+
+.list-cent .pages a {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 20px 0 20px 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: solid 1px #e2e2e2;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #999;
+}
+
+.list-cent .pages a input {
+  width: 20px;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.list-cent .pages a.active {
+  color: #fff;
+  background: #37b4f9;
+}
+
+@media screen and (max-width: 768px) {
+  .list-cent {
+    padding: 15px 0 0 0;
+    background: #f5f5f5;
+  }
+  .list-cent .list-show li {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}

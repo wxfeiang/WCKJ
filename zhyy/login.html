@@ -18,19 +18,19 @@
             <h3>用户注册</h3>
             <form action="">
                 <div class="inp-box">
-                    <input type="phone" placeholder="手机号"  >
+                    <input type="phone" placeholder="手机号">
                 </div>
                 <div class="inp-box">
-                    <input type="text" placeholder="短信验证码"  >
-                    <button class="code-btn">
-                       获取验证码
+                    <input type="text" placeholder="短信验证码">
+                    <button class="code-btn" id="button">
+                        获取验证码
                     </button>
                 </div>
                 <div class="inp-box">
-                    <input type="password" placeholder="密码"  >
+                    <input type="password" placeholder="密码">
                 </div>
                 <div class="inp-box">
-                    <input type="password" placeholder="确认密码"  >
+                    <input type="password" placeholder="确认密码">
                 </div>
 
                 <p>
@@ -45,5 +45,32 @@
     </div>
 
 </body>
+<script>
+    //  倒计时
+    var btn = document.getElementById('button');
+    var inp = document.getElementById('inp');
+
+    var num = 60;
+    btn.onclick = function () {
+        btn.classList.add("disabled");
+        btn.disabled = true;
+        var timer = setInterval(aoutpaly, 1000);
+        function aoutpaly() {
+            num--;
+            btn.innerHTML = num + "S后重新发送";
+            if (num
+                < 0) {
+                btn.disabled = false;
+
+                btn.classList.remove(" disabled")
+                btn.innerHTML = '发送验证码';
+                clearInterval(timer);
+                num = 5
+                console.log(num);
+            }
+        }
+    }
+
+</script>
 
 </html>

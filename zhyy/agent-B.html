@@ -26,14 +26,14 @@
     <!-- top end -->
     <!-- header -->
     <div class="header">
-        <div class="clearfix layout ">
+        <div class="clearfix layout">
             <div class="fl logo">
                 <img src="images/logo.png" alt="logo" width="192px">
             </div>
             <div class="fl searc-box col-6 col-m-12">
                 <div class="formbox">
                     <form action="">
-                        <input type="text" placeholder="请输入 ">
+                        <input type="text" placeholder="请输入">
                         <button class="fr">搜索</button>
                     </form>
                 </div>
@@ -95,7 +95,7 @@
                         <span>联系我们</span>
                     </div>
                     <div class="tab-list" id="tabbox">
-                        <div class="items " style="display:block">
+                        <div class="items" style="display:block">
                             <div class="links-p">
                                 <p>
                                     企业名称： 山东众源医疗科技有限公司
@@ -210,16 +210,13 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
                 <!-- product-dec -->
                 <div class="prodec">
                     <div class="btns">
                         <span>
 
-                            < 返回相关产品信息</span>
+                            <返回相关产品信息</span>
                     </div>
                     <div class="clearfix decions">
                         <div class="fl pro-img">
@@ -233,12 +230,13 @@
                                 代理区域： 山东省 济南市，青岛市，潍坊市
                             </p>
                             <p class="dec-p3">
-                                <span>简介：</span><br>
-                                经典光电比色法，四波长准确测试，检测效率高，恒速240T/H，可以完成12-14个干化学项目的检测 在原有12项基础上增加了尿肌酐和尿钙的检测
+                                <span>简介：</span>
+                                <br> 经典光电比色法，四波长准确测试，检测效率高，恒速240T/H，可以完成12-14个干化学项目的检测 在原有12项基础上增加了尿肌酐和尿钙的检测
                             </p>
                         </div>
                     </div>
                 </div>
+                <!-- product-dec -->
             </div>
         </div>
     </div>
@@ -301,13 +299,15 @@
     var adiv = document.getElementById("tabbox").getElementsByClassName("items");
 
     function tab(btn, boxlist) {
-        for (var i = 0; i < btn.length; i++) {
+        for (var i = 0; i
+            < btn.length; i++) {
             btn[i].index = i;
             btn[i].onclick = function () {
-                //alert(this.index );   
+                //alert(this.index );
                 for (var j = 0; j < btn.length; j++) {
                     btn[j].classList.remove("active")
                     boxlist[j].style.display = "none";
+
                     btn[this.index].classList.add("active");
                     boxlist[this.index].style.display = "block";
                 }
@@ -317,6 +317,7 @@
 
 
     tab(ali, adiv);
+
 
 
 </script>

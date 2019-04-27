@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title>医疗圈商品列表</title>
     <link rel="stylesheet" href="css/rest.css">
     <link rel="stylesheet" href="css/iconfont.css">
     <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/list.css">
 </head>
 
 <body>
@@ -26,14 +26,14 @@
     <!-- top end -->
     <!-- header -->
     <div class="header">
-        <div class="clearfix layout">
+        <div class="clearfix layout ">
             <div class="fl logo">
                 <img src="images/logo.png" alt="logo" width="192px">
             </div>
             <div class="fl searc-box col-6 col-m-12">
                 <div class="formbox">
                     <form action="">
-                        <input type="text" placeholder="请输入">
+                        <input type="text" placeholder="请输入 ">
                         <button class="fr">搜索</button>
                     </form>
                 </div>
@@ -203,218 +203,231 @@
     </div>
     <!-- nav -->
     <!-- banner -->
-    <div class="index-banner">
-        <img src="images/index-banner.jpg" alt="" width="100%">
-    </div>
-    <!-- banner -->
+    <!-- cuuent-list- -->
+    <div class="curent-list">
+        <!-- sm-current-nav -->
+        <div class="cursm-nav">
+            <div class="layout">
+                <h3 class="list-title">
+                    <a href="agent-A.html">医疗圈</a>> 血压仪
+                </h3>
+            </div>
 
-    <!-- conter1 -->
-    <div class="conter1">
+        </div>
+        <!-- sm-current-nav end-->
         <div class="layout">
-            <div class="item-warper row">
-                <div class="fl item-box col-3">
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter1.jpg" alt="">
-                        </div>
 
-                    </a>
-                </div>
-                <div class="fl item-box item-two col-6">
+            <div class="list-box">
+                <span>品牌</span>
+                <a href="">鱼跃</a>
+                <a href=""> 罗氏 </a>
+                <a href="">深圳捷美瑞 </a>
+                <a href=""> 北京普析通用 </a>
+                <a href="">山西亚森 </a>
+                <a href=""> 济南百欧 </a>
+                <a href=""> 深圳希莱恒 </a>
+                <a href="" class="fr active">
+                    更多
+                    <i class="icon iconfont">&#xe638;</i>
+                </a>
+            </div>
+            <div class="list-box">
+                <span>区域</span>
+                <div class="info">
+                    <div>
+                        <select id="s_province" name="s_province"></select>&nbsp;&nbsp;
+                        <select id="s_city" name="s_city"></select>&nbsp;&nbsp;
+                        <select id="s_county" name="s_county"></select>
 
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter2.jpg" alt="">
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter4.jpg" alt="">
-                        </div>
-                    </a>
+                    </div>
+                    <div id="show"></div>
                 </div>
-                <div class="fl item-box col-3">
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter3.jpg" alt="">
-                        </div>
+
+            </div>
+            <div class="list-box">
+                <span>医院级别</span>
+                <a href="">一级</a>
+                <a href="">二级</a>
+                <a href="">三级</a>
+
+            </div>
+            <div class="list-box">
+                <span>医院性质</span>
+                <a href="">公立</a>
+                <a href="">民营</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- cuuent-list-nav  -->
+    <!-- list-center -->
+    <div class="list-cent">
+        <div class="layout">
+            <div class="list-body">
+                <ul class="clearfix list-show">
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list1.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list2.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list1.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list1.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list2.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list1.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list1.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+                    <li class="fl">
+                        <a href="">
+                            <div class="li-img">
+                                <img src="images/list3.jpg" alt="">
+                            </div>
+                            <h4>电子血压计YE660D</h4>
+                            <p>山东众源医疗科技有限公司</p>
+                        </a>
+                    </li>
+
+
+                </ul>
+                <div class="pages">
+                    <a href="" class="active">上一页</a>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">....</a>
+                    <a href="">10</a>
+                    <a href="">下一页</a>
+                    <a href="javascript:;">
+                        <input type="text">
                     </a>
+                    <a href="">GO</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- conter1 end -->
-    <!-- conter2 end -->
-    <div class="conter2">
-        <div class="layout con-top">
-            <h3>
-                病房ICU优质代理
-                <a class="fr more">
-                    更多>
-                </a>
-            </h3>
-            <div class="con-box">
-                <div class="fl item-con col-6 col-sm-12">
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter21.jpg" alt="">
-                        </div>
 
-                        <h4>电解质分析仪URIT-910 </h4>
-                    </a>
-                </div>
-                <div class="fl row item-con col-6 col-sm-12">
 
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
+    <!-- list-center end -->
 
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="layout con-top">
-            <h3>
-                超声心电优质代理
-                <a class="fr more">
-                    更多>
-                </a>
-            </h3>
-            <div class="con-box">
-                <div class="fl item-con col-6 col-sm-12">
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter21.jpg" alt="">
-                        </div>
 
-                        <h4>电解质分析仪URIT-910 </h4>
-                    </a>
-                </div>
-                <div class="fl row item-con col-6 col-sm-12">
-
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="layout con-top">
-            <h3>
-                放射影像优质代理
-                <a class="fr more">
-                    更多>
-                </a>
-            </h3>
-            <div class="con-box">
-                <div class="fl item-con col-6 col-sm-12">
-                    <a href="">
-                        <div class="img">
-                            <img src="images/conter21.jpg" alt="">
-                        </div>
-
-                        <h4>电解质分析仪URIT-910 </h4>
-                    </a>
-                </div>
-                <div class="fl row item-con col-6 col-sm-12">
-
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                    <div class="fl con-two col-6 col-sm-6">
-                        <a href="">
-                            <div class="img">
-                                <img src="images/conter22.jpg" alt="">
-                            </div>
-                            <h4>电解质分析仪URIT-910 </h4>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- conter2 end -->
     <!-- footer -->
     <div class="footer">
         <div class="layout clearfix foot-top">
@@ -464,8 +477,19 @@
         </div>
     </div>
     <!-- footer end -->
-    <!-- login -->
 
 </body>
+<script src="js/area.js" type="text/javascript"></script>
+<script type="text/javascript">_init_area();</script>
+<script>
+    // 城市联动
+    var Gid = document.getElementById;
+    var showArea = function () {
+        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+            Gid('s_city').value + " - 县/区" +
+            Gid('s_county').value + "</h3>"
+    }
+    Gid('s_county').setAttribute('onchange', 'showArea()');
+</script>
 
 </html>
