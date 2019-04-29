@@ -73,9 +73,9 @@
                         position: absolute
                         left: 100%
                         top: 0
-                        padding: 0  20px 20px
+                        padding: 20px  30px 
                         width: 350%
-                        height: 100%
+                        height: auto
                         overflow: hidden
                         box-sizing: border-box
                         background: #fff
@@ -84,11 +84,26 @@
                             text-align: left
                             border-bottom:  1px dotted #e4e4e4
                             line-height: 40px
-                            a
-                                margin:  0 10px 0 0
-                                font-family: PingFangSC-Regular
-                                font-size: 16px
-                                color: #999
+                            label
+                                display: block
+                                float: left
+                                min-width: 8%
+                                font: 16px/40px "PingFangSC-Regular"
+                                color: #00b5fe
+                                text-align: right
+                            .a-linkd
+                                float: left
+                                width: 90%
+                                padding: 0 0 0 5%
+                                box-sizing: border-box
+                                a
+                                    margin:  0 5% 0 0
+                                    
+                                    font-family: PingFangSC-Regular
+                                    font-size: 16px
+                                    color: #999
+                                    &:hover
+                                        color: #00b5fe
                                
 
 
@@ -110,34 +125,9 @@
                     line-height: 60px
                     color: #333333
                     border-bottom:  2px solid transparent
-                    &:hover
+                    &:hover,&.active
                         color: #37b4f9
                         border-bottom:  2px solid #37b4f9
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -231,7 +221,7 @@
             color: rgba(255,255,255,0.5) 
             &:hover
                  color: #fff
-            &:last-child
+            &:nth-last-child(3)
                 border: none
         span
             border: none

@@ -28,9 +28,7 @@
     .list-body
         .list-tabs
             margin: 0 0 20px 0
-            span
-                display: inline-block
-                margin: 0 -3px
+            li
                 padding: 0 20px
                 font-family: PingFangSC-Regular
                 font-size: 16px
@@ -40,6 +38,10 @@
                 color: #999
                 cursor: pointer
                 border: 1px solid #ccc
+                &:nth-last-child(2)
+                    border-left: none
+                &:first-child   
+                    border-right: none !important
                 &:hover,&.active
                     background: #37b4f9
                     color: #fff

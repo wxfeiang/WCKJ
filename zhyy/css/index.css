@@ -32,11 +32,12 @@
 .item-warper .item-box a img {
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
 }
 
 .item-warper .item-box a:hover img {
-  transition: .4s;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .item-warper .item-two a {
@@ -82,7 +83,7 @@
 .con-top .con-box .item-con a h4 {
   position: absolute;
   left: 0;
-  bottom: 1%;
+  bottom: 1%s;
   width: 100%;
   height: 40px;
   font-family: PingFangSC-Regular;
@@ -97,11 +98,12 @@
 .con-top .con-box .item-con a img {
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
 }
 
 .con-top .con-box .item-con a:hover img {
-  transition: .4s;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .con-top .con-box .item-con .con-two {

@@ -24,10 +24,50 @@
   margin-top: 16px;
 }
 
+/*-------------------nav---------------*/
+.nav {
+  background: #191919;
+  border-top: 1px solid rgba(53, 50, 33, 0.8);
+  border-bottom: 1px solid rgba(53, 50, 33, 0.8);
+}
+
+.nav .nav-list li a {
+  display: block;
+  width: 134px;
+  line-height: 56px;
+  height: 56px;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-right: 1px solid rgba(53, 50, 33, 0.9);
+}
+
+.nav .nav-list li a:hover {
+  color: #000;
+  background: url("../images/g_navi_bg.jpg") repeat top center;
+}
+
+.nav .nav-list li:last-child a {
+  border: none;
+}
+
+.nav-fixd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 /*-----------banner---------------*/
 .banner {
   background: url("../images/banner.jpg") no-repeat center;
   background-size: 100% 100%;
+}
+
+.banner .ban-ran {
+  height: 533px;
 }
 
 .banner .ban-ranbox {
@@ -73,23 +113,38 @@
   color: #000;
 }
 
-.banner .ban-ranbox .table1 tr th {
+.banner .ban-ranbox .table1 .table-head ul li {
   padding: 12px 0;
   width: 25%;
   overflow: hidden;
   color: #fff;
   font-size: 18px;
+  text-align: center;
 }
 
-.banner .ban-ranbox .table1 tr td {
-  padding: 4px 0;
-  color: #fff;
+.banner .ban-ranbox .table1 .warpbox {
+  position: relative;
+  height: 252px;
+  overflow: hidden;
+}
+
+.banner .ban-ranbox .table1 .warpbox .wrp-list {
+  position: relative;
+  height: 600px;
+  top: 0;
+}
+
+.banner .ban-ranbox .table1 .warpbox .wrp-list li div {
+  float: left;
+  padding: 6px 0;
+  width: 25%;
   text-align: center;
   overflow: hidden;
 }
 
-.banner .ban-ranbox .table1 tr td .list {
-  margin: 0 auto;
+.banner .ban-ranbox .table1 .warpbox .wrp-list li .list span {
+  display: inline-block;
+  margin: 0 auto 0;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -97,13 +152,30 @@
   color: #000;
   font-size: 16px;
   line-height: 22px;
+  text-align: center;
 }
 
-.banner .ban-ranbox .table1 tr td .three {
+.banner .ban-ranbox .table1 .warpbox .wrp-list li .two {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.banner .ban-ranbox .table1 .warpbox .wrp-list li .three {
   color: #f7d300;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 16px;
 }
 
-.banner .ban-ranbox .table1 tr td .for-bt {
+.banner .ban-ranbox .table1 .warpbox .wrp-list li .for-bt {
+  text-align: center;
+}
+
+.banner .ban-ranbox .table1 .warpbox .wrp-list li .for-bt span {
+  display: inline-block;
   padding: 0 2px;
   color: #fff;
   border: solid 1px #fff;

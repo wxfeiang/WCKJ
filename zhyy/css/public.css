@@ -87,9 +87,9 @@
   position: absolute;
   left: 100%;
   top: 0;
-  padding: 0  20px 20px;
+  padding: 20px  30px;
   width: 350%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   box-sizing: border-box;
   background: #fff;
@@ -102,11 +102,31 @@
   line-height: 40px;
 }
 
-.nav .nav-box .classify .classify-list li .classify-item .item-lsit a {
-  margin: 0 10px 0 0;
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit label {
+  display: block;
+  float: left;
+  min-width: 8%;
+  font: 16px/40px "PingFangSC-Regular";
+  color: #00b5fe;
+  text-align: right;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit .a-linkd {
+  float: left;
+  width: 90%;
+  padding: 0 0 0 5%;
+  box-sizing: border-box;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit .a-linkd a {
+  margin: 0 5% 0 0;
   font-family: PingFangSC-Regular;
   font-size: 16px;
   color: #999;
+}
+
+.nav .nav-box .classify .classify-list li .classify-item .item-lsit .a-linkd a:hover {
+  color: #00b5fe;
 }
 
 .nav .nav-box .nav-list {
@@ -129,7 +149,7 @@
   border-bottom: 2px solid transparent;
 }
 
-.nav .nav-box .nav-list li a:hover {
+.nav .nav-box .nav-list li a:hover, .nav .nav-box .nav-list li a.active {
   color: #37b4f9;
   border-bottom: 2px solid #37b4f9;
 }
@@ -263,7 +283,7 @@
   color: #fff;
 }
 
-.footer .partner a:last-child, .footer .partner span:last-child {
+.footer .partner a:nth-last-child(3), .footer .partner span:nth-last-child(3) {
   border: none;
 }
 

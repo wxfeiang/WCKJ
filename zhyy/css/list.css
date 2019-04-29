@@ -38,9 +38,7 @@
   margin: 0 0 20px 0;
 }
 
-.list-cent .list-body .list-tabs span {
-  display: inline-block;
-  margin: 0 -3px;
+.list-cent .list-body .list-tabs li {
   padding: 0 20px;
   font-family: PingFangSC-Regular;
   font-size: 16px;
@@ -52,7 +50,15 @@
   border: 1px solid #ccc;
 }
 
-.list-cent .list-body .list-tabs span:hover, .list-cent .list-body .list-tabs span.active {
+.list-cent .list-body .list-tabs li:nth-last-child(2) {
+  border-left: none;
+}
+
+.list-cent .list-body .list-tabs li:first-child {
+  border-right: none !important;
+}
+
+.list-cent .list-body .list-tabs li:hover, .list-cent .list-body .list-tabs li.active {
   background: #37b4f9;
   color: #fff;
   border: 1px solid  transparent;
