@@ -1,0 +1,125 @@
+.pay-box {
+  padding: 30px 40px;
+  background-color: #fff;
+  border: solid 1px #e2e2e2;
+}
+
+.pay-box h4 {
+  margin: 0 0 20px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 30px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #000;
+}
+
+.pay-box h4 span {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #333;
+}
+
+.pay-box .pay-p1 {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+
+.pay-box .pay-may {
+  margin: 26px 0 0 0;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+}
+
+.pay-box .pay-may strong {
+  font-family: PingFangSC-Semibold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #f08302;
+}
+
+.pay-box .pay-may span {
+  font-size: 16px;
+  color: #f08302;
+}
+
+.pay-box2 {
+  margin: 16px 0 30px 0;
+  padding: 30px 40px;
+  background-color: #fff;
+  border: solid 1px #e2e2e2;
+}
+
+.pay-box2 h4 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #333;
+}
+
+.pay-box2 .tab-top li {
+  width: 138px;
+  margin: 18px 40px 18px 0;
+  height: 51px;
+  border: solid 1px #e2e2e2;
+  cursor: pointer;
+}
+
+.pay-box2 .tab-top li.active {
+  border: solid 1px #37b4f9;
+}
+
+.pay-box2 .tab-top .li1 {
+  background: url("../images/pay1.png") no-repeat center center;
+}
+
+.pay-box2 .tab-top .li2 {
+  background: url("../images/pay2.png") no-repeat center center;
+}
+
+.pay-box2 .tab-top .li3 {
+  background: url("../images/pay3.png") no-repeat center center;
+}
+
+.pay-box2 .show-box {
+  margin: 20px 0;
+  width: 540px;
+  background: url("../images/pay4.png") no-repeat top right;
+}
+
+.pay-box2 .show-box .tablist {
+  display: none;
+}
+
+.pay-box2 .show-box .tablist .imgbox {
+  padding: 24px;
+  width: 310px;
+  height: 290px;
+  background: #fff;
+  box-sizing: border-box;
+  border: solid 1px #e2e2e2;
+}
+
+.pay-box2 .show-box .tablist .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+
+.pay-box2 .btns {
+  width: 131px;
+  height: 51px;
+  background-color: #f08200;
+  color: #fff;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 50px;
+  cursor: pointer;
+}

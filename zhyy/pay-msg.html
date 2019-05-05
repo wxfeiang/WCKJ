@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付信息</title>
+    <link rel="stylesheet" href="css/rest.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/pay-msg.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="layout top-box">
+            欢迎来到鲸至医疗 您好 12124214124
+            <span>请
+                <a href="">登录</a>
+                <a href="">注册</a>
+            </span>
+        </div>
+    </div>
+    <!-- top end -->
+    <!-- header -->
+    <div class="header">
+        <div class="clearfix layout ">
+            <div class="fl logo">
+                <img src="images/logo.png" alt="logo" width="192px">
+            </div>
+            <div class="clearfix fr mag-top ">
+                <div class="fl ">
+                    <div class="curr-top curr-top1 active">
+                        <b>1</b>
+                        <span></span>
+                    </div>
+                    <p>
+                        我的购物车
+                    </p>
+
+                </div>
+                <div class="fl ">
+                    <div class="curr-top curr-top2 active">
+                        <b>2</b>
+                        <span>
+                        </span>
+                    </div>
+                    <p>
+                        填写核对订单信息
+                    </p>
+
+                </div>
+                <div class="fl ">
+                    <div class="curr-top curr-top3">
+                        <b>3</b>
+                        <span></span>
+                    </div>
+                    <p>
+                        成功提交订单
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- header end -->
+    <div class="msg-body">
+        <div class="layout">
+            <h3 class="top-h3">付款</h3>
+            <div class="pay-box">
+                <h4>
+                    提交订单成功
+                    <span>
+                        请您在 24 小时 内完成付款，否则订单会被自动取消。
+                    </span>
+                </h4>
+                <p class="pay-p1">
+                    寄送至： 北京 北京市 大兴区 亦庄经济开发区地盛西路1号数码庄园B1座
+                </p>
+                <p class="pay-p1">
+                    收货人： 穆欣 15811032833
+                </p>
+                <p class="pay-may">总额：
+                    <span>￥</span>
+                    <strong>130.00</strong>
+                </p>
+            </div>
+            <div class="pay-box2">
+                <h4>
+                        支付平台
+                </h4>
+                <ul class="clearfix tab-top" id="tabcilk">
+                    <li class="fl li1 active "></li>
+                    <li class="fl li2"></li>
+                    <li class="fl li3"></li>
+                </ul>
+                <p>亲,请尽快支付.</p>
+                <div class="show-box" id="tabbox">
+                    <div class="tablist" style="display:block">
+                        <div class="imgbox">
+                                <img src="images/wx1.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="tablist">
+                            <div class="imgbox">
+                                    <img src="images/wx1.png" alt="">
+                            </div>
+
+                    </div>
+                    <div class="tablist">
+                            <div class="imgbox">
+                                    <img src="images/wx1.png" alt="">
+                            </div>
+                    </div>
+                </div>
+                <div class="btns">
+                    去付款
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="layout clearfix foot-top">
+            <div class="ft-logo fl col-2 col-m-12">
+                <img src="images/logo.png" alt="logo" width="192px">
+            </div>
+            <div class="links fr col-6 col-m-12">
+                <div class="links-list">
+                    <a href="">鲸至医疗</a>
+                    <a href="">资质证书</a>
+                    <a href="">隐私安全</a>
+                    <a href="">联系我们</a>
+                    <a href="">关于我们</a>
+                </div>
+                <div class="links-list">
+                    <a href="">支付方式</a>
+                    <a href="">在线支付</a>
+                    <a href="">银行转账</a>
+                    <a href="">其他支付方式</a>
+
+                </div>
+                <div class="links-list">
+                    <a href="">配送方式</a>
+                    <a href="">快速运输</a>
+
+                </div>
+                <div class="links-list">
+                    <a href="">新手指南</a>
+                    <a href="">用户注册</a>
+                    <a href="">购物流程</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="layout partner">
+            <a href="">隐私声明</a>
+            <a href="">法律声明</a>
+            <a href="">联系我们</a>
+            <a href="">关于我们</a>
+            <a href="">产品地图</a>
+            <a href="">器械数据库</a>
+            <a href="">知识库</a>
+            <a href="">网站导航</a>
+            <a href="">互联网药品信息服务资格证</a>
+            <br>
+            <span>技术支持: 中企高呈</span>
+        </div>
+    </div>
+    <!-- footer end -->
+
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+ var ali = document.getElementById("tabcilk").getElementsByTagName("li");
+    var adiv = document.getElementById("tabbox").getElementsByClassName("tablist");
+
+
+
+    tab(ali, adiv);
+</script>
+
+</html>

@@ -386,6 +386,202 @@
   color: #37b4f9;
 }
 
+/*------------------------订单信息顶部-------------*/
+.mag-top {
+  margin: 10px 0 0 0;
+}
+
+.mag-top .curr-top {
+  position: relative;
+  width: 190px;
+}
+
+.mag-top .curr-top b {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  background: #d2d2d2;
+  text-align: center;
+  z-index: 99;
+}
+
+.mag-top .curr-top.active b {
+  background-color: #37b4f9;
+}
+
+.mag-top .curr-top.active span {
+  background-color: #37b4f9;
+}
+
+.mag-top .curr-top span {
+  display: block;
+  position: absolute;
+  top: 49%;
+  width: 80px;
+  height: 3px;
+  background: #d2d2d2;
+}
+
+.mag-top p {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.mag-top .curr-top1 b {
+  left: 50%;
+}
+
+.mag-top .curr-top1 span {
+  left: 55%;
+}
+
+.mag-top .curr-top2 {
+  text-align: center;
+}
+
+.mag-top .curr-top2 span {
+  width: 185px;
+  left: 0;
+}
+
+.mag-top .curr-top3 b {
+  left: 40%;
+}
+
+.mag-top .curr-top3 span {
+  right: 57%;
+}
+
+.msg-body {
+  border-top: 1px solid #37b4f9;
+}
+
+.msg-body .top-h3 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 50px;
+  color: #333;
+}
+
+/*----------------------table---------------------*/
+.table1 {
+  border-collapse: collapse;
+}
+
+.table1 thead tr {
+  padding: 0 24px;
+  background: #37b4f9;
+  height: 40px;
+  font-weight: normal;
+}
+
+.table1 thead tr th {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
+.table1 tbody tr {
+  font-weight: normal;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.table1 tbody tr td {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.table1 tbody tr td .td-1 .img-box {
+  margin: 0 20px 0 0;
+  width: 85px;
+  height: 86px;
+  text-align: center;
+  line-height: 86px;
+  border: solid 1px #bebebe;
+}
+
+.table1 tbody tr td .td-1 .img-box img {
+  width: 80%;
+}
+
+.table1 tbody tr td .td-1 .td-p1 {
+  margin: 20px 0 0 0;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-align: left;
+}
+
+.table1 tbody .first-tr {
+  text-align: left;
+  background: #eee;
+}
+
+.table1 tbody .first-tr td {
+  padding: 0;
+  text-align: left;
+}
+
+.table1 tbody .first-tr .tr-p {
+  padding: 12px 24px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  color: #000000;
+}
+
+.table1 tbody .first-tr .tr-p span {
+  color: #37b4f9;
+}
+
+.table1 .w-50 {
+  padding: 0 0 0 40px;
+  width: 50%;
+  text-align: left;
+}
+
+.table1 .p-24 {
+  padding: 20px 0 20px 24px;
+}
+
+/*----------------------左右---------------------*/
+.cen-box .center-left {
+  width: 14%;
+  border: 1px solid #e2e2e2;
+}
+
+.cen-box .center-left h3 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #37b4f9;
+  text-align: center;
+}
+
+.cen-box .center-right {
+  width: 85%;
+}
+
 /*---------------login end----------------------*/
 /*----------------media-----------------------*/
 @media screen and (max-width: 768px) {
