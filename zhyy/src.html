@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sec</title>
+</head>
+<style>
+    div img {
+        width: 100px
+    }
+
+    p img {
+        width: 200px;
+    }
+
+    .showbox {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+
+
+    }
+
+    .showbox img {
+        width: 500px
+    }
+</style>
+
+<body>
+    <div class="img">
+        <img src="images/agen1.png" alt="" id="test1">
+    </div>
+    <div class="showbox">
+        <img src="" alt="" id="show">
+    </div>
+    <p id="p">
+        <img src="images/banner-B.jpg" alt="">
+        <img src="images/banner-A.jpg" alt="">
+
+
+    </p>
+
+</body>
+<script>
+    var temp = document.getElementById('test1').getAttribute('src');
+    var im = document.getElementById('p').getElementsByTagName("img")
+    console.log(im)
+
+    for (var i = 0; i < im.length; i++) {
+        im[i].onclick = function () {
+            console.log(this.getAttribute('src'))
+            test1.src = this.getAttribute('src')
+
+        }
+
+    }
+    //进入 
+    test1.onmouseover = function () {
+        show.src = test1.src
+    }
+    test1.onmouseout = function () {
+        show.src = ""
+
+    }
+</script>
+
+</html>
