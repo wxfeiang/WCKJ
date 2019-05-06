@@ -1,0 +1,34 @@
+.account .account-list li {
+  padding: 26px 56px 26px 36px;
+  margin: -1px 0 0 0;
+  border: 1px solid #e2e2e2;
+}
+
+.account .account-list li p {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.account .account-list li p b {
+  font-size: 16px;
+  font-weight: normal;
+  color: #999999;
+}
+
+.account .account-list li p .btns {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  color: #000000;
+}
+
+.account .account-list li p .btns:hover {
+  color: #1890ff;
+  cursor: pointer;
+}

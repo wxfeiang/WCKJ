@@ -126,34 +126,6 @@
   overflow: hidden;
 }
 
-.list-cent .pages {
-  text-align: right;
-}
-
-.list-cent .pages a {
-  display: inline-block;
-  padding: 0 10px;
-  margin: 20px 0 20px 10px;
-  background-color: #fff;
-  border-radius: 2px;
-  border: solid 1px #e2e2e2;
-  font-family: PingFangSC-Regular;
-  font-size: 14px;
-  line-height: 26px;
-  color: #999;
-}
-
-.list-cent .pages a input {
-  width: 20px;
-  padding: 0 5px;
-  font-size: 14px;
-}
-
-.list-cent .pages a.active {
-  color: #fff;
-  background: #37b4f9;
-}
-
 @media screen and (max-width: 768px) {
   .list-cent {
     padding: 15px 0 0 0;

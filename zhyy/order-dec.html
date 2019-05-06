@@ -220,7 +220,53 @@
                     <h3>
                         个人中心
                     </h3>
-                    <ul>
+                    <ul class="side-nav">
+                        <li>
+                            <a href="javascript:;" class="side-click">
+                                <i class="icon iconfont">&#xe631;</i>订单中心
+                            </a>
+                            <dl class="side-nav-list">
+                                <dd>
+                                    <a href="order-dec.html" class="active">我的订单</a>
+                                </dd>
+                                <dd>
+                                    <a href="evaluate.html">评价晒单</a>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="javascript:;" class="side-click">
+                                    <i class="icon iconfont">&#xe631;</i>账户信息
+                                </a>
+                                <dl class="side-nav-list">
+                                    <dd>
+                                        <a href="personal.html">个人资料</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="ship-address.html">收货地址</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="account-security.html">账户安全</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </li>
+                        <li>
+                            <li>
+                                <a href="javascript:;" class="side-click">
+                                    <i class="icon iconfont">&#xe631;</i>订单中心
+                                </a>
+                                <dl class="side-nav-list">
+                                    <dd>
+                                        <a href="customer-service.html">客户服务</a>
+                                    </dd>
+                                    <dd>
+                                        <a href="refund.html">退货退款</a>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </li>
 
                     </ul>
 
@@ -380,20 +426,128 @@
 
                             </div>
                             <!-- 物流信息 -->
-                            <div class="boxlist">
-                                物流信息
+                            <div class="boxlist" >
+                                <div class="logistics">
+                                    <!-- 一 -->
+                                    <div class="clearfix logi-list">
+                                        <div class="fl logi-data">
+                                            2019-03-25/周一
+                                        </div>
+                                        <div class=" fl logi-decbox">
+                                            <div class=" clearfix  dec-box-list ">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+
+                                                   完成
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+                                                    配送员已经从站点出发，请您准备收货，姓名:赵艳岗,
+
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 一 -->
+                                    <div class="clearfix logi-list">
+                                        <div class="fl logi-data">
+                                            2019-03-25/周一
+                                        </div>
+                                        <div class=" fl logi-decbox">
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+
+                                                   结束qqq
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+
+                                                    配送员已经从站点出发，请您准备收货，姓名:赵艳岗,
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+
+                                                    配送员已经从站点出发，请您准备收货，姓名:赵艳岗,
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+
+                                                    配送员已经从站点出发，请您准备收货，姓名:赵艳岗,
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+                                            <div class=" clearfix  dec-box-list">
+                                                <div class="fl logi-time ">
+                                                    08:39:09
+
+                                                </div>
+                                                <div class="fl logi-dec">
+                                                        开始
+                                                </div>
+                                                <b class="after"></b>
+                                                <b class="before"></b>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- 一 -->
+
+
+
+                                </div>
+
 
                             </div>
 
                         </div>
                     </div>
-
                 </div>
 
             </div>
+
         </div>
-
-
+    </div>
 
 
     </div>
@@ -468,13 +622,17 @@
                 $(this).find("b").html(" &#xe62d;")
             }
         })
+          // 物流信息圆点控制
+            $('.dec-box-list').first().addClass("active")
+            $('.dec-box-list').last().find(".before").remove()
+           
+            
     })
-
-
-
     var ali = document.getElementById("tabcilk").getElementsByTagName("li");
     var adiv = document.getElementById("tabbox").getElementsByClassName("boxlist");
     tab(ali, adiv);
+  
+
 </script>
 
 

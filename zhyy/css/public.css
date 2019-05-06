@@ -181,6 +181,7 @@
 .curent-list {
   background: #fff;
   border-top: 2px solid #37b4f9;
+  padding: 0 0 60px 0;
 }
 
 .cursm-nav {
@@ -551,6 +552,7 @@
 
 .table1 tbody .first-tr .tr-p span {
   color: #37b4f9;
+  margin: 0 50px 0 0;
 }
 
 .table1 .w-50 {
@@ -578,8 +580,177 @@
   text-align: center;
 }
 
+.cen-box .center-left .side-nav {
+  padding: 20px 0 30px;
+}
+
+.cen-box .center-left .side-nav li a {
+  display: block;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 40px;
+  color: #333;
+}
+
+.cen-box .center-left .side-nav li a.active i {
+  display: inline-block;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.cen-box .center-left .side-nav li .side-nav-list a {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  color: #999;
+}
+
+.cen-box .center-left .side-nav li .side-nav-list a:hover {
+  color: #37b4f9;
+}
+
+.cen-box .center-left .side-nav li .side-nav-list a.active {
+  color: #37b4f9;
+}
+
+.cen-box .center-left .side-nav li .side-nav-list.active {
+  height: 0;
+  overflow: hidden;
+}
+
 .cen-box .center-right {
   width: 85%;
+}
+
+.cen-box .center-right h4 {
+  margin: 0 0 14px 0;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #000;
+}
+
+/*---------------pages----------------------*/
+.pages {
+  text-align: right;
+}
+
+.pages a {
+  display: inline-block;
+  padding: 0 10px;
+  margin: 20px 0 20px 10px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: solid 1px #e2e2e2;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 26px;
+  color: #999;
+}
+
+.pages a input {
+  width: 20px;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.pages a.active {
+  color: #fff;
+  border-color: transparent;
+  background: #37b4f9;
+}
+
+/*---------------状态----------------------*/
+.state-box {
+  border: 1px solid #e2e2e2;
+}
+
+.state-box .state-h3 {
+  padding: 0 0 0 27px;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 40px;
+  color: #333333;
+  background: #eee;
+}
+
+.state-box .state-list {
+  padding: 30px 0 30px;
+}
+
+.state-box .state-list li {
+  width: 20%;
+}
+
+.state-box .state-list li h5 {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+
+.state-box .state-list li h6 {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  text-align: center;
+  height: 36px;
+}
+
+.state-box .state-list li .state-item {
+  position: relative;
+  text-align: center;
+}
+
+.state-box .state-list li .state-item b {
+  display: inline-block;
+  position: relative;
+  width: 33px;
+  height: 33px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 32px;
+  background: #d2d2d2;
+  text-align: center;
+  z-index: 99;
+}
+
+.state-box .state-list li .state-item span {
+  display: block;
+  position: absolute;
+  top: 23%;
+  width: 40%;
+  height: 3px;
+  background: #d2d2d2;
+}
+
+.state-box .state-list li .state-item.active b {
+  background-color: #37b4f9;
+}
+
+.state-box .state-list li .state-item.active span {
+  background-color: #37b4f9;
+}
+
+.state-box .state-list li .item1 span {
+  left: 56%;
+}
+
+.state-box .state-list li .item2 span {
+  width: 90%;
+  left: 7%;
+}
+
+.state-box .state-list li .item5 span {
+  left: 15px;
 }
 
 /*---------------login end----------------------*/

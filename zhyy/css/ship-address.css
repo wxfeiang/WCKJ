@@ -1,0 +1,17 @@
+.ship-address {
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+}
+
+.ship-address .table1 tbody tr:hover, .ship-address .table1 tbody tr.active {
+  border-left: 4px solid #f08200;
+}
+
+.ship-address .table1 tbody tr td .oper span {
+  margin: 0 10px;
+}
+
+.ship-address .table1 tbody tr td .oper span:hover {
+  color: #37b4f9;
+  cursor: pointer;
+}

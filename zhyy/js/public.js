@@ -14,3 +14,9 @@ function tab(btn, boxlist) {
 		};
 	}
 }
+// 点击侧边
+$('.side-click').each(function() {
+	$(this).click(function() {
+		$(this).toggleClass('active').siblings().toggleClass('active');
+	});
+});

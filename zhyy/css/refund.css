@@ -1,0 +1,131 @@
+@charset "UTF-8";
+.refund .refund-top {
+  padding: 30px 56px 32px 32px;
+  border: 1px solid #e2e2e2;
+}
+
+.refund .refund-top h3 {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000;
+}
+
+.refund .refund-top h3 span {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.refund .refund-top h3 span:hover {
+  cursor: pointer;
+  color: #1890ff;
+}
+
+.refund .refund-top p {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #999;
+}
+
+.refund .tabs ul {
+  margin: 20px 0 10px 1px;
+}
+
+.refund .tabs ul li {
+  margin: 0 0 0 -1px;
+  padding: 0 20px;
+  border: solid 1px #eeeeee;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 36px;
+  color: #999;
+  cursor: pointer;
+}
+
+.refund .tabs ul li.active, .refund .tabs ul li:hover {
+  background: #2ab0f9;
+  color: #fff;
+}
+
+.refund .tabs .itembox {
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+}
+
+.refund .tabs .itembox .table1 .p-24 {
+  padding-left: 0;
+}
+
+.refund .tabs .itembox .table1 .btns .f37 {
+  color: #37b4f9;
+  cursor: pointer;
+}
+
+/*----------------退款详情---------------*/
+.state-box .state-list {
+  padding: 30px 0 30px 19%;
+}
+
+.state-box .state-list li {
+  width: 217px;
+}
+
+.state-box .state-list li h6 {
+  margin: 16px 0 0 0;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+
+.state-box .state-list li span {
+  top: 19% !important;
+}
+
+.state-box .state-list2 {
+  padding: 30px 0 30px 9%;
+}
+
+.h4-title {
+  padding: 20px 0;
+}
+
+.order-msg h4 {
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  line-height: 52px;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.order-msg .table1 {
+  border: 1px solid #e2e2e2;
+  border-bottom: none;
+}
+
+.order-msg .table1 tr th {
+  border: 1px solid #37b4f9;
+  width: 12%;
+}
+
+.order-msg .table1 tr td {
+  width: 12%;
+}
+
+.order-msg .table1 tr td .money span {
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1.1px;
+  color: #f08200;
+}
+
+.order-msg .table1 tr td .money span b {
+  font-size: 14px;
+}
+
+.order-msg .table1 .w-50 {
+  width: 40%;
+}

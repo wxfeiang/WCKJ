@@ -13,3 +13,14 @@
 ##  家用医疗商品详情           family-dec.html
 
 ##  会员中心                member-cen.html
+##  我的订单              order-dec.html
+##   评价晒单               evaluate.html
+##   个人资料                  personal.html
+##  收货地址                ship-address.html
+##  账户安全                account-security.html
+## 退货                 refund.html
+##  退货详情                 refund1.html
+##  客户服务            customer-service.html
+##  关于我们            about-me.html
+##  在线问诊         on-line.html
+

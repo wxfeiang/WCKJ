@@ -131,24 +131,6 @@
   font-size: 14px;
 }
 
-.center-right .order-msg .table1 tr td .btn-box .btns {
-  margin: 0 auto;
-  width: 103px;
-  height: 36px;
-  font-family: PingFangSC-Regular;
-  font-size: 14px;
-  line-height: 36px;
-  letter-spacing: 0px;
-  color: #999999;
-  text-align: center;
-  cursor: pointer;
-}
-
-.center-right .order-msg .table1 tr td .btn-box .btns.active {
-  background-color: #f08200;
-  color: #fff;
-}
-
 .center-right .order-msg .table1 .w-50 {
   width: 40%;
 }
