@@ -11,7 +11,8 @@
 ##  家用医疗                   family-index.html
 ##  家用医疗商品列表           family-list.html
 ##  家用医疗商品详情           family-dec.html
-
+##  购物车                    shop-car.html
+##  订单信息                   order-msg.html
 ##  会员中心                member-cen.html
 ##  我的订单              order-dec.html
 ##   评价晒单               evaluate.html

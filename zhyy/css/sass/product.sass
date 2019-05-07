@@ -7,19 +7,45 @@
             width: 80%
             box-sizing: border-box
             .left-top
+                position: relative
                 padding: 24px
                 background: #fff
-                .top-l
+                #big
+                    position: absolute
+                    width: 340px
+                    height: 360px
+                    overflow: hidden
+                    border: 1px solid #e2e2e2
+                    left: 39%
+                    background: #FFF
+                    top: 24px
+                    img
+                        // width: 150%
+                        // height: 150%
+                        position: absolute     
+                .top-l         
                     width: 35%
                     margin: 0 5% 0 0
                     .top-l-img
+                        position: relative
                         text-align: center
                         height: 360px
                         border: 1px solid #bebebe
                         line-height: 362px
+                        overflow: hidden
+                        #rectangle
+                            width: 80px  
+                            height: 80px 
+                            background: red 
+                            opacity: 0.4 
+                            position: absolute 
+                            filter: alpha(opacity=40) 
+                            display: none 
+                            cursor: move 
                         img
-                            max-width: 100%
-                            max-height: 100%
+                            width: 80%
+                            height: 80%
+                           
 
                     .sm-ul
                         margin: 0 -12px 0 0 
@@ -32,11 +58,7 @@
                             line-height: 80px
                             img
                                 width: 80%
-                                height: 90%
-                            
-
-
-                    
+                                height: 90%   
                 .top-r
                     width: 60%
                     h3

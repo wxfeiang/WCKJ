@@ -1,0 +1,73 @@
+.msg-body .tab-box {
+  margin: 0 0 60px 0;
+  border: 1px solid #e2e2e2;
+}
+
+.msg-body .tab-box .table1 tbody tr td .nums span {
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  line-height: 28px;
+  border: 1px solid #e2e2e2;
+  background: #eee;
+  cursor: pointer;
+  margin: 0 -6px;
+}
+
+.msg-body .tab-box .table1 tbody tr td .nums input {
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+}
+
+.msg-body .tab-box .table1 tbody tr td .btns .f37 {
+  color: #37b4f9;
+  cursor: pointer;
+}
+
+.msg-body .tab-box .table1 tfoot tr .foot1 {
+  padding: 0 0 0 24px;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #999999;
+}
+
+.msg-body .tab-box .table1 tfoot tr .foot2 {
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #999999;
+}
+
+.msg-body .tab-box .table1 tfoot tr .foot2 b {
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  color: #f08200;
+}
+
+.msg-body .tab-box .table1 tfoot tr .foot2 strong {
+  display: inline-block;
+  width: 131px;
+  height: 50px;
+  margin: 0 -1px 0 0;
+  background-color: #f08200;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  cursor: pointer;
+}

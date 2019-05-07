@@ -47,7 +47,7 @@
         </div>
     </div>
     <!-- header end -->
-  
+
     <!-- banner -->
     <!-- cuuent-list- -->
     <div class="curent-list">
@@ -62,29 +62,34 @@
     </div>
     <!-- product -->
     <div class="product">
-        <div class="layout">
+        <div class="layout" id="waprbox">
             <div class="clearfix product-box">
                 <div class="fl pro-left">
                     <div class="clearfix left-top">
                         <div class="fl top-l">
-                            <div class="top-l-img">
-                                <img src="images/produce-dec.jpg" alt="">
+                            <div class="top-l-img" id="smallBox">
+                                <div id="rectangle"></div>
+                                <img src="images/produce-dec.jpg" alt="" id="show-sm">
                             </div>
                             <ul class="clearfix  sm-ul">
+                                <li class="fl">
+                                    <img src="images/conter2.jpg" alt="">
+                                </li>
+                                <li class="fl">
+                                    <img src="images/rec1.jpg" alt="">
+                                </li>
                                 <li class="fl">
                                     <img src="images/produce-dec1.jpg" alt="">
                                 </li>
                                 <li class="fl">
-                                        <img src="images/rec1.jpg" alt="">
-                                </li>
-                                <li class="fl">
-                                        <img src="images/produce-dec1.jpg" alt="">
-                                </li>
-                                <li class="fl">
-                                        <img src="images/produce-dec1.jpg" alt="">
+                                    <img src="images/produce-dec1.jpg" alt="">
                                 </li>
                             </ul>
+                            <div id="big">
+                                <img src="images/produce-dec.jpg" alt="" id="bigImg">
+                            </div>
                         </div>
+
                         <div class="fl top-r">
                             <h3>迈瑞BC-1800血球分析仪</h3>
                             <h4>
@@ -106,8 +111,8 @@
                     <div class="left-center">
                         <ul class="clearfix tabs" id="tabcilk">
                             <li class="active">商品详情</li>
-                            <li >规格参数</li>
-                            <li >售后保障</li>
+                            <li>规格参数</li>
+                            <li>售后保障</li>
                         </ul>
                         <div class="tablist" id="tablist">
                             <div class="tabshow" style="display:block">
@@ -119,7 +124,7 @@
                                 请上传参数
                             </div>
                             <div class="tabshow">
-                                    请上传参数
+                                请上传参数
                             </div>
                         </div>
 
@@ -275,12 +280,64 @@
     <!-- footer end -->
 
 </body>
+<script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/public.js"></script>
 <script>
-       var ali = document.getElementById("tabcilk").getElementsByTagName("li");
+
+
+
+    var waprbox = document.getElementById("waprbox");
+    var smallBox = document.getElementById("smallBox");
+    var rectangle = document.getElementById("rectangle");
+    var bigBox = document.getElementById("big");
+    var bigImg = document.getElementById("bigImg");
+    var ali = document.getElementById("tabcilk").getElementsByTagName("li");
     var adiv = document.getElementById("tablist").getElementsByClassName("tabshow");
-
-
     tab(ali, adiv);
+    // 点击显示当前图片
+    $(".sm-ul li").click(function () {
+        var imsrc = $(this).find("img").attr("src");
+        // console.log(imsrc)
+        $("#show-sm").attr("src", imsrc)
+
+    })
+
+    smallBox.onmouseover = function () {
+        rectangle.style.display = "block";
+        bigBox.style.display = "block";
+        bigImg.src = $("#show-sm").attr("src")
+
+    }
+    smallBox.onmouseout = function () {
+        rectangle.style.display = "none";
+        bigBox.style.display = "none";
+    }
+    smallBox.onmousemove = function (ev) {
+        var ev = window.event || ev;
+        console.log(ev.pageX,ev.pageY);
+        var l = ev.pageX -waprbox.offsetLeft-smallBox.offsetLeft - rectangle.offsetWidth / 2;
+        var t = ev.pageY -waprbox.offsetTop -smallBox.offsetTop - rectangle.offsetHeight / 2;
+        if (l < 0) { l = 0 }
+        if (l > smallBox.clientWidth - rectangle.offsetWidth) {
+            l = smallBox.clientWidth - rectangle.offsetWidth;
+        }
+        if (t < 0) { t = 0; }
+        if (t > smallBox.clientHeight - rectangle.offsetHeight) {
+            t = smallBox.clientHeight - rectangle.offsetHeight;
+        }
+
+        // //130/l = 800/?  ? =
+        var x = l * (bigImg.clientWidth)/ smallBox.clientWidth;
+        var y = t * (bigImg.clientHeight)/ smallBox.clientHeight;
+        bigImg.style.left = -x + "px";
+        bigImg.style.top = -y + "px";
+        rectangle.style.left = l + "px";
+        rectangle.style.top = t + "px";
+
+
+    }
+
+
 </script>
+
 </html>
