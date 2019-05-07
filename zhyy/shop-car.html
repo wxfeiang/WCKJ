@@ -72,12 +72,11 @@
             <h3 class="top-h3">我的购物车</h3>
             <!-- table -->
             <div class="tab-box">
-                <table border="0 " cellspacing="0" width="100%" class="table1">
+                <table border="0 " cellspacing="0" width="100%" class="table1" id="table">
                     <thead>
                         <tr>
                             <th>
-                                <input type="checkbox" class="checkall check">
-                                全选
+                                <input type="checkbox" class="checkall check"> 全选
                             </th>
                             <th>商品</th>
                             <th>单价</th>
@@ -108,9 +107,9 @@
                             </td>
                             <td>
                                 <div class="nums">
-                                    <span>+</span>
+                                    <span class="add">+</span>
                                     <input type="text" value="1">
-                                    <span>-</span>
+                                    <span class="reduc">-</span>
                                 </div>
                             </td>
                             <td>
@@ -118,7 +117,7 @@
                             </td>
                             <td>
                                 <dib class="btns">
-                                        <span class="f37 ">删除</span>
+                                    <span class="f37 ">删除</span>
                                 </dib>
                             </td>
                         </tr>
@@ -129,7 +128,7 @@
                             <td>
                                 <div class="clearfix td-1">
                                     <div class="fl img-box">
-                                        <img src="images/four-im3.jpg" alt="" >
+                                        <img src="images/four-im3.jpg" alt="">
                                     </div>
                                     <p class="fl td-p1">
                                         血球分析仪BC-1800
@@ -142,9 +141,9 @@
                             </td>
                             <td>
                                 <div class="nums">
-                                    <span>+</span>
+                                    <span class="add">+</span>
                                     <input type="text" value="1">
-                                    <span>-</span>
+                                    <span class="reduc">-</span>
                                 </div>
                             </td>
                             <td>
@@ -167,8 +166,8 @@
                             </td>
                             <td colspan="4" class="foot2">
                                 已选
-                                <b>1</b> 件商品 总价（不包含运费）：
-                                <b> ￥130</b>
+                                <b id="selectdtotal">1</b> 件商品 总价（不包含运费）：
+                                <b id="pretotal"> ￥130</b>
                                 <strong class="bt">
                                     结算
                                 </strong>
@@ -239,30 +238,131 @@
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script>
-    $(function () {
+    // $(function () {
 
-        $(".labbox label").each(function () {
-            $(this).click(function () {
-                $(this)
-                    .addClass("active")
-                    .find("i")
-                    .html("&#xe635;");
-                $(this)
-                    .parent()
-                    .siblings()
-                    .find(" label").removeClass("active")
-                    .find("i")
-                    .html("&#xe67b;")
-            })
-        })
-    })
+    //     $(".labbox label").each(function () {
+    //         $(this).click(function () {
+    //             $(this)
+    //                 .addClass("active")
+    //                 .find("i")
+    //                 .html("&#xe635;");
+    //             $(this)
+    //                 .parent()
+    //                 .siblings()
+    //                 .find(" label").removeClass("active")
+    //                 .find("i")
+    //                 .html("&#xe67b;")
+    //         })
+    //     })
+    // })
     // for(i= 0;i<div.length;i++){
     //     console.log(i)
     //     div[i].setAttribute("id","id"+i)
     // }
     // 购物车
-    var  
 
+
+
+    var table = document.getElementById("table")
+    var tr = table.children[1].rows; // tbody 行
+    var checkIput = document.getElementsByClassName("check")
+    var checkall = document.getElementsByClassName("checkall")
+    var selectdtotal = document.getElementById("selectdtotal")
+    var pretotal = document.getElementById("pretotal")
+
+    // 计算
+    function trim(str) {
+        return str.replace(/^(\s|\xA0)+|(\s|\xA0)+$/g, '');
+    }
+
+    function gettotal() {
+        // 每一行累加
+        var selected = 0;
+        var prected = 0;
+
+        for (var i = 0, len = tr.length; i < len; i++) {
+            if (tr[i].getElementsByTagName("input")[0].checked) {
+                selected += tr[i].getElementsByTagName("input")[1].value * 1;
+                prected += trim(tr[i].cells[4].innerHTML).substring(1) * 1
+
+            }
+        }
+        selectdtotal.innerHTML = selected;
+        pretotal.innerHTML = "￥" + prected;
+
+    }
+
+
+    //  checkout
+    for (var i = 0, len = checkIput.length; i < len; i++) {
+        var title = 0;
+        checkIput[i].onclick = function () {
+
+            //全选
+            if (this.className === "checkall check") {
+                for (var j = 0; j < checkIput.length; j++) {
+                    checkIput[j].checked = this.checked;
+
+                }
+            }
+            if (this.checked == false) {
+                for (var k = 0; k < checkall.length; k++) {
+                    checkall[k].checked = false;
+
+                }
+            }
+
+            gettotal();
+        }
+    }
+    // 增加
+    for (var i = 0; i < tr.length; i++) {
+        tr[i].onclick = function (e) {
+            e = e || window.event;
+            var el = e.srcElement;
+            var cls = el.className;
+            var input = this.getElementsByTagName("input")[1];
+            var val = input.value * 1
+
+            switch (cls) {
+                case ("add"):
+                    input.value = val + 1
+                    getsutal(this);
+                    break;
+                case ("reduc"):
+                    input.value = val - 1
+                    if(val<=1){
+                        alert("0")
+                    }
+                    getsutal(this); 
+                    break;
+                case("del"):
+                break;
+                default:
+                    break;
+            }
+            gettotal();
+
+        }
+        // 输入
+        tr[i].getElementsByTagName("input")[1].onkeyup = function(){
+            var tr = this.parentNode.parentNode.parentNode;
+            getsutal(tr);
+            gettotal();
+            
+        }
+
+
+    }
+    // 小计
+    function getsutal (tr){
+        var tds = tr.cells;
+        var price = trim(tds[2].innerHTML).substring(1) * 1  // 价格
+        var cont = tr.getElementsByTagName("input")[1].value * 1; // 数量
+        var subtal  = parseFloat(price * cont);
+        tds[4].innerHTML = "￥"+ subtal;
+
+    }
 </script>
 
 </html>
