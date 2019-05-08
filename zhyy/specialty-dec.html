@@ -43,6 +43,12 @@
                     <a href="">血压计</a>
                 </div>
             </div>
+            <div class="fl shop-car">
+                    <a href="shop-car.html">
+                    <i class="icon iconfont">&#xe602;</i>
+                    购物车
+                </a>
+                </div>
 
         </div>
     </div>
@@ -101,8 +107,10 @@
                             <p>型 号：DH73</p>
                             <p>
                                 咨询电话：0531-85959329</p>
-                            <div class="btns">
-                                在线咨询
+                            <div class="btnbox">
+                                <div class="btns active">
+                                    在线咨询
+                                </div>
                             </div>
 
                         </div>
@@ -314,9 +322,9 @@
     }
     smallBox.onmousemove = function (ev) {
         var ev = window.event || ev;
-        console.log(ev.pageX,ev.pageY);
-        var l = ev.pageX -waprbox.offsetLeft-smallBox.offsetLeft - rectangle.offsetWidth / 2;
-        var t = ev.pageY -waprbox.offsetTop -smallBox.offsetTop - rectangle.offsetHeight / 2;
+        console.log(ev.pageX, ev.pageY);
+        var l = ev.pageX - waprbox.offsetLeft - smallBox.offsetLeft - rectangle.offsetWidth / 2;
+        var t = ev.pageY - waprbox.offsetTop - smallBox.offsetTop - rectangle.offsetHeight / 2;
         if (l < 0) { l = 0 }
         if (l > smallBox.clientWidth - rectangle.offsetWidth) {
             l = smallBox.clientWidth - rectangle.offsetWidth;
@@ -327,8 +335,8 @@
         }
 
         // //130/l = 800/?  ? =
-        var x = l * (bigImg.clientWidth)/ smallBox.clientWidth;
-        var y = t * (bigImg.clientHeight)/ smallBox.clientHeight;
+        var x = l * (bigImg.clientWidth) / smallBox.clientWidth;
+        var y = t * (bigImg.clientHeight) / smallBox.clientHeight;
         bigImg.style.left = -x + "px";
         bigImg.style.top = -y + "px";
         rectangle.style.left = l + "px";

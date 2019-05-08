@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title>当前项目包含页面</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            background: #333;
+            color: #6f828d;
+            font: 14px/1.5 sans-serif;
+            text-align: center;
+        }
+
+        a {
+            color: #026eba;
+            text-decoration: none;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            transition: all .3s ease-out;
+        }
+
+        a:visited {
+            color: #999;
+        }
+
+        a:hover,
+        a:active {
+            background: #2ea1f2;
+            color: #fff;
+        }
+
+        .wp {
+            margin: 0 auto;
+            width: 480px;
+            min-width: 320px;
+            min-height: 100%;
+            background: #fff;
+        }
+
+        .head {
+            padding: 15px 0;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAMAAADXT/YiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1QThBMDM1Qjk3NTgxMUU3QUY3RUE3RUVDMTBCOTg1MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1QThBMDM1Qzk3NTgxMUU3QUY3RUE3RUVDMTBCOTg1MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVBOEEwMzU5OTc1ODExRTdBRjdFQTdFRUMxMEI5ODUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVBOEEwMzVBOTc1ODExRTdBRjdFQTdFRUMxMEI5ODUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+sOoKxgAAAAZQTFRF7u7u9vb2jxyS+AAAACNJREFUeNpiYGRkYAQBBgYYA8SEMOAiUBYDCg9JATa9AAEGAAv0AEPRWjmBAAAAAElFTkSuQmCC);
+        }
+
+        .line {
+            margin: 1px 0;
+            height: 2px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJoAAAACCAYAAACgysU5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMjA1MTBFMDk3NjExMUU3QUY3RUE3RUVDMTBCOTg1MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMjA1MTBFMTk3NjExMUU3QUY3RUE3RUVDMTBCOTg1MCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVBOEEwMzYxOTc1ODExRTdBRjdFQTdFRUMxMEI5ODUwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVBOEEwMzYyOTc1ODExRTdBRjdFQTdFRUMxMEI5ODUwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+oUbe1QAAAEdJREFUeNpi/P//P4P+os//GQYAXIzjZfwe5jIgdnOu2sP4/pjOgNgtaHWFMfRO74DYvVqlmPHsjXt0t5uJYRSMAjoAgAADADNIFoNRUtweAAAAAElFTkSuQmCC);
+        }
+
+        .head h3 {
+            font-size: 20px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .head h5 {
+            font-size: 12px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .list,
+        .list li {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            list-style: none;
+        }
+
+        .list a {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: block;
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .wp {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wp">
+        <div class="head">
+            <h3>项目页面</h3>
+        </div>
+        <div class="line"></div>
+        <ol id="list" class="list">
+            <li>
+                <a href="index.html" target="_blank">首页</a>
+            </li>
+            <li>
+                <a href="agent-A.html" target="_blank"> 医疗圈代理商A </a>
+            </li>
+            <li>
+                <a href="agent-B.html" target="_blank">医疗圈代理商b</a>
+            </li>
+            <li>
+                <a href="agent-list.html" target="_blank">医疗圈商品列表 </a>
+            </li>
+            <li>
+                <a href="specialty-index.html" target="_blank">专业医疗 </a>
+            </li>
+            <li>
+                <a href="specialty-list.html" target="_blank">专业医疗商品列表 </a>
+            </li>
+            <li>
+                <a href="specialty-dec.html" target="_blank"> 专业医疗商品详情 </a>
+            </li>
+            <li>
+                <a href="family-index.html" target="_blank">家用医疗 </a>
+            </li>
+            <li>
+                <a href="family-list.html" target="_blank">家用医疗商品列表 </a>
+            </li>
+            <li>
+                <a href="family-dec.html" target="_blank"> 家用医疗商品详情 </a>
+            </li>
+            <li>
+                <a href="shop-car.html" target="_blank">购物车 </a>
+            </li>
+            <li>
+                <a href=" order-msg.html" target="_blank">订单信息 </a>
+            </li>
+            <li>
+                <a href="member-cen.html" target="_blank">会员中心</a>
+            </li>
+
+            <li>
+                <a href="order-dec.html" target="_blank">我的订单 </a>
+            </li>
+            <li>
+                <a href="evaluate.html" target="_blank">评价晒单</a>
+            </li>
+            <li>
+                <a href="personal.html" target="_blank">个人资料</a>
+            </li>
+            <li>
+                <a href=" ship-address.html" target="_blank">收货地址</a>
+            </li>
+            <li>
+                <a href="account-security.html" target="_blank">账户安全</a>
+            </li>
+
+            <li>
+                <a href=" refund.html" target="_blank">退货 </a>
+            </li>
+            <li>
+                <a href=" refund1.html" target="_blank"> 退货详情 </a>
+            </li>
+
+            <li>
+                <a href=" refund2.html" target="_blank"> 退货详情 </a>
+            </li>
+            <li>
+                <a href="customer-service.html" target="_blank">客户服务</a>
+            </li>
+
+            <li>
+                <a href="about-me.html" target="_blank"> 关于我们 </a>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

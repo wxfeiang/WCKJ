@@ -49,7 +49,7 @@
   left: 0;
   border-bottom: 0;
   width: 100%;
-  padding: 30px 0 0;
+  padding: 30px 0 50px;
   background: rgba(40, 44, 71, 0.8);
   z-index: 999;
 }
@@ -240,6 +240,26 @@
   color: #999;
 }
 
+.header .shop-car {
+  margin: 14px 0 0 26px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #333333;
+  border: solid 1px #999999;
+  cursor: pointer;
+}
+
+.header .shop-car i {
+  color: #f08200;
+}
+
 /*-----------------------header end----------------*/
 /*---------------footer----------------------*/
 .footer {
@@ -293,14 +313,21 @@
 
 /*---------------footer end----------------------*/
 /*---------------login----------------------*/
-.login .loginbox {
-  margin: 100px auto;
+.loginbox {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -130px 0 0 -186px;
   width: 498px;
+  height: 376px;
   box-sizing: border-box;
   border: 1px solid #ccc;
+  background: #ffffff;
+  z-index: 99999;
 }
 
-.login .loginbox h3 {
+.loginbox h3 {
   text-align: center;
   font-family: PingFangSC-Regular;
   font-size: 22px;
@@ -308,13 +335,13 @@
   color: #333333;
 }
 
-.login .loginbox .inp-box {
+.loginbox .inp-box {
   position: relative;
   margin: 0 auto 14px;
   width: 80%;
 }
 
-.login .loginbox .inp-box input {
+.loginbox .inp-box input {
   display: block;
   width: 100%;
   padding: 0 15px;
@@ -327,7 +354,7 @@
   box-sizing: border-box;
 }
 
-.login .loginbox .inp-box .code-btn {
+.loginbox .inp-box .code-btn {
   position: absolute;
   right: 0;
   top: 1px;
@@ -341,7 +368,7 @@
   color: #ffffff;
 }
 
-.login .loginbox .inp-box .code-btn:hover {
+.loginbox .inp-box .code-btn:hover {
   background: #1890ff;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -349,12 +376,12 @@
   transition: all 0.3s ease-in;
 }
 
-.login .loginbox .inp-box .code-btn.disabled {
+.loginbox .inp-box .code-btn.disabled {
   color: #000;
   background: #ccc;
 }
 
-.login .loginbox .sure-btn {
+.loginbox .sure-btn {
   display: block;
   margin: 26px auto;
   width: 193px;
@@ -369,7 +396,7 @@
   cursor: pointer;
 }
 
-.login .loginbox .sure-btn:hover {
+.loginbox .sure-btn:hover {
   background: #1890ff;
   -moz-transition: all 0.3s ease-in;
   -webkit-transition: all 0.3s ease-in;
@@ -377,12 +404,12 @@
   transition: all 0.3s ease-in;
 }
 
-.login .loginbox p {
+.loginbox p {
   margin: 0 auto 14px;
   width: 80%;
 }
 
-.login .loginbox p a {
+.loginbox p a {
   color: #37b4f9;
 }
 
@@ -565,6 +592,10 @@
 }
 
 /*----------------------左右---------------------*/
+.cen-box {
+  padding: 0 0 50px 0;
+}
+
 .cen-box .center-left {
   width: 14%;
   border: 1px solid #e2e2e2;

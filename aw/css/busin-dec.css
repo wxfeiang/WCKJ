@@ -1,0 +1,102 @@
+.bgcar-left .left-list {
+  padding: 0;
+  list-style: none;
+}
+
+.bgcar-left .left-list li {
+  list-style: none;
+  font-size: 22px;
+  height: 26px;
+  font-weight: bold;
+  color: #000;
+  margin: 0 0 4rem 0;
+}
+
+.bgcar-left .left-list li i {
+  margin: 0 0.5rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 0.6rem;
+  background: #0b3284;
+  border: 0.4rem solid #dbe0ed;
+  vertical-align: middle;
+  line-height: 26px;
+}
+
+.bgcar-right img {
+  width: 100%;
+}
+
+.serial-dec {
+  width: 80%;
+  font-family: PingFang-SC-Bold;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  color: #333333;
+}
+
+.bear {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 80%;
+  margin: 5rem -20% 0 0;
+}
+
+.bear li {
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.bear li .serial {
+  position: relative;
+  display: inline-block;
+  width: 2.1rem;
+  height: 2.1rem;
+  background: #0b3284;
+  color: #ffffff;
+  line-height: 2.1rem;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.bear li .ser-t {
+  font-family: PingFang-SC-Bold;
+  font-size: 16px;
+  line-height: 2.5rem;
+  letter-spacing: -0.5px;
+  color: #333333;
+}
+
+.bear li .line {
+  position: absolute;
+  width: 470%;
+  border: 1px dashed #ccc;
+  top: 23%;
+  left: -172%;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .serial-dec {
+    width: 100%;
+  }
+  .bear {
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+  .bear .line {
+    width: 300%;
+    left: -100%;
+  }
+  hr {
+    width: 100%;
+  }
+  .ser-img img {
+    width: 100% !important;
+  }
+}

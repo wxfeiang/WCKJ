@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="stylesheet" href="css/rest.css">
@@ -75,14 +75,14 @@
                 <table border="0 " cellspacing="0" width="100%" class="table1" id="table">
                     <thead>
                         <tr>
-                            <th>
+                            <th style="width: 5%">
                                 <input type="checkbox" class="checkall check"> 全选
                             </th>
-                            <th>商品</th>
-                            <th>单价</th>
-                            <th>数量</th>
-                            <th>小计</th>
-                            <th>操作</th>
+                            <th style="width: 35%">商品</th>
+                            <th style="width: 15">单价</th>
+                            <th style="width: 20%">数量</th>
+                            <th style="width: 15%">小计</th>
+                            <th style="width: 10%">操作</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -117,7 +117,7 @@
                             </td>
                             <td>
                                 <dib class="btns">
-                                    <span class="f37 ">删除</span>
+                                    <span class="del">删除</span>
                                 </dib>
                             </td>
                         </tr>
@@ -151,7 +151,7 @@
                             </td>
                             <td>
                                 <dib class="btns">
-                                    <span class="f37 ">删除</span>
+                                    <span class="del">删除</span>
                                 </dib>
                             </td>
                         </tr>
@@ -160,7 +160,7 @@
                         <tr>
                             <td colspan="2" class="foot1">
                                 <input type="checkbox" class="checkall check"> 全选
-                                <span>
+                                <span id="delall">
                                     删除所有商品
                                 </span>
                             </td>
@@ -238,28 +238,30 @@
 </body>
 <script src="js/jquery-1.8.3.min.js"></script>
 <script>
-    // $(function () {
+    $(function () {
 
-    //     $(".labbox label").each(function () {
-    //         $(this).click(function () {
-    //             $(this)
-    //                 .addClass("active")
-    //                 .find("i")
-    //                 .html("&#xe635;");
-    //             $(this)
-    //                 .parent()
-    //                 .siblings()
-    //                 .find(" label").removeClass("active")
-    //                 .find("i")
-    //                 .html("&#xe67b;")
-    //         })
-    //     })
-    // })
+        // $(".labbox label").each(function () {
+        //     $(this).click(function () {
+        //         $(this)
+        //             .addClass("active")
+        //             .find("i")
+        //             .html("&#xe635;");
+        //         $(this)
+        //             .parent()
+        //             .siblings()
+        //             .find(" label").removeClass("active")
+        //             .find("i")
+        //             .html("&#xe67b;")
+        //     })
+        // })
+
+    })
     // for(i= 0;i<div.length;i++){
     //     console.log(i)
     //     div[i].setAttribute("id","id"+i)
     // }
     // 购物车
+
 
 
 
@@ -269,6 +271,7 @@
     var checkall = document.getElementsByClassName("checkall")
     var selectdtotal = document.getElementById("selectdtotal")
     var pretotal = document.getElementById("pretotal")
+    var delall = document.getElementById("delall")
 
     // 计算
     function trim(str) {
@@ -284,15 +287,11 @@
             if (tr[i].getElementsByTagName("input")[0].checked) {
                 selected += tr[i].getElementsByTagName("input")[1].value * 1;
                 prected += trim(tr[i].cells[4].innerHTML).substring(1) * 1
-
             }
         }
         selectdtotal.innerHTML = selected;
         pretotal.innerHTML = "￥" + prected;
-
     }
-
-
     //  checkout
     for (var i = 0, len = checkIput.length; i < len; i++) {
         var title = 0;
@@ -302,16 +301,13 @@
             if (this.className === "checkall check") {
                 for (var j = 0; j < checkIput.length; j++) {
                     checkIput[j].checked = this.checked;
-
                 }
             }
             if (this.checked == false) {
                 for (var k = 0; k < checkall.length; k++) {
                     checkall[k].checked = false;
-
                 }
             }
-
             gettotal();
         }
     }
@@ -323,21 +319,26 @@
             var cls = el.className;
             var input = this.getElementsByTagName("input")[1];
             var val = input.value * 1
-
             switch (cls) {
                 case ("add"):
                     input.value = val + 1
                     getsutal(this);
                     break;
                 case ("reduc"):
-                    input.value = val - 1
-                    if(val<=1){
-                        alert("0")
+                    if (val > 1) {
+                        input.value = val - 1
+                        getsutal(this);
                     }
-                    getsutal(this); 
+
+                    if (val <= 1) {
+                        alert("至少有一个")
+                    }
+
                     break;
-                case("del"):
-                break;
+                case ("del"):
+                    this.parentNode.removeChild(this)
+                    gettotal();
+                    break;
                 default:
                     break;
             }
@@ -345,24 +346,42 @@
 
         }
         // 输入
-        tr[i].getElementsByTagName("input")[1].onkeyup = function(){
+        tr[i].getElementsByTagName("input")[1].onkeyup = function () {
+            var val = parseInt(this.value);
+            if (isNaN(val) || val <= 0) {
+                val = 1;
+            }
+            if (this.value != val) {
+                this.value = val;
+            }
             var tr = this.parentNode.parentNode.parentNode;
             getsutal(tr);
             gettotal();
-            
+
         }
-
-
     }
     // 小计
-    function getsutal (tr){
+    function getsutal(tr) {
         var tds = tr.cells;
         var price = trim(tds[2].innerHTML).substring(1) * 1  // 价格
         var cont = tr.getElementsByTagName("input")[1].value * 1; // 数量
-        var subtal  = parseFloat(price * cont);
-        tds[4].innerHTML = "￥"+ subtal;
-
+        var subtal = parseFloat(price * cont);
+        tds[4].innerHTML = "￥" + subtal;
     }
+    // delall
+    delall.onclick = function () {
+        if (selectdtotal.innerHTML != 0) {
+            for (var i = 0, len = tr.length; i < len; i++) {
+                if (tr[i].getElementsByTagName('input')[0].checked) {
+                    tr[i].parentNode.removeChild(tr[i]);
+                    i--;
+                    gettotal();
+                }
+            }
+        }
+    }
+    checkall[0].checked = true;
+    checkall[0].onclick();
 </script>
 
 </html>

@@ -17,8 +17,10 @@
                     overflow: hidden
                     border: 1px solid #e2e2e2
                     left: 39%
-                    background: #FFF
+                    background: #fff
                     top: 24px
+                    display: none
+                    z-index: 999
                     img
                         // width: 150%
                         // height: 150%
@@ -75,21 +77,92 @@
                         letter-spacing: 0.2px
                         color: #999
                     p
+                        position: relative
                         font-family: PingFangSC-Regular
                         font-size: 16px
                         line-height: 40px
                         color: #000
+                        .pick-area1
+                            position: absolute
+                            top: 0
+                            left: 60px 
+                            display: inline-block
+                        .f68
+                            font-family:PingFangSC-Semibold
+                            font-size: 30px
+                            font-weight: normal
+                            font-stretch: normal
+                            line-height: 20px
+                            letter-spacing: 0px
+                            color: #ff6868
+                        .muns
+                            position: absolute
+                            top: 5px
+                            
+                            span
+                                display: block
+                                float: left
+                                width: 28px
+                                height: 28px
+                                border: 1px solid #e2e2e2
+                                background: #eee
+                                line-height: 28px
+                                text-align: center
+                                cursor: pointer
+                                color: #999
+                                
+                            input
+                                display: block
+                                float: left
+                                width: 50px
+                                height: 28px
+                                border: 1px solid #e2e2e2
+                                line-height: 28px
+                                text-align: center
+                                color: #999
+                                margin: 0 -1px
+                                
+                        .st
+                            position: absolute
+                            top: 0
+                            strong
+                                display: inline-block
+                                margin: 0 10px 0 0
+                                padding: 0 14px
+                                height: 30px
+                                border: solid 1px #d2d2d2
+                                font-size: 14px
+                                line-height: 30px
+                                color: #000
+                                text-align: center
+                                cursor: pointer
+                                &:hover,&.active
+                                    border: solid 1px #37b4f9
+                                    color: #37b4f9
+
+
+
                     .btns
+                        display: inline-block
                         width: 121px
-                        background: #f08200
+                        background: #fff
                         text-align: center
                         height: 42px
                         font-size: 18px
                         line-height: 24px
-                        color: #fff
+                        color: #999
                         line-height: 42px
                         cursor: pointer
-                        margin-top: 28px
+                        margin: 28px 10px 0 0 
+                        border: 1px solid #d2d2d2
+                        cursor: pointer
+
+                        &.active
+                            background: #f08200
+                            color: #fff
+                            border: 1px solid transparent
+                            
+                            
             .left-center
                 margin: 20px 0 0 0
                 .tabs

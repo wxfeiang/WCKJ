@@ -131,6 +131,24 @@
   font-size: 14px;
 }
 
+.center-right .order-msg .table1 tr td .btn-box .btns {
+  margin: auto;
+  width: 103px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #999;
+  cursor: pointer;
+}
+
+.center-right .order-msg .table1 tr td .btn-box .btns.active {
+  color: #fff;
+  background-color: #f08200;
+}
+
 .center-right .order-msg .table1 .w-50 {
   width: 40%;
 }

@@ -15,8 +15,9 @@
 ##  订单信息                   order-msg.html
 ##  会员中心                member-cen.html
 ##  我的订单              order-dec.html
-##   评价晒单               evaluate.html
-##   个人资料                  personal.html
+##  订单中心               order-center.html
+##  评价晒单               evaluate.html
+##  个人资料                  personal.html
 ##  收货地址                ship-address.html
 ##  账户安全                account-security.html
 ## 退货                 refund.html

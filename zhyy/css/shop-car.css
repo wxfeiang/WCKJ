@@ -6,7 +6,7 @@
 .msg-body .tab-box .table1 tbody tr td .nums span {
   display: inline-block;
   width: 28px;
-  height: 26px;
+  height: 27px;
   line-height: 28px;
   border: 1px solid #e2e2e2;
   background: #eee;
@@ -23,8 +23,12 @@
   border: 1px solid #e2e2e2;
 }
 
-.msg-body .tab-box .table1 tbody tr td .btns .f37 {
+.msg-body .tab-box .table1 tbody tr td .btns .del {
   color: #37b4f9;
+  cursor: pointer;
+}
+
+.msg-body .tab-box .table1 #delall {
   cursor: pointer;
 }
 
